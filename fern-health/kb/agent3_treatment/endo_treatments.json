@@ -1,0 +1,1163 @@
+[
+  {
+    "id": "laparoscopic_excision_surgery",
+    "name": "Laparoscopic Excision Surgery",
+    "also_known_as": [
+      "excision surgery",
+      "laparoscopic excision",
+      "deep excision",
+      "endometriosis excision surgery"
+    ],
+    "condition": ["endometriosis"],
+    "category": "surgical",
+    "requires_prescription": false,
+    "requires_specialist": true,
+    "specialist_type": "excision-trained gynecologic surgeon",
+    "evidence_tier": "well_evidenced",
+    "evidence_summary": "Guidelines and large surgical series describe laparoscopic excision of endometriosis lesions as an effective approach for reducing pain and improving quality of life, particularly when all visible disease is completely excised by experienced surgeons.",
+    "evidence_sources": [
+      "Dr Seckin – Endometriosis Excision Surgery",
+      "ESHRE Endometriosis Guideline 2022",
+      "Nezhat et al. laparoscopic excision outcome series"
+    ],
+    "what_it_does": "Uses minimally invasive laparoscopy to visualize the pelvis and sharply excise endometriosis implants, nodules, and adhesions from affected tissues while preserving healthy structures as much as possible.",
+    "typical_timeline": "Surgery is a one-time procedure with immediate postoperative recovery over days to weeks; improvements in pain, function, and sometimes fertility are typically evaluated over 3–12 months.",
+    "best_for": [
+      "Moderate to severe pelvic pain strongly suspected to be from endometriosis",
+      "Deep infiltrating disease involving uterosacral ligaments, rectovaginal septum, bowel, bladder, or diaphragm",
+      "Endometriomas impacting pain, ovarian function, or fertility",
+      "Patients who have not responded adequately to medical management and want definitive diagnosis and debulking of disease"
+    ],
+    "not_recommended_for": [
+      "Patients unable to safely undergo general anesthesia or laparoscopy",
+      "Situations where pain is poorly correlated with endometriosis and other causes have not been excluded",
+      "Women with minimal symptoms who prefer conservative monitoring"
+    ],
+    "side_effects": [
+      "Standard surgical risks: bleeding, infection, injury to bowel, bladder, ureter, blood vessels, or nerves",
+      "Postoperative pain, fatigue, temporary activity limitations",
+      "Potential adhesion formation or need for repeat surgery if disease recurs or was incomplete",
+      "Ovarian reserve impact if large endometriomas require cyst wall removal, especially if performed by less experienced surgeons"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "nsaids_standard_analgesics_endo",
+      "pelvic_floor_physical_therapy_endo",
+      "anti_inflammatory_endo_diet",
+      "nac_endo",
+      "omega_3_fatty_acids_endo"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "high",
+      "fertility_preservation": "high",
+      "avoid_surgery": "low",
+      "natural_options_only": "low",
+      "hormonal_treatment": "not_applicable",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "Excision surgery does not suppress ovulation and can improve pelvic anatomy for future ovulation and conception; careful technique is required when removing endometriomas to avoid excess loss of healthy ovarian tissue, which is why surgeon experience and a tissue-sparing approach are critical for preserving ovarian reserve."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Surgery clarifies diagnosis and removes visible disease rather than masking symptoms with hormonal suppression, but residual microscopic disease and non-endo pain generators can still exist and should be addressed with rehabilitation and lifestyle care.",
+      "natural_cycle_alternatives": [
+        "anti_inflammatory_endo_diet",
+        "pelvic_floor_physical_therapy_endo",
+        "nac_endo",
+        "omega_3_fatty_acids_endo",
+        "fertility_enzyme_therapy_endo"
+      ]
+    },
+    "cost_accessibility": "High-cost intervention requiring an operating room, anesthesia, and a highly trained excision surgeon; often partially covered by insurance, but access to true excision specialists can be limited geographically and may involve travel and waitlists.",
+    "self_directed": false,
+    "patient_note": "Ask your surgeon whether they perform true excision rather than burning or ablation, how they will protect your ovaries and other organs, and what their complication and reoperation rates are for endometriosis surgery."
+  },
+  {
+    "id": "endometrial_ablation_surgery",
+    "name": "Endometrial Ablation / Lesion Ablation Surgery",
+    "also_known_as": ["laser ablation", "cautery ablation", "burning lesions", "fulguration"],
+    "condition": ["endometriosis"],
+    "category": "surgical",
+    "requires_prescription": false,
+    "requires_specialist": true,
+    "specialist_type": "gynecologic surgeon",
+    "evidence_tier": "promising",
+    "evidence_summary": "Earlier laparoscopic approaches used ablation or cautery to destroy surface endometriosis lesions; some studies show short-term pain relief, but recurrence rates are higher compared to full excision, especially for deep lesions.",
+    "evidence_sources": [
+      "ACOG Practice Bulletin on Endometriosis",
+      "ESHRE Endometriosis Guideline 2022"
+    ],
+    "what_it_does": "Uses heat, laser, or cautery to burn or vaporize visible endometriosis implants rather than cutting them out completely.",
+    "typical_timeline": "Some patients experience pain relief in the months after surgery, but recurrence or persistence of symptoms is common over time, especially with deep disease.",
+    "best_for": [
+      "Superficial peritoneal endometriosis when excision expertise is unavailable",
+      "Patients needing symptom relief but without access to specialized excision surgeons"
+    ],
+    "not_recommended_for": [
+      "Deep infiltrating endometriosis affecting bowel, bladder, or ligaments",
+      "Patients specifically seeking the lowest possible recurrence risk",
+      "Situations where complete excision is feasible with an experienced surgeon"
+    ],
+    "side_effects": [
+      "General laparoscopic surgery risks including bleeding, infection, organ injury",
+      "Potential for persistent or recurrent pain if disease is only partially treated",
+      "Possible adhesion formation"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "nsaids_standard_analgesics_endo",
+      "hormonal_suppression_combined_ocp_endo",
+      "progestin_only_therapies_endo"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "moderate",
+      "avoid_surgery": "low",
+      "natural_options_only": "low",
+      "hormonal_treatment": "not_applicable",
+      "ovarian_health_preservation": "moderate"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "Ablation itself does not suppress ovulation but may leave residual disease; it carries similar surgical risks to excision without always providing the same long-term symptom control."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Does not mask ovarian insufficiency or hormonal changes but can give a false sense that disease is fully treated when deep lesions remain.",
+      "natural_cycle_alternatives": [
+        "laparoscopic_excision_surgery",
+        "anti_inflammatory_endo_diet",
+        "pelvic_floor_physical_therapy_endo"
+      ]
+    },
+    "cost_accessibility": "Requires operating room and anesthesia; may be more widely available than expert excision, but similar surgical cost profile.",
+    "self_directed": false,
+    "patient_note": "Ask your surgeon whether they will be ablating or fully excising lesions and what that means for recurrence risk and fertility."
+  },
+  {
+    "id": "hormonal_suppression_combined_ocp_endo",
+    "name": "Combined Oral Contraceptives for Endometriosis",
+    "also_known_as": [
+      "birth control pills",
+      "combined pill",
+      "COCs for endometriosis"
+    ],
+    "condition": ["endometriosis"],
+    "category": "hormonal",
+    "requires_prescription": true,
+    "requires_specialist": false,
+    "specialist_type": "gynecologist or primary care clinician",
+    "evidence_tier": "well_evidenced",
+    "evidence_summary": "Clinical trials and guideline summaries show that combined oral contraceptives reduce menstrual flow and can lessen endometriosis-related pelvic pain for many women, especially when used continuously, but they do not treat the underlying lesions and symptoms often return after stopping.",
+    "evidence_sources": [
+      "Natural Fertility Info – Natural Alternatives to Birth Control for Endometriosis",
+      "Brigham and Women's – Endometriosis Pain Management",
+      "ESHRE Endometriosis Guideline 2022"
+    ],
+    "what_it_does": "Provides synthetic estrogen and progestin that suppress ovulation, thin the uterine lining, and blunt cyclical hormonal stimulation of endometriosis lesions, resulting in lighter or absent periods and reduced pain for some women.",
+    "typical_timeline": "Pain and bleeding changes are usually noticed within 1–3 cycles; full assessment of benefit and side effects typically occurs over 3–6 months.",
+    "best_for": [
+      "Women with suspected or confirmed endometriosis who are not trying to conceive and want contraception plus symptom control",
+      "Patients with heavy or very painful periods who need a short- to medium-term way to reduce bleeding and cramps",
+      "Those who cannot access surgery immediately and need interim symptom management"
+    ],
+    "not_recommended_for": [
+      "Women actively trying to conceive or planning pregnancy soon",
+      "Patients with contraindications to estrogen (e.g., history of blood clots, certain migraines, high thrombotic risk)",
+      "Those who strongly wish to track natural cycles or avoid synthetic hormones and ovulation suppression"
+    ],
+    "side_effects": [
+      "Nausea, breast tenderness, and breakthrough bleeding, especially in the first few months",
+      "Mood changes, headaches, or changes in libido in some women",
+      "Increased risk of blood clots and other estrogen-related complications in susceptible individuals"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "nsaids_standard_analgesics_endo",
+      "anti_inflammatory_endo_diet",
+      "pelvic_floor_physical_therapy_endo",
+      "nac_endo",
+      "omega_3_fatty_acids_endo",
+      "pycnogenol_pine_bark_endo"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "low",
+      "avoid_surgery": "moderate",
+      "natural_options_only": "low",
+      "hormonal_treatment": "high",
+      "ovarian_health_preservation": "low"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": true,
+      "ovarian_reserve_effect": "may_mask",
+      "cycle_signal_preserved": false,
+      "note": "Combined birth control pills suppress ovulation and flatten natural hormone fluctuations, so cycles appear regular even though ovulation is not occurring; AMH, antral follicle count, and ovarian volume can be lower while on the pill and usually normalize after stopping, which means early ovarian insufficiency can be masked rather than caused."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [
+        "vitamin B2",
+        "vitamin B6",
+        "vitamin B12",
+        "folate",
+        "vitamin C",
+        "magnesium",
+        "zinc",
+        "selenium"
+      ],
+      "masking_risks": "Regular withdrawal bleeds can give the impression of a healthy cycle even when ovulation is absent and ovarian reserve is changing, so long-term users who may want children later should plan off-pill assessments of cycles and ovarian markers.",
+      "natural_cycle_alternatives": [
+        "anti_inflammatory_endo_diet",
+        "nac_endo",
+        "pycnogenol_pine_bark_endo",
+        "fertility_enzyme_therapy_endo",
+        "omega_3_fatty_acids_endo",
+        "pelvic_floor_physical_therapy_endo"
+      ]
+    },
+    "cost_accessibility": "Generic combined pills are widely available and usually inexpensive, with many insurance plans and public programs covering them; access varies by country and prescribing policies.",
+    "self_directed": false,
+    "patient_note": "Ask how the pill fits into your long-term plan, what nutrients you may need to replenish, and when you will come off it to reassess your natural cycles and ovarian health if pregnancy is a future goal."
+  },
+  {
+    "id": "progestin_only_therapies_endo",
+    "name": "Progestin-Only Therapies for Endometriosis",
+    "also_known_as": [
+      "progestin-only pills",
+      "depot medroxyprogesterone acetate",
+      "DMPA",
+      "levonorgestrel IUD",
+      "progestin IUD"
+    ],
+    "condition": ["endometriosis"],
+    "category": "hormonal",
+    "requires_prescription": true,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "well_evidenced",
+    "evidence_summary": "Guidelines and multiple trials show that progestin-only regimens, including oral progestins, depot injections, and levonorgestrel IUDs, reduce menstrual bleeding and can significantly decrease endometriosis-related pelvic pain.",
+    "evidence_sources": [
+      "ESHRE Endometriosis Guideline 2022",
+      "ACOG Practice Bulletin on Endometriosis",
+      "Clinical trials of levonorgestrel IUD and oral progestins for endometriosis"
+    ],
+    "what_it_does": "Provides synthetic progestins that thin the endometrium, reduce menstrual bleeding, and blunt estrogenic stimulation of endometriosis lesions; many regimens also suppress ovulation.",
+    "typical_timeline": "Pain and bleeding changes are often noticeable within 1–3 months; IUD-based therapies may take several months to reach full effect.",
+    "best_for": [
+      "Patients who cannot take estrogen but want hormonal symptom control",
+      "Those desiring long-acting options like the levonorgestrel IUD",
+      "Post-surgical suppression to reduce recurrence risk"
+    ],
+    "not_recommended_for": [
+      "Women currently trying to conceive",
+      "Patients with known intolerance to specific progestins",
+      "Those unwilling to accept irregular bleeding patterns during adaptation"
+    ],
+    "side_effects": [
+      "Irregular bleeding or spotting, especially in the first months",
+      "Mood changes, bloating, breast tenderness",
+      "Possible weight changes or acne depending on formulation",
+      "Injection forms may affect bone density with long-term use"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "nsaids_standard_analgesics_endo",
+      "anti_inflammatory_endo_diet",
+      "pelvic_floor_physical_therapy_endo"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "low",
+      "avoid_surgery": "moderate",
+      "natural_options_only": "low",
+      "hormonal_treatment": "high",
+      "ovarian_health_preservation": "low"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": true,
+      "ovarian_reserve_effect": "may_mask",
+      "cycle_signal_preserved": false,
+      "note": "Many progestin-only regimens, especially injections and some IUDs, suppress ovulation or significantly alter bleeding patterns, which can hide early signs of ovarian aging or hormonal imbalance; ovarian reserve markers may be altered while on therapy but typically recover after stopping."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Can mask underlying cycle irregularities and perimenopausal changes by causing amenorrhea or irregular bleeding that is not reflective of natural cycles.",
+      "natural_cycle_alternatives": [
+        "anti_inflammatory_endo_diet",
+        "nac_endo",
+        "omega_3_fatty_acids_endo",
+        "pelvic_floor_physical_therapy_endo",
+        "fertility_enzyme_therapy_endo"
+      ]
+    },
+    "cost_accessibility": "Oral progestins are generally low cost; IUD insertion has higher upfront cost but may be covered by insurance; injections require clinic visits in some settings.",
+    "self_directed": false,
+    "patient_note": "Ask which progestin option is being recommended, how it affects ovulation and bone health, and how you'll know whether your underlying cycle is improving or worsening over time."
+  },
+  {
+    "id": "gnrh_agonists_antagonists_endo",
+    "name": "GnRH Agonists and Antagonists for Endometriosis",
+    "also_known_as": [
+      "GnRH analogs",
+      "Lupron",
+      "leuprolide",
+      "elagolix",
+      "Orilissa"
+    ],
+    "condition": ["endometriosis"],
+    "category": "hormonal",
+    "requires_prescription": true,
+    "requires_specialist": true,
+    "specialist_type": "gynecologist or reproductive endocrinologist",
+    "evidence_tier": "well_evidenced",
+    "evidence_summary": "Randomized controlled trials demonstrate that GnRH agonists and antagonists reduce endometriosis pain by inducing a hypoestrogenic state; however, side effects and bone density loss limit long-term use.",
+    "evidence_sources": [
+      "ESHRE Endometriosis Guideline 2022",
+      "ACOG Practice Bulletin on Endometriosis",
+      "Phase III trials of elagolix and leuprolide for endometriosis pain"
+    ],
+    "what_it_does": "Suppresses the pituitary-ovarian axis to drastically lower estrogen levels, inducing a reversible pseudo-menopausal state that reduces stimulation of endometriosis lesions and associated inflammation.",
+    "typical_timeline": "Pain relief often occurs within 4–8 weeks of starting therapy; treatment courses are usually limited to 6–24 months depending on formulation and use of add-back therapy.",
+    "best_for": [
+      "Moderate to severe endometriosis pain not controlled by other hormonal therapies",
+      "Short-term pre-surgical or post-surgical suppression in selected cases",
+      "Patients willing to tolerate menopausal-like side effects for pain control"
+    ],
+    "not_recommended_for": [
+      "Women trying to conceive during treatment",
+      "Patients with high risk of osteoporosis or significant baseline low bone density",
+      "Those who cannot tolerate hypoestrogenic symptoms like hot flashes and mood changes"
+    ],
+    "side_effects": [
+      "Hot flashes, night sweats, vaginal dryness",
+      "Mood changes, decreased libido",
+      "Bone mineral density loss over time",
+      "Headaches and joint pain in some patients"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "nsaids_standard_analgesics_endo",
+      "pelvic_floor_physical_therapy_endo",
+      "anti_inflammatory_endo_diet"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "high",
+      "fertility_preservation": "low",
+      "avoid_surgery": "moderate",
+      "natural_options_only": "low",
+      "hormonal_treatment": "high",
+      "ovarian_health_preservation": "low"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": true,
+      "ovarian_reserve_effect": "suppresses_temporarily",
+      "cycle_signal_preserved": false,
+      "note": "GnRH analogs profoundly suppress ovarian hormone production and ovulation; this is typically reversible after stopping but fully masks natural cycle patterns during use and may affect bone health if used long term without appropriate add-back therapy."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Completely masks cycle regularity, making it impossible to track natural hormonal patterns or early ovarian decline while on treatment.",
+      "natural_cycle_alternatives": [
+        "laparoscopic_excision_surgery",
+        "anti_inflammatory_endo_diet",
+        "nac_endo",
+        "omega_3_fatty_acids_endo"
+      ]
+    },
+    "cost_accessibility": "High cost medications that may require prior authorization and specialist involvement; coverage varies and out-of-pocket costs can be substantial without insurance.",
+    "self_directed": false,
+    "patient_note": "Ask how long your clinician plans to keep you on a GnRH analog, whether you need add-back therapy, and how your bone density and long-term ovarian health will be monitored."
+  },
+  {
+    "id": "nsaids_standard_analgesics_endo",
+    "name": "NSAIDs and Standard Analgesics for Endometriosis Pain",
+    "also_known_as": ["ibuprofen", "naproxen", "nonsteroidal anti-inflammatory drugs", "acetaminophen"],
+    "condition": ["endometriosis"],
+    "category": "pharmaceutical",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "promising",
+    "evidence_summary": "NSAIDs are commonly recommended for dysmenorrhea and pelvic pain, and some trials support their use for endometriosis-related pain, but evidence is mixed and they rarely control severe symptoms alone.",
+    "evidence_sources": [
+      "Cochrane Review on NSAIDs for dysmenorrhea",
+      "ACOG guidance on pain management in endometriosis"
+    ],
+    "what_it_does": "Reduces prostaglandin production and inflammation to lessen menstrual cramps and some components of pelvic pain; acetaminophen provides analgesia without anti-inflammatory action.",
+    "typical_timeline": "Effects are felt within hours of dosing; used as needed around menses or flares.",
+    "best_for": [
+      "Mild to moderate menstrual and pelvic pain",
+      "Adjunctive pain control alongside surgical or hormonal treatment",
+      "Short-term use during acute flares"
+    ],
+    "not_recommended_for": [
+      "Severe pain unresponsive to over-the-counter dosing",
+      "Patients with significant kidney disease, peptic ulcer disease, or NSAID allergy",
+      "Long-term high-dose use without medical supervision"
+    ],
+    "side_effects": [
+      "Stomach irritation, heartburn, nausea",
+      "Increased risk of gastrointestinal bleeding or ulcers with chronic use",
+      "Potential impact on kidney function or blood pressure in susceptible individuals"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "laparoscopic_excision_surgery",
+      "hormonal_suppression_combined_ocp_endo",
+      "progestin_only_therapies_endo",
+      "gnrh_agonists_antagonists_endo",
+      "pelvic_floor_physical_therapy_endo"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "high",
+      "avoid_surgery": "low",
+      "natural_options_only": "low",
+      "hormonal_treatment": "not_applicable",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "Standard NSAID and acetaminophen use does not suppress ovulation or mask ovarian reserve markers, though very high-dose peri-ovulatory NSAID use may occasionally delay ovulation."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Can temporarily mask pain signals, potentially delaying investigation of underlying endometriosis if used as the sole long-term strategy.",
+      "natural_cycle_alternatives": [
+        "heat_therapy_and_tens_endo",
+        "anti_inflammatory_endo_diet",
+        "omega_3_fatty_acids_endo",
+        "pelvic_floor_physical_therapy_endo"
+      ]
+    },
+    "cost_accessibility": "Widely available over-the-counter at low cost; stronger prescription NSAIDs or combination analgesics may have modest additional cost.",
+    "self_directed": true,
+    "patient_note": "If you need high doses of NSAIDs every cycle or daily to cope, ask your clinician about investigating underlying endometriosis and adding disease-targeted treatments."
+  },
+  {
+    "id": "neuromodulators_chronic_pelvic_pain_endo",
+    "name": "Neuromodulators for Chronic Pelvic Pain in Endometriosis",
+    "also_known_as": ["tricyclic antidepressants", "amitriptyline", "gabapentin", "pregabalin"],
+    "condition": ["endometriosis"],
+    "category": "pharmaceutical",
+    "requires_prescription": true,
+    "requires_specialist": false,
+    "specialist_type": "gynecologist, pain specialist, or primary care physician",
+    "evidence_tier": "emerging",
+    "evidence_summary": "Evidence from chronic pelvic pain and neuropathic pain studies suggests that low-dose tricyclic antidepressants and gabapentinoids can help some patients whose pain persists despite treatment of the underlying endometriosis, though data specific to endometriosis are limited.",
+    "evidence_sources": [
+      "Chronic pelvic pain management reviews",
+      "Pain society guidelines on neuropathic pain"
+    ],
+    "what_it_does": "Modulates how the nervous system processes pain signals, helping to calm central sensitization and neuropathic components of chronic pelvic pain.",
+    "typical_timeline": "Benefits are typically assessed after 4–8 weeks of titrating to a tolerated dose; ongoing use is tailored to response and side effects.",
+    "best_for": [
+      "Persistent pelvic pain after adequate surgical and hormonal treatment",
+      "Patients with clear neuropathic features such as burning or radiating pain",
+      "Those engaged in multidisciplinary pain programs including physical therapy and psychological support"
+    ],
+    "not_recommended_for": [
+      "Patients with unmanaged severe depression or bipolar disorder without psychiatric oversight",
+      "Those with contraindications to specific agents (e.g., certain cardiac conditions for tricyclics)",
+      "Patients seeking a fertility-specific intervention, as this addresses pain rather than disease burden"
+    ],
+    "side_effects": [
+      "Sedation, dizziness, dry mouth, constipation (tricyclics)",
+      "Weight gain or edema (gabapentinoids)",
+      "Cognitive slowing or mood changes in some individuals"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "laparoscopic_excision_surgery",
+      "pelvic_floor_physical_therapy_endo",
+      "psychological_therapy_chronic_pain_endo"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "moderate",
+      "avoid_surgery": "low",
+      "natural_options_only": "low",
+      "hormonal_treatment": "not_applicable",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "Neuromodulators act on the nervous system rather than directly on the ovaries, so they do not suppress ovulation or mask ovarian reserve, though sedation and side effects may indirectly affect quality of life."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Can reduce pain perception without changing underlying disease; should be paired with appropriate evaluation to avoid missing progressive endometriosis.",
+      "natural_cycle_alternatives": [
+        "pelvic_floor_physical_therapy_endo",
+        "mind_body_therapies_endo",
+        "anti_inflammatory_endo_diet"
+      ]
+    },
+    "cost_accessibility": "Many agents are available as low-cost generics, but some newer options may be more expensive; access is generally good where prescriptions are available.",
+    "self_directed": false,
+    "patient_note": "If a neuromodulator is suggested, ask what specific pain pattern it is targeting, how long to trial it, and how it will fit into a broader plan that also addresses your endometriosis itself."
+  },
+  {
+    "id": "anti_inflammatory_endo_diet",
+    "name": "Anti-Inflammatory and Endometriosis Diet",
+    "also_known_as": [
+      "endometriosis diet",
+      "anti-inflammatory diet for endometriosis",
+      "endo-resolved diet plan"
+    ],
+    "condition": ["endometriosis"],
+    "category": "dietary",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "promising",
+    "evidence_summary": "Patient-reported outcomes and observational studies described in endometriosis diet resources suggest that reducing inflammatory foods (red meat, processed foods, trans fats) and emphasizing vegetables, fruits, omega-3 fats, and whole grains can lessen pain, bloating, and fatigue, although robust randomized trials are still limited.",
+    "evidence_sources": [
+      "Endo-Resolved – Endometriosis Diet and Nutrition To Help Reduce Symptoms",
+      "Dr. Weil – Endometriosis Condition Care Guide",
+      "Natural Fertility Info – Endo Diet & Food Intolerances"
+    ],
+    "what_it_does": "Uses food choices to lower systemic inflammation, support hormone metabolism, stabilize blood sugar, and reduce immune and histamine triggers that can exacerbate endometriosis-related pain and digestive symptoms.",
+    "typical_timeline": "Some women report changes in bloating and energy within a few weeks; more meaningful changes in pain, PMS, and cycle symptoms often emerge over 2–3 cycles and deepen over 3–6 months of consistent eating patterns.",
+    "best_for": [
+      "Endometriosis with significant pelvic pain, bloating, bowel symptoms, or fatigue",
+      "Women who notice flares after certain foods (e.g., high sugar, dairy, gluten, processed foods)",
+      "Patients wanting foundational, non-hormonal support before or after surgery or alongside medical treatment"
+    ],
+    "not_recommended_for": [
+      "Individuals with a current or past eating disorder who may be triggered by restrictive plans without professional support",
+      "People with complex medical diets or multiple food allergies who need individualized dietitian guidance",
+      "Those who attempt overly restrictive versions that risk under-fueling or nutrient deficiencies"
+    ],
+    "side_effects": [
+      "Short-term digestive changes as fiber and plant food intake increase",
+      "Potential weight loss or under-nutrition if calories are unintentionally too low",
+      "Social or emotional stress if diet is taken to extremes or rigidly followed"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "nac_endo",
+      "omega_3_fatty_acids_endo",
+      "curcumin_turmeric_endo",
+      "fertility_enzyme_therapy_endo",
+      "pelvic_floor_physical_therapy_endo",
+      "nsaids_standard_analgesics_endo"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "high",
+      "avoid_surgery": "moderate",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "An anti-inflammatory endometriosis diet supports hormone metabolism, blood sugar balance, and gut health without suppressing ovulation, helping preserve natural cycle signals and the ovarian environment over time."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Diet can reduce pain and digestive flares, but if symptoms persist or worsen, underlying disease still needs imaging and gynecologic evaluation; improved comfort should not delay appropriate diagnostics.",
+      "natural_cycle_alternatives": []
+    },
+    "cost_accessibility": "Cost depends on local food prices; the approach emphasizes whole, minimally processed foods and may increase spending on fresh produce and quality proteins while reducing processed snack purchases; no prescription or special products are required.",
+    "self_directed": true,
+    "patient_note": "Start by consistently adding anti-inflammatory foods—colorful vegetables, fruits, omega-3-rich fats, and high-fiber whole grains—while gradually reducing processed and high-sugar foods, and track your pain, bowel symptoms, and energy across several cycles to see what changes for you."
+  },
+  {
+    "id": "endo_diet_food_intolerances",
+    "name": "Endometriosis Diet with Food Intolerance Focus",
+    "also_known_as": [
+      "endo diet with elimination",
+      "food intolerance diet for endometriosis"
+    ],
+    "condition": ["endometriosis"],
+    "category": "dietary",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "emerging",
+    "evidence_summary": "Clinical experience and small reports suggest that identifying and reducing individual food intolerances (such as gluten or dairy) may lessen bloating, bowel symptoms, and pain in some women with endometriosis, though evidence is largely observational.",
+    "evidence_sources": [
+      "Natural Fertility Info – Endo Diet & Food Intolerances",
+      "Endo-Resolved – Endometriosis diet resources",
+      "Food-allergy.org – Allergies, Inflammation and Weight Control"
+    ],
+    "what_it_does": "Uses a structured elimination-and-reintroduction approach to identify foods that may worsen inflammation, gut permeability, or immune responses, aiming to reduce GI-driven flares and overall symptom load.",
+    "typical_timeline": "Elimination phases typically last 3–6 weeks, with reintroduction phases extending over several months to clarify individual triggers.",
+    "best_for": [
+      "Women with endometriosis who also have IBS-like symptoms, bloating, or suspected food intolerances",
+      "Those motivated to log foods and symptoms carefully",
+      "Patients who have noticed flares linked to particular foods"
+    ],
+    "not_recommended_for": [
+      "Individuals with a history of disordered eating",
+      "Those without capacity to manage detailed tracking and reintroduction",
+      "Patients who are pregnant or have complex medical diets without professional guidance"
+    ],
+    "side_effects": [
+      "Potential nutrient gaps if multiple food groups are removed without careful substitution",
+      "Stress or social limitations around eating in restrictive phases"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "anti_inflammatory_endo_diet",
+      "omega_3_fatty_acids_endo",
+      "pelvic_floor_physical_therapy_endo"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "high",
+      "avoid_surgery": "moderate",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "Elimination diets adjust immune and inflammatory triggers without shutting down ovarian function, keeping cycles visible for tracking."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Diet changes can reduce symptom intensity but do not hide cycle length or ovulation; ongoing severe symptoms require further evaluation.",
+      "natural_cycle_alternatives": []
+    },
+    "cost_accessibility": "Low direct cost but higher planning burden; some specialty foods and testing (if pursued) may add expense.",
+    "self_directed": true,
+    "patient_note": "Work with a structured plan—remove only a few common triggers at a time, reintroduce them methodically, and track pain, bloating, and bowel symptoms so you can identify true patterns."
+  },
+  {
+    "id": "omega_3_fatty_acids_endo",
+    "name": "Omega-3 Fatty Acids",
+    "also_known_as": [
+      "fish oil",
+      "EPA/DHA",
+      "omega-3 supplements"
+    ],
+    "condition": ["endometriosis"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "promising",
+    "evidence_summary": "Prospective studies and small trials indicate that higher omega-3 intake is associated with lower endometriosis risk, and supplemental omega-3s may reduce pain and inflammatory markers in women with endometriosis.",
+    "evidence_sources": [
+      "Natural Fertility Info – Foods To Help You Fight Endometriosis",
+      "Verywell Health – Natural Endometriosis Treatments",
+      "Epidemiologic studies on omega-3 intake and endometriosis"
+    ],
+    "what_it_does": "Provides anti-inflammatory fatty acids (EPA and DHA) that can shift eicosanoid balance, potentially reducing prostaglandin-driven pain and local inflammation around endometriosis lesions.",
+    "typical_timeline": "Some women notice changes in pain and PMS within 1–3 cycles; more consistent benefits may emerge over 3–6 months of daily use.",
+    "best_for": [
+      "Endometriosis-related pain with strong inflammatory features",
+      "Women with low fish intake or high omega-6/pro-inflammatory diets",
+      "Patients wanting adjunctive pain support without hormonal suppression"
+    ],
+    "not_recommended_for": [
+      "Individuals with fish or shellfish allergies when using fish-based products",
+      "Patients on anticoagulants or with bleeding disorders without clinician oversight"
+    ],
+    "side_effects": [
+      "Mild GI upset or fishy aftertaste",
+      "Increased bruising or bleeding tendency at high doses, especially with other blood thinners"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "anti_inflammatory_endo_diet",
+      "nac_endo",
+      "pycnogenol_pine_bark_endo",
+      "curcumin_turmeric_endo",
+      "fertility_enzyme_therapy_endo"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "high",
+      "avoid_surgery": "low",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "Omega-3s modulate inflammation without interfering with ovulation or hormone production, making them compatible with cycle tracking and ovarian health goals."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "May reduce pain and inflammation but does not hide cycle irregularities or ovulatory status.",
+      "natural_cycle_alternatives": []
+    },
+    "cost_accessibility": "Widely available as over-the-counter supplements at moderate cost; quality and EPA/DHA dose vary by brand.",
+    "self_directed": true,
+    "patient_note": "Look for a high-quality omega-3 with clear EPA/DHA content, start at a moderate dose, and discuss with your clinician if you are on blood thinners or have bleeding risks."
+  },
+  {
+    "id": "nac_endo",
+    "name": "N-Acetyl Cysteine (NAC) for Endometriosis",
+    "also_known_as": [
+      "N-acetylcysteine",
+      "NAC",
+      "NAC for endometriomas"
+    ],
+    "condition": ["endometriosis"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "promising",
+    "evidence_summary": "An Italian observational study of 92 women with endometriomas found that NAC 600 mg three times daily for 3 months reduced cyst size, dyspareunia, dysmenorrhea, and chronic pelvic pain, with 92.6% of patients deciding to postpone surgery after treatment.",
+    "evidence_sources": [
+      "Natural Fertility Info – NAC for Endometriosis",
+      "Aviva Romm – The Natural Approach to Endometriosis (NAC section)",
+      "Italian observational study on NAC and endometriomas (2013)"
+    ],
+    "what_it_does": "Acts as a precursor to glutathione, boosting antioxidant capacity and reducing oxidative stress, inflammation, and cyst growth in endometriomas while supporting overall pelvic pain reduction.",
+    "typical_timeline": "The Italian study used 600 mg three times daily for 3 months; significant cyst size reduction, pain improvement, and surgery deferral decisions were seen at the end of this period.",
+    "best_for": [
+      "Women with ovarian endometriomas who want to try conservative treatment before surgery",
+      "Patients with dyspareunia, dysmenorrhea, or chronic pelvic pain seeking non-hormonal options",
+      "Those preparing for surgery who want to reduce cyst size and inflammation beforehand"
+    ],
+    "not_recommended_for": [
+      "Individuals with known NAC allergy or severe asthma without medical supervision",
+      "Patients on chemotherapy or medications with known NAC interactions without clinician oversight"
+    ],
+    "side_effects": [
+      "Mild GI upset, nausea, or diarrhea in some users",
+      "Rare allergic reactions or bronchospasm in sensitive individuals",
+      "Unpleasant sulfur-like taste or smell with some formulations"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "anti_inflammatory_endo_diet",
+      "omega_3_fatty_acids_endo",
+      "pycnogenol_pine_bark_endo",
+      "fertility_enzyme_therapy_endo",
+      "pelvic_floor_physical_therapy_endo"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "high",
+      "fertility_preservation": "high",
+      "avoid_surgery": "high",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "NAC supports antioxidant defenses and reduces endometrioma cyst size without suppressing ovulation or altering natural hormone production, making it compatible with fertility tracking and ovarian health preservation."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "NAC can reduce pain and cyst size but does not eliminate underlying endometriosis; imaging and clinical follow-up remain essential, especially for endometriomas.",
+      "natural_cycle_alternatives": []
+    },
+    "cost_accessibility": "Widely available over-the-counter supplement; 600 mg three times daily costs moderate amounts monthly depending on brand quality.",
+    "self_directed": true,
+    "patient_note": "Try the research protocol of 600 mg three times daily for 3 months, monitor symptoms and ultrasound if you have endometriomas, and discuss results with your gynecologist to decide about surgery."
+  },
+  {
+    "id": "pycnogenol_pine_bark_endo",
+    "name": "Pycnogenol (French Maritime Pine Bark Extract)",
+    "also_known_as": [
+      "pine bark extract",
+      "Pycnogenol"
+    ],
+    "condition": ["endometriosis"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "promising",
+    "evidence_summary": "A randomized clinical trial and follow-up summaries show that Pycnogenol, taken for several months, reduced endometriosis-related pain scores and symptoms and maintained benefits after discontinuation, though pain relief was slower and less dramatic than with hormonal suppression.",
+    "evidence_sources": [
+      "Natural Fertility Info – Pycnogenol for Endometriosis",
+      "Natural Fertility Info – Pine Bark Significantly Reduces Endometriosis, New Study Finds",
+      "Effect of French maritime pine bark extract on endometriosis (clinical trial summaries)"
+    ],
+    "what_it_does": "Provides concentrated antioxidant and anti-inflammatory polyphenols that may reduce oxidative stress, angiogenesis, and inflammatory signaling around endometriosis lesions, helping to lessen pain and support a healthier pelvic environment.",
+    "typical_timeline": "In clinical studies, Pycnogenol was used for 3–6 months; symptom improvements often accumulated gradually over this period, with some women maintaining relief after stopping the supplement.",
+    "best_for": [
+      "Women with mild to moderate endometriosis pain who prefer non-hormonal options",
+      "Patients who cannot tolerate or do not wish to use GnRH agonists or continuous hormonal suppression",
+      "Those looking for longer-term symptom support that does not shut down ovulation"
+    ],
+    "not_recommended_for": [
+      "Individuals with known allergy or sensitivity to pine bark products",
+      "Patients on multiple medications with bleeding or clotting effects without clinician review, due to theoretical interaction risks"
+    ],
+    "side_effects": [
+      "Generally well tolerated; some users report mild GI upset or headaches",
+      "Possible increased bruising or bleeding tendency at higher doses in susceptible individuals"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "anti_inflammatory_endo_diet",
+      "nac_endo",
+      "omega_3_fatty_acids_endo",
+      "fertility_enzyme_therapy_endo",
+      "pelvic_floor_physical_therapy_endo"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "high",
+      "avoid_surgery": "low",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "Pycnogenol acts on inflammatory and oxidative pathways rather than directly on the ovaries, so it does not suppress ovulation or obscure cycle patterns and can be used while tracking natural fertility signs."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "By gently reducing pain and inflammation without altering hormone production, Pycnogenol improves comfort but does not hide cycle irregularities or disease progression; persistent or worsening symptoms still require medical evaluation.",
+      "natural_cycle_alternatives": []
+    },
+    "cost_accessibility": "Available as a branded supplement at moderate to high cost compared with basic vitamins; quality and dose vary by manufacturer, and research-based doses may require multiple capsules per day.",
+    "self_directed": true,
+    "patient_note": "Look for a reputable Pycnogenol product that provides the dose used in studies, use it consistently for several months, and track your pain and cycle changes while coordinating with your clinician about when to combine it with other therapies."
+  },
+  {
+    "id": "curcumin_turmeric_endo",
+    "name": "Curcumin / Turmeric for Endometriosis",
+    "also_known_as": [
+      "curcumin supplement",
+      "turmeric extract",
+      "turmeric for endo pain"
+    ],
+    "condition": ["endometriosis"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "emerging",
+    "evidence_summary": "Preclinical studies and dietary supplement reviews show curcumin inhibits proliferation of endometrial-like cells, reduces inflammatory cytokines, and blocks angiogenesis pathways relevant to endometriosis lesions, with preliminary clinical data supporting pain reduction.",
+    "evidence_sources": [
+      "Dietary supplements for treatment of endometriosis: A review (PMC 2022)",
+      "Dr Jolene Brighten – 19 Ways to Find Endometriosis Relief Naturally",
+      "EndoExcellence Center – Herbal supplements for endometriosis",
+      "WebMD / Healthline – Herbs for endometriosis"
+    ],
+    "what_it_does": "Inhibits NF-κB, COX-2, and VEGF pathways to reduce inflammation, oxidative stress, and lesion growth while supporting liver detoxification of excess estrogens that fuel endometriosis.",
+    "typical_timeline": "Pain and inflammatory changes are typically assessed after 1–3 months of daily use; effects accumulate gradually with consistent intake.",
+    "best_for": [
+      "Endometriosis with inflammatory pelvic pain, bloating, or PMS symptoms",
+      "Women seeking to reduce NSAID use or complement other anti-inflammatory strategies",
+      "Patients with coexisting digestive inflammation or estrogen dominance concerns"
+    ],
+    "not_recommended_for": [
+      "Individuals with gallbladder disease, bile duct obstruction, or gallstones without medical clearance",
+      "Patients on anticoagulants or antiplatelet therapy without clinician oversight due to additive bleeding risk"
+    ],
+    "side_effects": [
+      "GI upset, heartburn, or loose stools, especially with poor bioavailability formulations",
+      "Potential increased bruising or bleeding tendency at higher doses"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "anti_inflammatory_endo_diet",
+      "omega_3_fatty_acids_endo",
+      "nac_endo",
+      "pycnogenol_pine_bark_endo",
+      "nsaids_standard_analgesics_endo"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "high",
+      "avoid_surgery": "low",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "Curcumin modulates inflammation and estrogen pathways without suppressing ovarian hormone production or ovulation, making it suitable for women tracking fertility and preserving natural cycles."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Pain relief and reduced inflammation can improve quality of life, but persistent symptoms or new changes should still prompt gynecologic evaluation and imaging.",
+      "natural_cycle_alternatives": []
+    },
+    "cost_accessibility": "Widely available; basic turmeric powder is inexpensive but low absorption—bioavailability-enhanced curcumin formulas cost more but are more effective.",
+    "self_directed": true,
+    "patient_note": "Choose a curcumin product with piperine or other absorption enhancers, take with fat-containing meals, start with a modest dose, and review safety with your clinician if you have gallbladder issues or take blood thinners."
+  },
+  {
+    "id": "fertility_enzyme_therapy_endo",
+    "name": "Systemic Enzyme Therapy for Endometriosis",
+    "also_known_as": [
+      "systemic enzymes",
+      "proteolytic enzyme therapy",
+      "serrapeptase for endometriosis"
+    ],
+    "condition": ["endometriosis"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "emerging",
+    "evidence_summary": "Clinical experience and mechanistic rationale described in fertility resources suggest systemic enzyme therapy helps resolve pelvic 'stagnation,' fibrin deposits, and scar tissue associated with endometriosis, supporting pain reduction and fertility preparation, though endometriosis-specific RCTs are limited.",
+    "evidence_sources": [
+      "Natural Fertility Info – Fertility Enzyme Therapy",
+      "Natural Fertility Info – 5 Steps to Reversing Endometriosis Infertility (Step 4)",
+      "Natural Fertility Info – Serrapeptase Enzyme Therapy"
+    ],
+    "what_it_does": "Delivers oral proteolytic enzymes (serrapeptase, nattokinase, bromelain) taken away from meals to systemically break down fibrin, reduce inflammation, and improve pelvic circulation and tissue healing in endometriosis.",
+    "typical_timeline": "Protocols recommend 3 months or more of consistent use before conception attempts; gradual improvements in pain, adhesions, and pelvic 'stagnation' are expected over this period.",
+    "best_for": [
+      "Women with endometriosis and suspected adhesions, scar tissue, or pelvic stagnation",
+      "Patients preparing for natural conception after surgery or medical treatment",
+      "Those with chronic pelvic pain and digestive symptoms who want to support tissue remodeling"
+    ],
+    "not_recommended_for": [
+      "Individuals on anticoagulants or with bleeding disorders without medical supervision",
+      "Patients with known allergies to enzyme sources (pineapple, silk worm, soy)"
+    ],
+    "side_effects": [
+      "GI upset, nausea, or loose stools during initial adaptation",
+      "Potential increased bruising or bleeding tendency, especially when combined with other blood thinners"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "anti_inflammatory_endo_diet",
+      "nac_endo",
+      "pycnogenol_pine_bark_endo",
+      "pelvic_floor_physical_therapy_endo",
+      "laparoscopic_excision_surgery"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "high",
+      "avoid_surgery": "moderate",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "Systemic enzyme therapy targets fibrin and inflammation rather than ovarian hormones, so it supports pelvic health and circulation without suppressing ovulation or masking natural cycle signals."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Pain reduction and improved pelvic circulation can make symptoms feel better, but imaging and clinical exams are still needed to assess disease status and adhesions.",
+      "natural_cycle_alternatives": []
+    },
+    "cost_accessibility": "Moderate monthly cost for quality enzyme blends; requires commitment to specific timing (away from food and medications) for systemic absorption.",
+    "self_directed": true,
+    "patient_note": "Use enzymes strictly away from food and medications, follow a 3-month minimum protocol before TTC, and coordinate with your clinician if you take blood thinners or have bleeding concerns."
+  },
+  {
+    "id": "pelvic_floor_physical_therapy_endo",
+    "name": "Pelvic Floor Physical Therapy",
+    "also_known_as": [
+      "pelvic rehab",
+      "pelvic floor therapy",
+      "PRM endometriosis protocol"
+    ],
+    "condition": ["endometriosis"],
+    "category": "physical_therapy",
+    "requires_prescription": false,
+    "requires_specialist": true,
+    "specialist_type": "pelvic floor physical therapist",
+    "evidence_tier": "promising",
+    "evidence_summary": "Studies in chronic pelvic pain and endometriosis populations show that pelvic floor physical therapy can reduce pain, improve function, and address muscle spasm and trigger points that persist even after disease-focused treatment.",
+    "evidence_sources": [
+      "PelvicRehabilitation.com – Endometriosis treatment protocol",
+      "Brigham and Women's – Endometriosis pain management resources"
+    ],
+    "what_it_does": "Uses manual techniques, biofeedback, stretching, and exercises to treat pelvic floor muscle spasm, trigger points, and postural issues that contribute to pain and painful intercourse.",
+    "typical_timeline": "Many patients attend weekly or biweekly sessions for several months, with gradual reductions in pain and improved function over 6–12+ visits.",
+    "best_for": [
+      "Chronic pelvic pain and muscle spasm related to endometriosis",
+      "Painful intercourse, bowel movements, or pelvic exams",
+      "Persistent pain after surgery or medical therapy"
+    ],
+    "not_recommended_for": [
+      "Patients unable to tolerate internal pelvic exams without appropriate trauma-informed support",
+      "Those without access to trained pelvic floor therapists"
+    ],
+    "side_effects": [
+      "Temporary soreness or flare in pain after sessions",
+      "Emotional discomfort if trauma history is not adequately supported"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "laparoscopic_excision_surgery",
+      "anti_inflammatory_endo_diet",
+      "fertility_enzyme_therapy_endo",
+      "neuromodulators_chronic_pelvic_pain_endo"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "high",
+      "fertility_preservation": "high",
+      "avoid_surgery": "moderate",
+      "natural_options_only": "high",
+      "hormonal_treatment": "not_applicable",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "Pelvic floor therapy addresses musculoskeletal components of pain and does not alter ovarian function or hormone signaling."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Pain reduction from muscle work does not mean underlying lesions are gone; ongoing gynecologic follow-up remains important.",
+      "natural_cycle_alternatives": []
+    },
+    "cost_accessibility": "Requires access to a specialized therapist; per-session cost can be significant, but some insurance plans cover a portion of visits.",
+    "self_directed": false,
+    "patient_note": "Seek out a therapist with specific training in pelvic floor and endometriosis, and discuss your pain history and goals up front so therapy can be tailored to you."
+  },
+  {
+    "id": "acupuncture_endo",
+    "name": "Acupuncture for Endometriosis",
+    "also_known_as": [
+      "TCM acupuncture",
+      "acupuncture for pelvic pain"
+    ],
+    "condition": ["endometriosis"],
+    "category": "complementary",
+    "requires_prescription": false,
+    "requires_specialist": true,
+    "specialist_type": "licensed acupuncturist or TCM practitioner",
+    "evidence_tier": "emerging",
+    "evidence_summary": "Small trials and observational studies suggest that acupuncture may reduce dysmenorrhea and chronic pelvic pain, including in women with endometriosis, though evidence quality is variable and often limited by study design.",
+    "evidence_sources": [
+      "Verywell Health – Natural Endometriosis Treatments",
+      "Dr. Brighten – Natural relief for endometriosis"
+    ],
+    "what_it_does": "Uses needle stimulation of specific points to modulate pain pathways, circulation, and autonomic balance, which may help reduce pelvic pain and support overall stress regulation.",
+    "typical_timeline": "Often delivered 1–2 times per week for several weeks, with reassessment after 6–8 sessions; some women continue monthly maintenance sessions.",
+    "best_for": [
+      "Women seeking non-pharmacologic pain management",
+      "Those with stress-related symptom flares or sleep disruption",
+      "Patients combining multiple complementary approaches with medical care"
+    ],
+    "not_recommended_for": [
+      "Individuals with severe needle phobia",
+      "Patients with bleeding disorders or on anticoagulants without practitioner coordination"
+    ],
+    "side_effects": [
+      "Mild bruising or soreness at needle sites",
+      "Transient lightheadedness or fatigue after sessions"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "pelvic_floor_physical_therapy_endo",
+      "anti_inflammatory_endo_diet",
+      "nsaids_standard_analgesics_endo"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "high",
+      "avoid_surgery": "low",
+      "natural_options_only": "high",
+      "hormonal_treatment": "not_applicable",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "Acupuncture may influence hormonal signaling indirectly via stress pathways but does not directly suppress ovulation or mask ovarian reserve."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Symptom relief from acupuncture should be integrated with medical evaluation, not used to ignore new or worsening signs.",
+      "natural_cycle_alternatives": []
+    },
+    "cost_accessibility": "Per-session costs vary widely by region and practitioner; some insurance plans cover acupuncture for pain conditions.",
+    "self_directed": false,
+    "patient_note": "Choose a practitioner experienced with pelvic pain and endometriosis, and track pain scores and cycle symptoms to see whether treatments are helping over time."
+  },
+  {
+    "id": "heat_therapy_and_tens_endo",
+    "name": "Heat Therapy and TENS for Endometriosis Pain",
+    "also_known_as": [
+      "heating pad",
+      "hot water bottle",
+      "TENS unit for pelvic pain"
+    ],
+    "condition": ["endometriosis"],
+    "category": "complementary",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "emerging",
+    "evidence_summary": "Studies in dysmenorrhea show that local heat and transcutaneous electrical nerve stimulation (TENS) can reduce menstrual pain intensity; specific data in endometriosis-related pain are limited but clinical use is widespread.",
+    "evidence_sources": [
+      "Home remedies for endometriosis – Medical News Today",
+      "Endometriosis pain management resources – Brigham and Women's"
+    ],
+    "what_it_does": "Applies heat or mild electrical stimulation to the abdomen or lower back to relax muscles, increase blood flow, and modulate pain signal transmission at the spinal cord level.",
+    "typical_timeline": "Provides short-term relief during flares or menstruation, often within minutes to hours of application.",
+    "best_for": [
+      "Acute pain flares and menstrual cramps",
+      "Adjunctive at-home management between medical visits",
+      "Patients who want to reduce reliance on pain medications when possible"
+    ],
+    "not_recommended_for": [
+      "Use of high heat on numb skin or in individuals with impaired sensation",
+      "TENS use over broken skin, near pacemakers, or during pregnancy without medical advice"
+    ],
+    "side_effects": [
+      "Skin irritation or burns if heat is too intense or applied for too long",
+      "Mild skin irritation from TENS pads"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "nsaids_standard_analgesics_endo",
+      "anti_inflammatory_endo_diet",
+      "pelvic_floor_physical_therapy_endo"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "high",
+      "avoid_surgery": "low",
+      "natural_options_only": "high",
+      "hormonal_treatment": "not_applicable",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "Heat and TENS provide symptomatic relief and do not affect ovulation, hormone levels, or ovarian reserve measurements."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Can temporarily mask pain intensity, so persistent or escalating symptoms still warrant medical evaluation.",
+      "natural_cycle_alternatives": []
+    },
+    "cost_accessibility": "Low cost for basic heating pads and consumer TENS units; widely accessible and can be reused for many cycles.",
+    "self_directed": true,
+    "patient_note": "Use gentle, consistent heat or appropriate TENS settings during flares, and track how much these tools reduce your need for medications or improve daily functioning."
+  }
+]
