@@ -1,0 +1,76 @@
+ENDOMETRIOSIS - TREATMENT GUIDE
+
+Overview
+--------
+Endometriosis is a chronic, estrogen-dependent inflammatory condition where
+endometrial-like tissue grows outside the uterus, most commonly on the ovaries,
+fallopian tubes, and pelvic peritoneum. It affects approximately 10% of reproductive-age
+women and is a leading cause of pelvic pain and infertility.
+
+Symptoms
+- Dysmenorrhea (often severe, worsening over time)
+- Chronic pelvic pain (not only menstrual)
+- Dyspareunia (painful intercourse)
+- Dyschezia (painful bowel movements)
+- Dysuria (painful urination)
+- Infertility
+- Fatigue
+
+Treatment Approaches
+
+A. Pain Management (Medical — Hormonal)
+   First-Line:
+   - Combined oral contraceptives (COCs): Continuous or cyclic use; suppresses
+     menstruation and endometrial growth.
+   - Progestins: Norethisterone, medroxyprogesterone acetate, or dienogest.
+     Dienogest 2 mg daily is highly effective and well tolerated.
+   - Levonorgestrel IUD (Mirena): Reduces dysmenorrhea significantly.
+
+   Second-Line (GnRH Analogues / Antagonists):
+   - GnRH agonists (e.g., leuprolide): Induce medical menopause; highly effective
+     but significant side effects (bone loss, hot flashes); use with add-back
+     hormone therapy (low-dose estrogen + progestin) to mitigate.
+   - GnRH antagonists (e.g., elagolix): Oral; dose-dependent suppression; allows
+     partial estrogen activity. Approved specifically for endometriosis.
+   - Maximum 6-month treatment without add-back; 12 months with add-back.
+
+   Analgesics:
+   - NSAIDs: Essential adjunct for pain flares; take regularly rather than PRN
+     for best effect during menstruation.
+   - Low-dose naltrexone: Emerging adjunct for central sensitization.
+
+B. Surgical Treatment
+   - Laparoscopy: Gold standard for diagnosis AND treatment; excision or ablation
+     of lesions. Excision generally preferred over ablation for deeper disease.
+   - Endometrioma (ovarian cyst): Cystectomy preferred over drainage/ablation;
+     associated with improved pain and fertility outcomes.
+   - Hysterectomy ± bilateral salpingo-oophorectomy: For severe, refractory disease
+     in women who have completed childbearing; not a guaranteed cure.
+   - Bowel/bladder/ureteral surgery: Required for deep infiltrating endometriosis
+     involving adjacent organs; specialist multidisciplinary approach.
+
+C. Fertility Treatment
+   - Surgical removal of endometriosis improves natural conception rates,
+     especially for mild-moderate disease.
+   - IVF: Effective for endometriosis-associated infertility; outcomes comparable
+     to tubal factor infertility for stage I/II; slightly reduced for stage III/IV.
+   - Ovarian reserve monitoring (AMH, antral follicle count): Important as
+     endometriomas and surgery can reduce ovarian reserve.
+   - Avoid repeat surgery on endometriomas before IVF if possible; risk to
+     ovarian reserve outweighs benefit in most cases.
+
+D. Non-Pharmacological / Complementary
+   - Pelvic physiotherapy: Addresses pelvic floor dysfunction common in
+     endometriosis; reduces dyspareunia.
+   - Psychology/CBT: Central sensitization and pain catastrophizing are common;
+     psychological support improves outcomes.
+   - Diet: Anti-inflammatory diet (Mediterranean); some evidence for omega-3 and
+     reduced red meat.
+   - Exercise: Regular aerobic exercise reduces pain and inflammation.
+
+Long-Term Management
+- Endometriosis is a chronic condition requiring long-term management strategy.
+- Recurrence after surgery is common without hormonal suppression.
+- Post-surgical hormonal therapy recommended to delay recurrence.
+- Regular review and individualized care essential.
+- Multidisciplinary care (gynecology, pain management, physiotherapy, psychology).

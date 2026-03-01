@@ -1,0 +1,62 @@
+POLYCYSTIC OVARY SYNDROME (PCOS) - TREATMENT GUIDE
+
+Overview
+--------
+PCOS is one of the most common hormonal disorders affecting women of reproductive age,
+estimated to affect 8–13% of women globally. It is characterized by a combination of
+hyperandrogenism, ovulatory dysfunction, and polycystic ovarian morphology on ultrasound.
+
+Diagnostic Criteria (Rotterdam Criteria — 2 of 3 required)
+1. Oligo- or anovulation
+2. Clinical and/or biochemical hyperandrogenism
+3. Polycystic ovaries on ultrasound (≥12 follicles per ovary or ovarian volume >10 mL)
+
+Treatment by Goal
+
+A. Menstrual Regulation
+   - Combined oral contraceptives (COCs): First-line for cycle regulation and
+     anti-androgen effect. Prefer progestins with low androgenic activity
+     (e.g., drospirenone, cyproterone acetate where available).
+   - Progestin-only withdrawal bleeds: Medroxyprogesterone acetate 10 mg for
+     10 days every 1–3 months if COCs are contraindicated.
+
+B. Hyperandrogenism (Acne, Hirsutism, Hair Loss)
+   - COCs as above.
+   - Spironolactone (100–200 mg/day): Anti-androgen; use with contraception.
+   - Eflornithine cream: Slows facial hair growth.
+   - Finasteride: For female pattern hair loss (use with contraception).
+   - Topical retinoids and antibiotics for acne.
+
+C. Ovulation Induction (Fertility)
+   - Letrozole (2.5–7.5 mg, days 3–7): First-line ovulation induction; superior
+     to clomiphene in PCOS.
+   - Clomiphene citrate (50–150 mg, days 3–7): Alternative first-line agent.
+   - Metformin: May restore ovulation, especially in insulin-resistant women;
+     often combined with clomiphene.
+   - Gonadotrophins: Second-line if oral agents fail; requires monitoring.
+   - Laparoscopic ovarian drilling: Surgical option reducing androgen production.
+   - IVF: For cases not responding to other treatments.
+
+D. Metabolic Management (Insulin Resistance, Weight)
+   - Lifestyle modification: FIRST AND MOST IMPORTANT intervention. Even 5–10%
+     weight loss improves menstrual regularity, fertility, and metabolic markers.
+     150+ minutes/week moderate exercise; low-glycemic-index diet.
+   - Metformin (500–2000 mg/day): Improves insulin sensitivity; reduces androgen
+     levels; supports weight management. Not a weight-loss drug per se.
+   - Inositol (myo-inositol 2–4 g/day): Emerging evidence for improving
+     insulin sensitivity and ovulation; generally safe.
+
+E. Long-Term Health Risks and Prevention
+   - Increased risk of type 2 diabetes: Screen regularly; lifestyle first-line.
+   - Cardiovascular risk: Monitor lipids, blood pressure; encourage exercise.
+   - Endometrial hyperplasia/cancer: Regular menstrual regulation essential to
+     prevent unopposed estrogen effect on endometrium.
+   - Mental health: Higher rates of anxiety and depression; screen and refer.
+   - Sleep apnea: Screen, especially in overweight women with PCOS.
+
+Monitoring
+- Annual fasting glucose or HbA1c
+- Lipid panel
+- Blood pressure
+- Body weight and BMI
+- Menstrual calendar
