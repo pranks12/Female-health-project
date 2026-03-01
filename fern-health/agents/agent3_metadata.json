@@ -1,0 +1,20 @@
+{
+  "agent_id": "agent3_treatment_advisor",
+  "kb_version": "1.0.0",
+  "conditions_covered": ["endometriosis", "pcos"],
+  "kb_files": [
+    "endo_treatments.json",
+    "pcos_treatments.json",
+    "shared_supplements.json",
+    "contraindications_matrix.json",
+    "evidence_glossary.json"
+  ],
+  "last_updated": "2026-02",
+  "scope_notes": "MVP scope: PCOS and endometriosis only. Adenomyosis and thyroid conditions deferred to v1.1.",
+  "out_of_scope": [
+    "Drug interaction checking (beyond flagged contraindications)",
+    "Dosing recommendations",
+    "Lab result interpretation",
+    "Provider matching"
+  ]
+}
