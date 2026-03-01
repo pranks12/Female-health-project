@@ -1,0 +1,617 @@
+[
+  {
+    "id": "nac_shared",
+    "name": "N-Acetyl Cysteine (NAC)",
+    "also_known_as": [
+      "N-acetylcysteine",
+      "NAC"
+    ],
+    "condition": ["endometriosis", "pcos"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "promising",
+    "evidence_summary": "Observational and interventional studies suggest NAC can reduce endometrioma size and pain in endometriosis and improve insulin sensitivity, ovulation, and androgen profiles in PCOS, but large high-quality RCTs are still limited.",
+    "evidence_sources": [
+      "Italian observational study on NAC and endometriomas",
+      "PCOS trials of NAC as an insulin-sensitizing agent",
+      "Natural Fertility Info – NAC for Endometriosis",
+      "PCOS insulin resistance literature including NAC"
+    ],
+    "what_it_does": "Acts as a precursor to glutathione, enhancing antioxidant defenses and modulating inflammatory, insulin-signaling, and cellular proliferation pathways relevant to both endometriosis and PCOS.",
+    "typical_timeline": "Protocols often use NAC for at least 3 months; improvements in pain or cyst size in endo and in cycles or insulin markers in PCOS are typically evaluated over 3–6 months.",
+    "best_for": [
+      "Endometriosis with ovarian endometriomas or chronic pelvic pain",
+      "PCOS with insulin resistance, irregular ovulation, or elevated androgens",
+      "Patients seeking a non-hormonal adjunct that may support both inflammation and metabolism"
+    ],
+    "not_recommended_for": [
+      "Individuals with known NAC allergy or sensitivity",
+      "Patients on medications with known interactions requiring clinician oversight (e.g., certain chemotherapies)",
+      "Those with severe asthma without medical supervision"
+    ],
+    "side_effects": [
+      "GI upset, nausea, or loose stools",
+      "Unpleasant taste or smell in some formulations",
+      "Rare allergic reactions or bronchospasm in susceptible individuals"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "anti_inflammatory_endo_diet",
+      "omega_3_fatty_acids_shared",
+      "curcumin_turmeric_shared",
+      "metformin_pcos",
+      "pcos_inositol_40_1"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "high",
+      "avoid_surgery": "moderate",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "NAC supports antioxidant and metabolic pathways without suppressing ovulation, and may be protective where oxidative stress threatens ovarian tissue or egg quality."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Reduced pain or improved cycles reflect underlying metabolic and inflammatory support rather than masking; imaging and labs are still needed to monitor disease status.",
+      "natural_cycle_alternatives": []
+    },
+    "condition_specific_notes": {
+      "endometriosis": "NAC has been studied in women with ovarian endometriomas, where multi-month protocols led to reduced cyst size and pain in some, with a notable proportion deciding to postpone surgery due to symptom improvement.",
+      "pcos": "In PCOS, NAC has been shown in trials to improve insulin sensitivity, lower fasting insulin, and support ovulation rates, sometimes augmenting or partially substituting for metformin."
+    },
+    "cost_accessibility": "Available over-the-counter at moderate cost; higher-dose and quality-controlled products may cost more.",
+    "self_directed": true,
+    "patient_note": "Discuss NAC dosing and duration with your clinician, especially if you have endometriomas or insulin resistance, and track symptoms, cycles, and labs over several months."
+  },
+  {
+    "id": "omega_3_fatty_acids_shared",
+    "name": "Omega-3 Fatty Acids (EPA/DHA)",
+    "also_known_as": [
+      "fish oil",
+      "EPA/DHA",
+      "omega-3 supplements"
+    ],
+    "condition": ["endometriosis", "pcos"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "promising",
+    "evidence_summary": "Prospective studies and small trials suggest higher omega-3 intake is associated with lower endometriosis risk and reduced pain, while in PCOS omega-3s improve triglycerides, inflammatory markers, and in some studies insulin sensitivity and androgen profiles.",
+    "evidence_sources": [
+      "Natural Fertility Info – Foods To Help You Fight Endometriosis",
+      "PCOS omega-3 trials on lipids and inflammation",
+      "Epidemiologic studies on omega-3 intake and endometriosis"
+    ],
+    "what_it_does": "Provides anti-inflammatory long-chain fatty acids that shift eicosanoid production toward less inflammatory prostaglandins, improving systemic and local inflammation relevant to both endometriosis and PCOS.",
+    "typical_timeline": "Changes in pain, PMS, or inflammation are often noted after 1–3 cycles; lipid and metabolic improvements are typically evaluated over 3–6 months.",
+    "best_for": [
+      "Endometriosis with significant inflammatory pain",
+      "PCOS with high triglycerides, low HDL, or systemic inflammation",
+      "Patients with low dietary fish intake or high omega-6 consumption"
+    ],
+    "not_recommended_for": [
+      "Individuals with fish or shellfish allergies using fish-based products",
+      "Patients on anticoagulants or with bleeding disorders without clinician guidance"
+    ],
+    "side_effects": [
+      "Fishy aftertaste or reflux",
+      "Mild GI upset",
+      "Increased bruising or bleeding tendency at higher doses, especially when combined with other blood thinners"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "anti_inflammatory_endo_diet",
+      "pcos_low_gi_diet",
+      "nac_shared",
+      "curcumin_turmeric_shared"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "high",
+      "avoid_surgery": "low",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "Omega-3s act on inflammatory pathways rather than directly on ovarian hormone production, supporting a healthier environment for ovulation and egg development without masking ovarian status."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Pain and metabolic improvements do not mask cycle irregularities; cycles remain a useful barometer of ovarian health.",
+      "natural_cycle_alternatives": []
+    },
+    "condition_specific_notes": {
+      "endometriosis": "Higher omega-3 intake has been linked to reduced risk of developing endometriosis and may help reduce dysmenorrhea and pelvic pain in those already affected.",
+      "pcos": "In PCOS, omega-3s support lipid profiles and may modestly improve insulin sensitivity and inflammation, complementing diet and other insulin-sensitizing therapies."
+    },
+    "cost_accessibility": "Widely available OTC; cost varies with quality and EPA/DHA dose per capsule.",
+    "self_directed": true,
+    "patient_note": "Choose a reputable brand with clear EPA/DHA content, consider pairing with an anti-inflammatory diet, and speak with your clinician if you take blood thinners."
+  },
+  {
+    "id": "magnesium_shared",
+    "name": "Magnesium",
+    "also_known_as": [
+      "magnesium glycinate",
+      "magnesium citrate",
+      "magnesium supplement"
+    ],
+    "condition": ["endometriosis", "pcos"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "emerging",
+    "evidence_summary": "Magnesium has not been extensively tested in endometriosis-specific trials, but broader evidence supports its role in muscle relaxation, pain modulation, insulin sensitivity, and mood regulation, all relevant to both endometriosis and PCOS.",
+    "evidence_sources": [
+      "Reviews on magnesium in pain and muscle tension",
+      "PCOS metabolic literature citing magnesium in insulin sensitivity",
+      "Nutrient depletion discussions related to hormonal contraception"
+    ],
+    "what_it_does": "Serves as a cofactor in hundreds of enzymatic reactions, supporting neuromuscular relaxation, glucose metabolism, and stress response, which can influence cramps, pain perception, and insulin dynamics.",
+    "typical_timeline": "Improvements in constipation, sleep, or muscle tension may appear within days to weeks; metabolic and mood effects are often assessed over 1–3 months.",
+    "best_for": [
+      "Endometriosis with significant muscle cramping, PMS, or constipation",
+      "PCOS with insulin resistance, PMS, or sleep/mood difficulties",
+      "Individuals with low dietary intake or suspected deficiency"
+    ],
+    "not_recommended_for": [
+      "Advanced kidney disease without medical supervision",
+      "Use of very high doses that can cause diarrhea or electrolyte imbalance"
+    ],
+    "side_effects": [
+      "Loose stools or diarrhea, especially with magnesium oxide or high doses",
+      "Abdominal cramping or nausea at excessive intakes"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "nac_shared",
+      "omega_3_fatty_acids_shared",
+      "vitamin_d_shared",
+      "b_vitamins_shared"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "high",
+      "avoid_surgery": "low",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "Magnesium supports cellular and neuromuscular function without altering ovulation or ovarian hormone production, and may help offset depletions from hormonal contraceptive use."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Improved cramps or mood do not hide cycle changes or disease progression; cycles remain informative.",
+      "natural_cycle_alternatives": []
+    },
+    "condition_specific_notes": {
+      "endometriosis": "By supporting smooth muscle relaxation and nervous system balance, magnesium may ease uterine cramping, pelvic floor tension, and constipation that aggravate pain.",
+      "pcos": "Magnesium contributes to glucose regulation and may support insulin sensitivity and mood stability in PCOS, particularly when dietary intake is low or contraceptive use has depleted stores."
+    },
+    "cost_accessibility": "Inexpensive and widely available; higher-quality forms (e.g., glycinate) may cost more but are often better tolerated.",
+    "self_directed": true,
+    "patient_note": "Select a well-absorbed form such as magnesium glycinate or citrate, start with a modest dose at night, and adjust based on bowel tolerance and symptom response."
+  },
+  {
+    "id": "vitamin_d_shared",
+    "name": "Vitamin D",
+    "also_known_as": [
+      "cholecalciferol",
+      "vitamin D3"
+    ],
+    "condition": ["endometriosis", "pcos"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "promising",
+    "evidence_summary": "Low vitamin D levels are common in women with both PCOS and endometriosis; supplementation improves insulin resistance, menstrual regularity, and inflammatory markers in PCOS and may modulate immune and inflammatory activity relevant to endometriosis.",
+    "evidence_sources": [
+      "PCOS vitamin D RCTs showing improved metabolic and cycle outcomes",
+      "Observational studies linking low vitamin D to endometriosis and chronic pain"
+    ],
+    "what_it_does": "Acts as a hormone-like vitamin regulating calcium, immune function, and gene expression, influencing inflammation, autoimmunity, and insulin sensitivity.",
+    "typical_timeline": "Serum vitamin D levels change over 2–3 months; changes in metabolic and inflammatory markers are often assessed over 3–6 months.",
+    "best_for": [
+      "Documented vitamin D deficiency or insufficiency",
+      "PCOS with insulin resistance or menstrual irregularity",
+      "Endometriosis with chronic pain and suspected immune dysregulation"
+    ],
+    "not_recommended_for": [
+      "Hypercalcemia or disorders of calcium metabolism without specialist supervision",
+      "High-dose long-term use without lab monitoring"
+    ],
+    "side_effects": [
+      "Generally well tolerated at physiologic doses; excessive dosing can cause hypercalcemia with nausea, weakness, or kidney issues"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "magnesium_shared",
+      "omega_3_fatty_acids_shared",
+      "nac_shared",
+      "b_vitamins_shared"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "low",
+      "fertility_preservation": "high",
+      "avoid_surgery": "low",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "Vitamin D supports immune and metabolic health without suppressing ovulation, and adequate levels are associated with better reproductive outcomes."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Improved symptoms reflect underlying physiologic correction; cycles remain visible and informative.",
+      "natural_cycle_alternatives": []
+    },
+    "condition_specific_notes": {
+      "endometriosis": "By modulating immune responses and inflammation, adequate vitamin D may help reduce chronic pain and inflammatory drive in endometriosis, though data are still emerging.",
+      "pcos": "RCTs in PCOS show that vitamin D repletion improves insulin resistance, menstrual regularity, and sometimes androgen levels, especially when baseline deficiency is present."
+    },
+    "cost_accessibility": "Very inexpensive and widely available; high-dose prescriptions may be used initially for deficiency.",
+    "self_directed": true,
+    "patient_note": "Have your vitamin D level checked, use a dose tailored to reach an optimal range rather than megadoses indefinitely, and re-test periodically."
+  },
+  {
+    "id": "curcumin_turmeric_shared",
+    "name": "Curcumin / Turmeric",
+    "also_known_as": [
+      "turmeric extract",
+      "curcumin supplement"
+    ],
+    "condition": ["endometriosis", "pcos"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "emerging",
+    "evidence_summary": "Preclinical and small clinical studies suggest curcumin has anti-inflammatory and anti-proliferative effects on endometrial cells relevant to endometriosis and may improve inflammatory markers and insulin sensitivity in metabolic conditions linked to PCOS.",
+    "evidence_sources": [
+      "Natural Fertility Info – supplements for endometriosis",
+      "Herbal and nutraceutical reviews in PCOS and metabolic syndrome"
+    ],
+    "what_it_does": "Inhibits NF-κB and other inflammatory pathways, reduces oxidative stress, and may influence estrogen metabolism and insulin signaling.",
+    "typical_timeline": "Symptom changes in pain, inflammation, or metabolic markers are typically assessed after 1–3 months of daily use.",
+    "best_for": [
+      "Endometriosis with inflammatory pain and PMS",
+      "PCOS with low-grade inflammation or metabolic syndrome features",
+      "Patients seeking to reduce reliance on NSAIDs or complement other anti-inflammatory strategies"
+    ],
+    "not_recommended_for": [
+      "Gallbladder disease or bile duct obstruction without medical guidance",
+      "Concomitant anticoagulant therapy without clinician oversight due to bleeding risk"
+    ],
+    "side_effects": [
+      "GI discomfort or reflux at higher doses",
+      "Potential increased bleeding tendency, especially at high doses with blood thinners"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "omega_3_fatty_acids_shared",
+      "nac_shared",
+      "anti_inflammatory_endo_diet",
+      "pcos_low_gi_diet"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "moderate",
+      "fertility_preservation": "high",
+      "avoid_surgery": "low",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "Curcumin modulates inflammatory and metabolic pathways without flattening or suppressing ovulatory cycles."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Reduction in pain or inflammation does not hide cycle irregularities; worsening or new symptoms should still prompt evaluation.",
+      "natural_cycle_alternatives": []
+    },
+    "condition_specific_notes": {
+      "endometriosis": "Curcumin has been shown in lab models to inhibit proliferation of endometrial-like cells and reduce inflammatory mediators, aligning with its use as part of natural pain and lesion-support protocols.",
+      "pcos": "In metabolic syndrome and early PCOS data, curcumin has improved inflammatory markers and some aspects of insulin sensitivity, making it a potential adjunct to lifestyle and insulin-sensitizing drugs."
+    },
+    "cost_accessibility": "Widely available; specialized high-bioavailability formulations are more expensive but may be more effective at lower doses.",
+    "self_directed": true,
+    "patient_note": "Choose a bioavailability-enhanced form (with piperine or phospholipid complexes), start gradually, and review safety if you have gallbladder disease or use blood thinners."
+  },
+  {
+    "id": "zinc_shared",
+    "name": "Zinc",
+    "also_known_as": [
+      "zinc gluconate",
+      "zinc citrate",
+      "zinc supplement"
+    ],
+    "condition": ["endometriosis", "pcos"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "emerging",
+    "evidence_summary": "Zinc plays roles in immune function, antioxidant defense, and hormone metabolism; small studies suggest benefits in acne and androgen modulation in PCOS, and it is relevant to inflammatory processes seen in endometriosis, though direct endometriosis trials are sparse.",
+    "evidence_sources": [
+      "PCOS acne and androgen-focused supplement literature",
+      "Nutrient depletion data for hormonal contraception highlighting zinc"
+    ],
+    "what_it_does": "Supports antioxidant enzymes, immune regulation, and steroid hormone metabolism, which may influence inflammation, skin health, and androgen activity.",
+    "typical_timeline": "Skin and immune changes may appear over 1–3 months; hormonal or metabolic shifts, if present, may take longer.",
+    "best_for": [
+      "PCOS with acne or mild androgen excess where zinc deficiency is suspected",
+      "Endometriosis with heavy bleeding and potential nutrient depletion, especially if on oral contraceptives",
+      "Individuals with low dietary zinc intake (low meat/seafood, high phytate diets)"
+    ],
+    "not_recommended_for": [
+      "High-dose long-term use without copper monitoring, due to risk of copper deficiency",
+      "Known zinc allergy or GI intolerance"
+    ],
+    "side_effects": [
+      "Nausea or stomach upset if taken on an empty stomach",
+      "Potential copper depletion at high doses over time"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "b_vitamins_shared",
+      "magnesium_shared",
+      "vitamin_d_shared",
+      "omega_3_fatty_acids_shared"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "low",
+      "fertility_preservation": "high",
+      "avoid_surgery": "low",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "Zinc supports overall reproductive and immune health and can help replace zinc lost with long-term oral contraceptive use, without suppressing ovulation."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Improved skin or immune health does not hide cycle changes; those remain visible for tracking.",
+      "natural_cycle_alternatives": []
+    },
+    "condition_specific_notes": {
+      "endometriosis": "Zinc contributes to antioxidant and immune pathways that may help buffer chronic inflammation and oxidative stress associated with endometriosis.",
+      "pcos": "In PCOS, zinc is often used in androgen-focused protocols to support acne and hair balance, and to counter potential depletion from long-term hormonal contraceptive use."
+    },
+    "cost_accessibility": "Low-cost supplement widely available; combined formulations with other micronutrients may cost more.",
+    "self_directed": true,
+    "patient_note": "Take zinc with food to minimize nausea, avoid very high doses without monitoring, and consider pairing with a multi that includes copper if using long term."
+  },
+  {
+    "id": "coq10_shared",
+    "name": "Coenzyme Q10 (CoQ10)",
+    "also_known_as": [
+      "ubiquinone",
+      "ubiquinol"
+    ],
+    "condition": ["endometriosis", "pcos"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "promising",
+    "evidence_summary": "In fertility studies, CoQ10 supplementation has improved ovarian response and embryo quality in women with diminished ovarian reserve and older age; PCOS trials show benefits in insulin resistance and lipid profiles, while its antioxidant effects may be relevant to endometriosis-related oxidative stress.",
+    "evidence_sources": [
+      "CoQ10 RCTs in infertility and diminished ovarian reserve",
+      "PCOS CoQ10 trials on insulin resistance and lipids"
+    ],
+    "what_it_does": "Functions in mitochondrial energy production and as an antioxidant, supporting oocyte mitochondrial function, metabolic health, and protection against oxidative damage.",
+    "typical_timeline": "Egg quality and ovarian response are usually evaluated over 2–3 months of supplementation; metabolic changes in PCOS are often seen over a similar timeframe.",
+    "best_for": [
+      "Women with PCOS or endometriosis planning fertility treatment or egg freezing",
+      "PCOS with insulin resistance or dyslipidemia seeking additional metabolic support",
+      "Endometriosis with concern about oxidative stress impacting ovarian reserve"
+    ],
+    "not_recommended_for": [
+      "Individuals on certain anticoagulants without medical oversight (CoQ10 may interact with warfarin)",
+      "Those with low blood pressure where additional BP-lowering is a concern"
+    ],
+    "side_effects": [
+      "Generally well tolerated; occasional GI upset, headaches, or insomnia if taken late in the day"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "nac_shared",
+      "omega_3_fatty_acids_shared",
+      "vitamin_d_shared",
+      "pcos_inositol_40_1"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "low",
+      "fertility_preservation": "high",
+      "avoid_surgery": "low",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "CoQ10 supports mitochondrial and antioxidant function in oocytes and ovarian tissue without suppressing cycles, and is often used specifically to protect or enhance ovarian reserve and egg quality."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Improvements in fertility outcomes or metabolic markers reflect genuine physiologic support, not masking of ovarian decline.",
+      "natural_cycle_alternatives": []
+    },
+    "condition_specific_notes": {
+      "endometriosis": "By bolstering mitochondrial and antioxidant defenses, CoQ10 may help protect ovarian tissue from oxidative damage associated with chronic pelvic inflammation and surgery.",
+      "pcos": "In PCOS, CoQ10 has been shown to improve insulin resistance and lipid profiles, and may support egg quality for those pursuing fertility treatments."
+    },
+    "cost_accessibility": "Moderately priced, with ubiquinol forms being more expensive but sometimes better absorbed; often taken for several months around fertility attempts.",
+    "self_directed": true,
+    "patient_note": "Use CoQ10 consistently for at least 2–3 months before expecting changes in egg-related outcomes, and discuss timing around fertility treatments with your clinician."
+  },
+  {
+    "id": "iron_shared",
+    "name": "Iron (Context: Heavy Bleeding, Fatigue, Hair Loss)",
+    "also_known_as": [
+      "ferrous sulfate",
+      "ferrous bisglycinate",
+      "iron supplement"
+    ],
+    "condition": ["endometriosis", "pcos"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": "primary care physician or hematologist for significant anemia",
+    "evidence_tier": "well_evidenced",
+    "evidence_summary": "Iron supplementation is well supported for treating iron deficiency and iron-deficiency anemia, conditions common in women with heavy menstrual bleeding from endometriosis and sometimes in PCOS; correcting deficiency improves fatigue, hair loss, and exercise tolerance.",
+    "evidence_sources": [
+      "Hematology guidelines on iron deficiency anemia",
+      "Natural Fertility and PCOS/endometriosis resources emphasizing iron depletion from heavy bleeding"
+    ],
+    "what_it_does": "Replenishes iron stores needed for hemoglobin production and cellular function, improving oxygen delivery, energy, and hair and nail health.",
+    "typical_timeline": "Symptom improvements (fatigue, dizziness) can appear within weeks; full repletion of iron stores often requires 3–6 months or longer depending on severity and ongoing losses.",
+    "best_for": [
+      "Endometriosis with heavy or prolonged bleeding leading to low ferritin or anemia",
+      "PCOS with chronic heavy cycles or dietary insufficiency, hair loss, or fatigue",
+      "Women preparing for pregnancy or surgery who need adequate iron stores"
+    ],
+    "not_recommended_for": [
+      "Individuals with iron overload disorders (e.g., hemochromatosis)",
+      "Supplementation without lab confirmation of deficiency or low stores"
+    ],
+    "side_effects": [
+      "Constipation or dark stools",
+      "Nausea, abdominal discomfort",
+      "Teeth staining with certain liquid formulations"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "vitamin_c_foods_or_supplement",
+      "magnesium_shared (for constipation)",
+      "anti_inflammatory_endo_diet"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "low",
+      "fertility_preservation": "high",
+      "avoid_surgery": "low",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "Iron repletion addresses a systemic deficiency without affecting ovulation; correcting anemia may improve energy for lifestyle interventions that support ovarian health."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Correcting anemia can improve how you feel but does not treat the underlying cause of heavy bleeding; ongoing excessive loss still needs evaluation and management.",
+      "natural_cycle_alternatives": []
+    },
+    "condition_specific_notes": {
+      "endometriosis": "Chronic heavy or painful bleeding from endometriosis commonly depletes iron, contributing to fatigue, breathlessness, and hair shedding; supplementation plus treating the bleeding source are both important.",
+      "pcos": "Women with PCOS may have heavy irregular bleeds or dietary patterns that lower iron intake; deficiency can worsen fatigue and hair loss often blamed solely on hormones."
+    },
+    "cost_accessibility": "Very low cost for standard oral iron; IV iron is more expensive and usually reserved for severe or unresponsive cases.",
+    "self_directed": false,
+    "patient_note": "Ask for ferritin and hemoglobin testing before starting iron, take it away from calcium and with vitamin C for better absorption, and re-test after a few months to avoid both under- and over-treatment."
+  },
+  {
+    "id": "b_vitamins_shared",
+    "name": "B Vitamins (With Emphasis on Folate)",
+    "also_known_as": [
+      "B-complex",
+      "folate",
+      "methylfolate",
+      "B2, B6, B12"
+    ],
+    "condition": ["endometriosis", "pcos"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "promising",
+    "evidence_summary": "B vitamins are essential for methylation, energy production, neurotransmitter synthesis, and hormone metabolism; adequate folate is critical for preventing neural tube defects, and long-term oral contraceptive use can deplete several B vitamins, which matters in both PCOS and endometriosis populations.",
+    "evidence_sources": [
+      "Scientific American – How Birth Control Pills Affect Your Nutritional Needs",
+      "Fertility and preconception guidelines on folate",
+      "PCOS literature mentioning B12 and folate in metformin and OCP users"
+    ],
+    "what_it_does": "Supports cellular energy, methylation, neurotransmitter production, and hormone and homocysteine metabolism, which influence mood, cardiovascular risk, and reproductive health.",
+    "typical_timeline": "Energy and mood changes may appear over weeks; homocysteine and red blood cell indices are assessed over months.",
+    "best_for": [
+      "Women with PCOS or endometriosis who have used combined oral contraceptives long-term",
+      "Those planning pregnancy who need folate for neural tube defect prevention",
+      "Metformin users at risk of B12 lowering"
+    ],
+    "not_recommended_for": [
+      "Very high-dose B6 without monitoring (risk of neuropathy)",
+      "Unsupervised high-dose folate in the context of B12 deficiency (can mask hematologic signs)"
+    ],
+    "side_effects": [
+      "Usually well tolerated; high doses of some B vitamins can cause tingling, flushing, or GI upset"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "metformin_pcos",
+      "pcos_cocs_cycle_regulation",
+      "iron_shared",
+      "magnesium_shared"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "low",
+      "fertility_preservation": "high",
+      "avoid_surgery": "low",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "B vitamins support mitochondrial and methylation pathways important for egg quality and hormone metabolism without suppressing ovulation; repletion is especially important when OCPs or metformin have lowered levels."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Energy and mood improvements do not hide cycle issues; they can make it easier to pursue lifestyle changes that support ovarian health.",
+      "natural_cycle_alternatives": []
+    },
+    "condition_specific_notes": {
+      "endometriosis": "Adequate B vitamins support detoxification of estrogens and homocysteine regulation, both relevant to inflammation and vascular health in chronic pelvic disease.",
+      "pcos": "In PCOS, B12 and folate are crucial for homocysteine control and metabolic health, and long-term OCP and metformin use can deplete them, making targeted repletion important."
+    },
+    "cost_accessibility": "Inexpensive and widely available; methylated forms may cost more but are preferred for some individuals.",
+    "self_directed": true,
+    "patient_note": "Consider a balanced B-complex rather than isolated high doses, and make sure folate intake is adequate if you may conceive, especially if you've been on the pill or metformin."
+  }
+]
