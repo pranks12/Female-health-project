@@ -1235,7 +1235,13 @@
     // ─────────────────────────────────────────────────────────
     (function init() {
       if (typeof marked !== 'undefined') {
-        marked.setOptions({ breaks: true, gfm: true });
+        try {
+          if (typeof marked.use === 'function') {
+            marked.use({ breaks: true, gfm: true });
+          } else if (typeof marked.setOptions === 'function') {
+            marked.setOptions({ breaks: true, gfm: true });
+          }
+        } catch (_) {}
       }
       loadProfile();
       renderProgress();
@@ -1688,8 +1694,8 @@
       state.currentReviewData = data;
       state.appliedFixes = new Set();
 
-      const score = data.score || 0;
-      const dims  = data.dimensions || [];
+      const score = data.overall_score || 0;
+      const dims  = data.scorecard || [];
       const gaps  = data.gaps || [];
 
       let html = '<div class="reviewer-score-display">'
@@ -1703,7 +1709,7 @@
         const color = s <= 2 ? 'var(--accent)' : s === 3 ? '#D97706' : 'var(--sage)';
         html += '<div class="dimension-item">'
               + '<div class="dimension-header">'
-              + '<span class="dimension-name">' + escHtml(d.name || '') + '</span>'
+              + '<span class="dimension-name">' + escHtml(d.dimension || '') + '</span>'
               + '<span class="dimension-score-txt">' + s + '/5</span>'
               + '</div>'
               + '<div class="dimension-bar-track">'
