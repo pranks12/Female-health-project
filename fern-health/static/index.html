@@ -1228,6 +1228,8 @@
       appliedFixes: new Set()
     };
 
+    const STEP_LABELS = ['Diagnosis', 'History', 'Current', 'Goals', 'Research'];
+
     // ─────────────────────────────────────────────────────────
     // INIT
     // ─────────────────────────────────────────────────────────
@@ -1333,8 +1335,6 @@
     // ─────────────────────────────────────────────────────────
     // PROGRESS BAR
     // ─────────────────────────────────────────────────────────
-    const STEP_LABELS = ['Diagnosis', 'History', 'Current', 'Goals', 'Research'];
-
     function renderProgress() {
       const container = document.getElementById('progress-steps');
       let html = '';
