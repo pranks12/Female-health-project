@@ -13,12 +13,13 @@ _retriever = RAGRetriever(_kb_loader)
 
 # Anthropic client — supports API key or OAuth auth token
 _auth_token = os.getenv("ANTHROPIC_AUTH_TOKEN")
+_api_key = os.getenv("Anthropic_API_Key_2") or os.getenv("ANTHROPIC_API_KEY")
 if _auth_token:
     # Remove API key from env so the SDK doesn't try to use it alongside auth_token
     os.environ.pop("ANTHROPIC_API_KEY", None)
     client = anthropic.Anthropic(auth_token=_auth_token)
 else:
-    client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+    client = anthropic.Anthropic(api_key=_api_key)
 
 MODEL = "claude-sonnet-4-20250514"
 
