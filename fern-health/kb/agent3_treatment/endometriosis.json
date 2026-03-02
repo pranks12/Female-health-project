@@ -1,0 +1,40 @@
+{
+  "topic": "Endometriosis",
+  "description": "A chronic condition where tissue similar to the uterine lining grows outside the uterus — on ovaries, fallopian tubes, and pelvic tissue. Affects ~10% of women of reproductive age. Average diagnosis delay is 7-10 years.",
+  "staging": {
+    "stage_1_minimal": "Small implants, shallow endometriosis, no significant adhesions",
+    "stage_2_mild": "More implants, slightly deeper, minor adhesions",
+    "stage_3_moderate": "Many deep implants, small endometriomas on ovaries, some adhesions",
+    "stage_4_severe": "Many deep implants, large endometriomas, dense adhesions"
+  },
+  "symptoms": {
+    "pain": ["Severe menstrual cramps (dysmenorrhea)", "Chronic pelvic pain", "Pain during or after sex (dyspareunia)", "Pain with bowel movements or urination during period", "Lower back and abdominal pain"],
+    "menstrual": ["Heavy or irregular periods", "Spotting between periods"],
+    "other": ["Fatigue and exhaustion", "Bloating ('endo belly')", "Nausea during periods", "Infertility — affects ~30-50% of those with endometriosis"]
+  },
+  "diagnosis": ["Laparoscopy with biopsy (gold standard)", "Pelvic ultrasound (can detect endometriomas)", "MRI for deep infiltrating endometriosis"],
+  "treatments": {
+    "pain_management": {
+      "medications": ["NSAIDs — ibuprofen 400-800mg taken before period starts", "Combined hormonal contraceptives (pill, patch, ring)", "Progestin-only methods (Mirena IUD, depo shot, mini-pill)", "GnRH agonists (Lupron) — induce temporary menopause, short-term use", "GnRH antagonists (Orilissa/elagolix) — newer option", "Dienogest (Visanne) — progestin specifically studied for endometriosis"],
+      "non_medication": ["Heat therapy", "TENS unit", "Physical therapy (pelvic floor PT)", "Acupuncture", "Cannabis/CBD in some regions"]
+    },
+    "surgical": {
+      "excision_surgery": "Gold standard — complete excision of endometrial lesions. Provides longest pain relief and best fertility outcomes",
+      "ablation": "Burns lesion surface — less effective than excision, higher recurrence",
+      "hysterectomy": "Last resort; does not guarantee cure as endometriosis can remain on other organs"
+    },
+    "fertility_treatments": ["Laparoscopic excision before IVF improves outcomes", "IVF is often recommended for endometriosis-related infertility", "Ovarian reserve monitoring (AMH, AFC) important due to endometrioma damage"],
+    "lifestyle": {
+      "diet": ["Anti-inflammatory diet — reduce red meat, processed foods", "Increase omega-3s (fish, flaxseed)", "Cruciferous vegetables support estrogen metabolism", "Limit alcohol and caffeine", "Gluten-free diet helps ~75% of endometriosis patients with GI symptoms"],
+      "supplements": ["Omega-3 fatty acids", "Vitamin D", "NAC — shown to reduce endometrioma size in studies", "Turmeric/curcumin — anti-inflammatory", "Resveratrol"],
+      "other": ["Stress reduction important — cortisol affects estrogen", "Regular moderate exercise", "Adequate sleep"]
+    }
+  },
+  "important_notes": [
+    "Stage does not correlate with pain severity",
+    "Endometriosis is estrogen-dependent — treatments that reduce estrogen help",
+    "There is no cure — management is ongoing",
+    "Seek an endometriosis specialist (excision surgeon) for best outcomes"
+  ],
+  "when_to_see_doctor": "If you have severe period pain, painful sex, or are struggling to conceive — push for investigation even if initially dismissed"
+}
