@@ -1,0 +1,92 @@
+{
+  "conflicts": [
+    {
+      "treatment_a": "vitex_chaste_tree_endo",
+      "treatment_b": "hormonal_suppression_combined_ocp_endo",
+      "reason": "Vitex may interfere with the hormonal mechanisms of birth control pills by affecting the pituitary gland, potentially reducing the effectiveness of the medication.",
+      "severity": "moderate",
+      "recommendation": "Do not combine without a specialist's supervision; hormonal suppression is typically prioritized for symptom control."
+    },
+    {
+      "treatment_a": "vitex_chaste_tree_endo",
+      "treatment_b": "progestin_only_therapies_endo",
+      "reason": "Vitex influences hormone levels and may conflict with the synthetic progestins used in IUDs or pills, leading to unpredictable hormonal signals.",
+      "severity": "moderate",
+      "recommendation": "Consult with a clinician; Vitex is often used as an alternative to, not a co-therapy with, hormonal suppression."
+    },
+    {
+      "treatment_a": "omega_3_fatty_acids_endo",
+      "treatment_b": "blood_thinners_anticoagulants",
+      "reason": "High-dose omega-3 fatty acids have natural anti-clotting effects that can be additive to pharmaceutical blood thinners like aspirin or warfarin, increasing bleeding risk.",
+      "severity": "high",
+      "recommendation": "Do not exceed standard doses without medical oversight and regular monitoring of clotting times."
+    },
+    {
+      "treatment_a": "berberine_pcos",
+      "treatment_b": "metformin_pcos",
+      "reason": "Both berberine and metformin work via similar metabolic pathways to lower blood sugar; combining them may increase the risk of hypoglycemia or severe digestive distress.",
+      "severity": "moderate",
+      "recommendation": "Monitor blood sugar levels closely and consult your doctor before combining these treatments."
+    },
+    {
+      "treatment_a": "gnrh_agonists_antagonists_endo",
+      "treatment_b": "estrogen_supplementation_standard",
+      "reason": "GnRH analogs work by creating a low-estrogen state to suppress endometriosis; uncontrolled estrogen supplementation defeats this therapeutic suppression.",
+      "severity": "high",
+      "recommendation": "Only use estrogen as part of a formal 'add-back' therapy protocol prescribed by your specialist."
+    },
+    {
+      "treatment_a": "spironolactone_pcos",
+      "treatment_b": "potassium_supplements",
+      "reason": "Spironolactone is a potassium-sparing diuretic; taking extra potassium can lead to dangerously high levels (hyperkalemia).",
+      "severity": "high",
+      "recommendation": "Avoid all potassium supplements and salt substitutes containing potassium while on this medication."
+    },
+    {
+      "treatment_a": "spironolactone_pcos",
+      "treatment_b": "ace_inhibitors",
+      "reason": "Both medications can increase serum potassium, significantly raising the risk of hyperkalemia and related cardiac issues.",
+      "severity": "high",
+      "recommendation": "Requires regular blood work and electrolyte monitoring by a physician if used together."
+    },
+    {
+      "treatment_a": "nsaids_standard_analgesics_endo",
+      "treatment_b": "gi_conditions_gastritis_ulcers",
+      "reason": "Long-term or high-dose NSAID use irritates the stomach lining and increases the risk of gastrointestinal bleeding and ulcers.",
+      "severity": "high",
+      "recommendation": "Use the lowest effective dose for the shortest time; discuss alternative pain strategies with your doctor if you have a history of GI issues."
+    }
+  ],
+  "cautions": [
+    {
+      "treatment": "letrozole_pcos",
+      "condition": "pregnancy",
+      "reason": "Letrozole is an aromatase inhibitor that is teratogenic and can cause significant birth defects if taken during pregnancy.",
+      "recommendation": "Ensure a negative pregnancy test before starting treatment and stop immediately if pregnancy is suspected."
+    },
+    {
+      "treatment": "gnrh_agonists_antagonists_endo",
+      "condition": "low_bone_density",
+      "reason": "These medications lower estrogen levels, which can lead to rapid loss of bone mineral density.",
+      "recommendation": "Treatment beyond 6 months requires low-dose 'add-back' hormone therapy and periodic bone density (DEXA) scans."
+    },
+    {
+      "treatment": "spironolactone_pcos",
+      "condition": "pregnancy",
+      "reason": "Spironolactone has anti-androgenic effects that can interfere with the normal development of a male fetus.",
+      "recommendation": "Reliable contraception must be used while on this medication; stop treatment before attempting to conceive."
+    },
+    {
+      "treatment": "vitamin_a_high_dose",
+      "condition": "pregnancy_planning",
+      "reason": "Excessive intake of preformed Vitamin A (retinol) is linked to birth defects during early fetal development.",
+      "recommendation": "Switch to beta-carotene sources and stay within recommended daily allowances when planning for pregnancy."
+    },
+    {
+      "treatment": "hormonal_suppression_combined_ocp_endo",
+      "condition": "ovarian_reserve_testing",
+      "reason": "Combined pills suppress ovulation and lower AMH and AFC levels, which can mask the true status of your ovarian reserve.",
+      "recommendation": "Wait at least 1-3 months after stopping the pill before conducting accurate ovarian reserve or fertility assessments."
+    }
+  ]
+}

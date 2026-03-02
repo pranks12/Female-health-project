@@ -1,0 +1,36 @@
+{
+  "topic": "Polycystic Ovary Syndrome (PCOS)",
+  "description": "A hormonal disorder common among women of reproductive age where the ovaries produce an abnormal amount of androgens. PCOS affects 1 in 10 women of childbearing age.",
+  "diagnostic_criteria": {
+    "rotterdam_criteria": "Diagnosis requires 2 of 3: irregular periods, excess androgens (clinical or lab), polycystic ovaries on ultrasound",
+    "lab_markers": ["Elevated testosterone", "Elevated DHEA-S", "Elevated LH:FSH ratio (>2:1)", "Elevated insulin/fasting glucose", "Elevated AMH"]
+  },
+  "symptoms": {
+    "menstrual": ["Irregular or absent periods", "Heavy periods", "Unpredictable ovulation"],
+    "androgenic": ["Excess facial and body hair (hirsutism)", "Acne on face, chest, back", "Male-pattern hair thinning or baldness"],
+    "metabolic": ["Weight gain especially around abdomen", "Difficulty losing weight", "Skin darkening (acanthosis nigricans)", "Skin tags"],
+    "reproductive": ["Difficulty getting pregnant", "Multiple small cysts on ovaries", "Pelvic pain"]
+  },
+  "associated_conditions": ["Type 2 diabetes", "Insulin resistance", "High blood pressure", "High cholesterol", "Sleep apnea", "Depression and anxiety", "Endometrial cancer (long-term risk)"],
+  "treatments": {
+    "lifestyle_first_line": {
+      "weight_loss": "Even 5-10% weight loss can restore ovulation and significantly improve symptoms",
+      "diet": ["Low glycemic index diet", "Anti-inflammatory foods", "High fiber foods", "Lean protein", "Limit processed foods and sugar", "Mediterranean diet approach"],
+      "exercise": ["150 min/week moderate cardio", "Strength training 2-3x/week", "HIIT shown effective for insulin resistance"],
+      "stress": ["Chronic stress worsens cortisol and androgen levels", "Yoga, meditation, adequate sleep"]
+    },
+    "medications": {
+      "menstrual_regulation": ["Combined oral contraceptives (regulate cycle, reduce androgens)", "Progestin-only pills or IUD"],
+      "insulin_resistance": ["Metformin — reduces insulin resistance, can restore ovulation, supports weight loss"],
+      "androgen_reduction": ["Spironolactone for hirsutism and acne", "Finasteride for hair loss"],
+      "fertility": ["Letrozole (first-line for ovulation induction)", "Clomiphene citrate", "Gonadotropins", "IVF if other methods fail"],
+      "acne": ["Topical retinoids", "Antibiotics", "Combined OCP"]
+    },
+    "supplements": {
+      "evidence_based": ["Inositol (myo-inositol + D-chiro-inositol 40:1 ratio) — improves insulin sensitivity and ovulation", "Vitamin D — commonly deficient in PCOS, supports insulin sensitivity", "Magnesium — supports insulin function", "Omega-3 fatty acids — reduces inflammation and androgens", "NAC (N-acetyl cysteine) — insulin sensitizer"],
+      "emerging": ["Berberine — similar effect to metformin", "Chromium picolinate", "Zinc for androgen reduction"]
+    }
+  },
+  "monitoring": ["Annual fasting glucose and HbA1c", "Lipid panel", "Blood pressure", "Endometrial thickness if periods absent >3 months"],
+  "when_to_see_doctor": "Always seek evaluation for PCOS — it is a complex hormonal disorder requiring proper diagnosis and management plan"
+}

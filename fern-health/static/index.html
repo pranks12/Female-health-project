@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fern Health — Treatment Navigation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8F6F2;
+      --bg-card: #FFFFFF;
+      --primary: #1B4332;
+      --primary-light: #2D6A4F;
+      --accent: #C4622D;
+      --accent-soft: #F0E6DF;
+      --sage: #87A98A;
+      --sage-light: #E8F0E9;
+      --text: #1A1A1A;
+      --text-muted: #6B7280;
+      --border: #E5E0D8;
+      --shadow: rgba(27, 67, 50, 0.08);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Source Serif 4', Georgia, serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    /* Noise texture overlay */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      opacity: 0.028;
+      pointer-events: none;
+      z-index: 9000;
+    }
+
+    /* ── HEADER ─────────────────────────────────────────── */
+    header {
+      height: 64px;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      position: relative;
+      z-index: 100;
+      flex-shrink: 0;
+    }
+
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+
+    .logo-leaf { font-size: 20px; line-height: 1; }
+
+    .logo-text { display: flex; align-items: baseline; gap: 5px; }
+
+    .logo-fern {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -0.3px;
+    }
+
+    .logo-health {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 17px;
+      font-weight: 300;
+      color: var(--primary-light);
+      letter-spacing: 0.5px;
+    }
+
+    .header-tabs {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .tab-btn {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 8px 20px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: var(--text-muted);
+      position: relative;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+
+    .tab-btn.active {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .tab-btn.active::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--primary);
+    }
+
+    .tab-btn.tab-disabled { cursor: default; }
+
+    .tab-btn.tab-disabled .tab-tooltip {
+      display: none;
+      position: absolute;
+      bottom: calc(100% + 6px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--text);
+      color: white;
+      font-size: 11px;
+      padding: 4px 9px;
+      border-radius: 4px;
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 200;
+    }
+
+    .tab-btn.tab-disabled .tab-tooltip::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 4px solid transparent;
+      border-top-color: var(--text);
+    }
+
+    .tab-btn.tab-disabled:hover .tab-tooltip { display: block; }
+
+    .header-actions { display: flex; align-items: center; }
+
+    .gear-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      color: var(--text-muted);
+      padding: 4px;
+      transition: color 0.2s;
+      line-height: 1;
+    }
+
+    .gear-btn:hover { color: var(--text); }
+
+    /* ── MAIN LAYOUT ────────────────────────────────────── */
+    main {
+      display: flex;
+      height: calc(100vh - 64px);
+      overflow: hidden;
+    }
+
+    /* ── LEFT PANEL ─────────────────────────────────────── */
+    .left-panel {
+      width: 38%;
+      min-width: 320px;
+      background: var(--bg);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Profile Card */
+    .profile-card {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 20px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .profile-header-title {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .chevron {
+      font-size: 11px;
+      color: var(--text-muted);
+      transition: transform 0.25s;
+      display: inline-block;
+    }
+
+    .chevron.open { transform: rotate(180deg); }
+
+    .profile-body {
+      padding: 0 20px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .profile-body.collapsed { display: none; }
+
+    .profile-label {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .profile-age-input {
+      width: 80px;
+      padding: 6px 10px;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 14px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .profile-age-input:focus { border-color: var(--sage); }
+
+    /* Chip input */
+    .chip-input-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      padding: 6px 8px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg);
+      min-height: 38px;
+      cursor: text;
+      transition: border-color 0.2s;
+      align-items: center;
+    }
+
+    .chip-input-container:focus-within { border-color: var(--sage); }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      padding: 3px 8px 3px 9px;
+      background: var(--sage-light);
+      color: var(--primary);
+      border-radius: 12px;
+      font-size: 12px;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 500;
+    }
+
+    .chip-remove {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      color: var(--primary-light);
+      padding: 0;
+      line-height: 1;
+      opacity: 0.7;
+      transition: opacity 0.15s;
+    }
+
+    .chip-remove:hover { opacity: 1; }
+
+    .chip-text-input {
+      border: none;
+      outline: none;
+      background: transparent;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 13px;
+      color: var(--text);
+      flex: 1;
+      min-width: 120px;
+    }
+
+    .chip-text-input::placeholder { color: var(--text-muted); }
+
+    .profile-textarea {
+      width: 100%;
+      padding: 7px 10px;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 13px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--text);
+      resize: vertical;
+      outline: none;
+      line-height: 1.5;
+      transition: border-color 0.2s;
+    }
+
+    .profile-textarea:focus { border-color: var(--sage); }
+
+    .save-btn {
+      align-self: flex-start;
+      padding: 7px 16px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .save-btn:hover { background: var(--primary-light); }
+
+    /* Progress Bar */
+    .progress-section {
+      padding: 14px 20px 12px;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .progress-steps {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .progress-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .step-circle {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      font-family: 'Source Serif 4', Georgia, serif;
+      border: 2px solid var(--border);
+      background: var(--bg-card);
+      color: var(--text-muted);
+      transition: all 0.3s;
+      flex-shrink: 0;
+    }
+
+    .step-circle.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: white;
+    }
+
+    .step-circle.completed {
+      background: var(--sage);
+      border-color: var(--sage);
+      color: white;
+    }
+
+    .step-label {
+      font-size: 9px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      white-space: nowrap;
+    }
+
+    .step-label.active { color: var(--primary); }
+    .step-label.completed { color: var(--sage); }
+
+    .progress-line {
+      flex: 1;
+      height: 2px;
+      background: var(--border);
+      margin-top: 12px;
+      transition: background 0.3s;
+    }
+
+    .progress-line.completed { background: var(--sage); }
+
+    /* Chat Area */
+    .chat-area {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .chat-area::-webkit-scrollbar { width: 4px; }
+    .chat-area::-webkit-scrollbar-track { background: transparent; }
+    .chat-area::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+    .message-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .message-wrapper.user { align-items: flex-end; }
+    .message-wrapper.agent { align-items: flex-start; }
+
+    .message-sender {
+      font-size: 10px;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 0 4px;
+    }
+
+    .message-bubble {
+      max-width: 88%;
+      padding: 9px 14px;
+      font-size: 14px;
+      line-height: 1.6;
+      font-family: 'Source Serif 4', Georgia, serif;
+      word-wrap: break-word;
+    }
+
+    .message-bubble.user {
+      background: var(--primary);
+      color: white;
+      border-radius: 18px 18px 4px 18px;
+    }
+
+    .message-bubble.agent {
+      background: var(--bg-card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 18px 18px 18px 4px;
+    }
+
+    /* Typing indicator */
+    .typing-dots {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 11px 14px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 18px 18px 18px 4px;
+    }
+
+    .typing-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--sage);
+      animation: bounce 1.2s infinite;
+    }
+
+    .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+    .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes bounce {
+      0%, 60%, 100% { transform: translateY(0); opacity: 0.45; }
+      30% { transform: translateY(-5px); opacity: 1; }
+    }
+
+    /* Input Area */
+    .input-area {
+      padding: 12px 18px 14px;
+      background: var(--bg-card);
+      border-top: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .input-row {
+      display: flex;
+      gap: 8px;
+      align-items: flex-end;
+    }
+
+    .chat-textarea {
+      flex: 1;
+      padding: 9px 13px;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--bg);
+      color: var(--text);
+      resize: none;
+      outline: none;
+      min-height: 40px;
+      max-height: 120px;
+      line-height: 1.5;
+      transition: border-color 0.2s;
+      overflow-y: auto;
+    }
+
+    .chat-textarea:focus { border-color: var(--sage); }
+
+    .chat-textarea:disabled { opacity: 0.55; cursor: not-allowed; }
+
+    .send-btn {
+      width: 40px;
+      height: 40px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    .send-btn:hover:not(:disabled) { background: var(--primary-light); }
+    .send-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .generate-btn {
+      width: 100%;
+      margin-top: 10px;
+      padding: 12px;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 15px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .generate-btn:disabled {
+      background: var(--border);
+      color: var(--text-muted);
+      cursor: not-allowed;
+    }
+
+    .generate-btn.enabled {
+      background: var(--primary);
+      color: white;
+    }
+
+    .generate-btn.enabled:hover { background: var(--primary-light); }
+
+    .generate-btn.loading {
+      background: var(--primary);
+      color: white;
+      cursor: wait;
+    }
+
+    /* ── RIGHT PANEL ────────────────────────────────────── */
+    .right-panel {
+      flex: 1;
+      background: var(--bg);
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .right-panel::-webkit-scrollbar { width: 6px; }
+    .right-panel::-webkit-scrollbar-track { background: transparent; }
+    .right-panel::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+    /* Empty State */
+    .empty-state {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 40px;
+    }
+
+    .empty-state-inner {
+      text-align: center;
+      max-width: 400px;
+      padding: 52px 44px;
+      border: 2px dashed var(--border);
+      border-radius: 16px;
+    }
+
+    .empty-state-icon {
+      font-size: 60px;
+      line-height: 1;
+      margin-bottom: 22px;
+      display: block;
+      opacity: 0.55;
+    }
+
+    .empty-state-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 25px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .empty-state-text {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* Action Bar */
+    .action-bar {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 32px;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      flex-shrink: 0;
+    }
+
+    .action-bar.visible { display: flex; }
+
+    .action-bar-left { display: flex; gap: 10px; align-items: center; }
+
+    .action-btn {
+      padding: 7px 16px;
+      border-radius: 6px;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .action-btn-review {
+      background: var(--bg-card);
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .action-btn-review:hover { background: var(--sage-light); }
+
+    .action-btn-copy {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .action-btn-copy:hover { border-color: var(--text-muted); }
+
+    .retrieval-meta {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: 'Source Serif 4', Georgia, serif;
+    }
+
+    /* Roadmap Content */
+    .roadmap-content {
+      display: none;
+      padding: 36px 48px 48px;
+    }
+
+    .roadmap-content.visible {
+      display: block;
+      animation: fadeUp 0.4s ease;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .roadmap-content h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 28px;
+      line-height: 1.3;
+    }
+
+    .roadmap-content h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-top: 36px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      line-height: 1.3;
+    }
+
+    .roadmap-content h3 {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--primary-light);
+      margin-top: 22px;
+      margin-bottom: 8px;
+    }
+
+    .roadmap-content p {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .roadmap-content strong { color: var(--primary); }
+
+    .roadmap-content em { color: var(--text-muted); }
+
+    .roadmap-content ul,
+    .roadmap-content ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    .roadmap-content li {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 7px;
+    }
+
+    .roadmap-content hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 28px 0;
+    }
+
+    .roadmap-content blockquote {
+      border-left: 3px solid var(--sage);
+      padding-left: 16px;
+      margin: 16px 0;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* ── REVIEWER SLIDE-OVER ────────────────────────────── */
+    .reviewer-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+      z-index: 200;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+
+    .reviewer-overlay.visible {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .reviewer-panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 380px;
+      background: var(--bg-card);
+      z-index: 201;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      box-shadow: -4px 0 24px var(--shadow);
+    }
+
+    .reviewer-panel.visible { transform: translateX(0); }
+
+    .reviewer-panel::-webkit-scrollbar { width: 4px; }
+    .reviewer-panel::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+    .reviewer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .reviewer-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .reviewer-close {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      color: var(--text-muted);
+      padding: 4px;
+      line-height: 1;
+      transition: color 0.15s;
+    }
+
+    .reviewer-close:hover { color: var(--text); }
+
+    .reviewer-body {
+      padding: 24px;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .reviewer-body::-webkit-scrollbar { width: 4px; }
+    .reviewer-body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+    .reviewer-score-display {
+      text-align: center;
+      padding: 20px 0 24px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .reviewer-score-number {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 52px;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1;
+    }
+
+    .reviewer-score-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 6px;
+      font-family: 'Source Serif 4', Georgia, serif;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .dimension-item { margin-bottom: 20px; }
+
+    .dimension-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+
+    .dimension-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      font-family: 'Source Serif 4', Georgia, serif;
+    }
+
+    .dimension-score-txt {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      font-family: 'Source Serif 4', Georgia, serif;
+    }
+
+    .dimension-bar-track {
+      height: 7px;
+      background: var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 5px;
+    }
+
+    .dimension-bar-fill {
+      height: 100%;
+      border-radius: 4px;
+      transition: width 0.6s ease;
+    }
+
+    .dimension-assessment {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: 'Source Serif 4', Georgia, serif;
+      line-height: 1.5;
+    }
+
+    .gaps-section { margin-top: 28px; }
+
+    .gaps-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 14px;
+    }
+
+    .gap-card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 12px;
+      transition: opacity 0.3s;
+    }
+
+    .gap-card.applied { opacity: 0.45; }
+
+    .gap-card-title {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .gap-problem {
+      font-size: 13px;
+      color: var(--text);
+      font-family: 'Source Serif 4', Georgia, serif;
+      line-height: 1.55;
+      margin-bottom: 10px;
+    }
+
+    .gap-fix-box {
+      background: var(--sage-light);
+      border-radius: 6px;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+    }
+
+    .gap-fix-label {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 5px;
+    }
+
+    .gap-fix-text {
+      font-size: 13px;
+      color: var(--text);
+      font-family: 'Source Serif 4', Georgia, serif;
+      line-height: 1.55;
+    }
+
+    .apply-fix-btn {
+      padding: 6px 14px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .apply-fix-btn:hover:not(:disabled) { background: var(--primary-light); }
+
+    .apply-fix-btn:disabled {
+      background: var(--border);
+      color: var(--text-muted);
+      cursor: not-allowed;
+    }
+
+    .re-review-btn {
+      width: 100%;
+      margin-top: 24px;
+      padding: 12px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .re-review-btn:hover:not(:disabled) { background: var(--primary-light); }
+    .re-review-btn:disabled { opacity: 0.55; cursor: wait; }
+
+    .reviewer-loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 64px 24px;
+      gap: 16px;
+    }
+
+    .reviewer-loading-text {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* Spinners */
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .spinner {
+      width: 15px;
+      height: 15px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 0.75s linear infinite;
+      flex-shrink: 0;
+    }
+
+    .spinner-large {
+      width: 30px;
+      height: 30px;
+      border: 3px solid var(--border);
+      border-top-color: var(--primary);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    /* ── TOAST ──────────────────────────────────────────── */
+    .toast-container {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+      pointer-events: none;
+    }
+
+    .toast {
+      padding: 10px 18px;
+      background: #DC2626;
+      color: white;
+      border-radius: 8px;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 13px;
+      font-weight: 500;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+      animation: toastIn 0.3s ease;
+      pointer-events: all;
+      max-width: 380px;
+      text-align: center;
+    }
+
+    @keyframes toastIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="header-logo">
+      <span class="logo-leaf">🌿</span>
+      <div class="logo-text">
+        <span class="logo-fern">Fern</span>
+        <span class="logo-health">Health</span>
+      </div>
+    </div>
+
+    <div class="header-tabs">
+      <button class="tab-btn active">Treatment Advisor</button>
+      <button class="tab-btn tab-disabled">
+        Diagnostic Planner
+        <span class="tab-tooltip">Coming soon</span>
+      </button>
+    </div>
+
+    <div class="header-actions">
+      <button class="gear-btn" title="Settings">⚙</button>
+    </div>
+  </header>
+
+  <!-- ── MAIN ── -->
+  <main>
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+
+      <!-- Profile Card -->
+      <div class="profile-card">
+        <div class="profile-header" id="profile-header">
+          <span class="profile-header-title">Your Profile</span>
+          <span class="chevron open" id="profile-chevron">▼</span>
+        </div>
+        <div class="profile-body" id="profile-body">
+          <div>
+            <label class="profile-label" for="profile-age">Age</label>
+            <input type="number" class="profile-age-input" id="profile-age" placeholder="Age" min="1" max="120">
+          </div>
+          <div>
+            <label class="profile-label">Conditions</label>
+            <div class="chip-input-container" id="chip-container">
+              <input type="text" class="chip-text-input" id="chip-input" placeholder="Type condition, press Enter...">
+            </div>
+          </div>
+          <div>
+            <label class="profile-label" for="profile-meds">Current Medications &amp; Supplements</label>
+            <textarea class="profile-textarea" id="profile-meds" rows="3"
+              placeholder="List anything you're currently taking..."></textarea>
+          </div>
+          <button class="save-btn" id="save-btn">Save Profile</button>
+        </div>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="progress-section">
+        <div class="progress-steps" id="progress-steps"></div>
+      </div>
+
+      <!-- Chat Area -->
+      <div class="chat-area" id="chat-area"></div>
+
+      <!-- Input Area -->
+      <div class="input-area">
+        <div class="input-row">
+          <textarea class="chat-textarea" id="chat-input"
+            placeholder="Share your situation..." rows="1"></textarea>
+          <button class="send-btn" id="send-btn" title="Send">&#8594;</button>
+        </div>
+        <button class="generate-btn" id="generate-btn" disabled>
+          Complete interview to generate
+        </button>
+      </div>
+
+    </div><!-- /left-panel -->
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel" id="right-panel">
+
+      <div class="action-bar" id="action-bar">
+        <div class="action-bar-left">
+          <button class="action-btn action-btn-review" id="review-btn">Review My Roadmap</button>
+          <button class="action-btn action-btn-copy" id="copy-btn">Copy Roadmap</button>
+        </div>
+        <span class="retrieval-meta" id="retrieval-meta"></span>
+      </div>
+
+      <div class="empty-state" id="empty-state">
+        <div class="empty-state-inner">
+          <span class="empty-state-icon">🌿</span>
+          <h2 class="empty-state-title">Your Treatment Roadmap</h2>
+          <p class="empty-state-text">
+            Complete the interview on the left to generate your
+            personalized evidence-based treatment roadmap.
+          </p>
+        </div>
+      </div>
+
+      <div class="roadmap-content" id="roadmap-content"></div>
+
+    </div><!-- /right-panel -->
+
+  </main>
+
+  <!-- ── REVIEWER SLIDE-OVER ── -->
+  <div class="reviewer-overlay" id="reviewer-overlay"></div>
+  <div class="reviewer-panel" id="reviewer-panel">
+    <div class="reviewer-header">
+      <span class="reviewer-title">Roadmap Review</span>
+      <button class="reviewer-close" id="reviewer-close">&#10005;</button>
+    </div>
+    <div class="reviewer-body" id="reviewer-body"></div>
+  </div>
+
+  <!-- ── TOAST ── -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- marked.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <script>
+    // ─────────────────────────────────────────────────────────
+    // STATE
+    // ─────────────────────────────────────────────────────────
+    const state = {
+      messages: [],
+      roadmap: '',
+      step: 0,
+      generating: false,
+      reviewing: false,
+      profile: {},
+      interviewComplete: false,
+      currentReviewData: null,
+      appliedFixes: new Set()
+    };
+
+    // ─────────────────────────────────────────────────────────
+    // INIT
+    // ─────────────────────────────────────────────────────────
+    (function init() {
+      if (typeof marked !== 'undefined') {
+        marked.setOptions({ breaks: true, gfm: true });
+      }
+      loadProfile();
+      renderProgress();
+      setupChatInput();
+      setupChipInput();
+
+      document.getElementById('profile-header').addEventListener('click', toggleProfile);
+      document.getElementById('save-btn').addEventListener('click', saveProfile);
+      document.getElementById('send-btn').addEventListener('click', sendMessage);
+      document.getElementById('generate-btn').addEventListener('click', generateRoadmap);
+      document.getElementById('review-btn').addEventListener('click', openReviewer);
+      document.getElementById('copy-btn').addEventListener('click', copyRoadmap);
+      document.getElementById('reviewer-overlay').addEventListener('click', closeReviewer);
+      document.getElementById('reviewer-close').addEventListener('click', closeReviewer);
+    })();
+
+    // ─────────────────────────────────────────────────────────
+    // PROFILE
+    // ─────────────────────────────────────────────────────────
+    function loadProfile() {
+      try {
+        const raw = localStorage.getItem('fern_profile');
+        if (!raw) return;
+        state.profile = JSON.parse(raw);
+        if (state.profile.age)
+          document.getElementById('profile-age').value = state.profile.age;
+        if (state.profile.medications)
+          document.getElementById('profile-meds').value = state.profile.medications;
+        if (Array.isArray(state.profile.conditions))
+          state.profile.conditions.forEach(addChip);
+      } catch (_) { /* ignore */ }
+    }
+
+    function saveProfile() {
+      state.profile = {
+        age: document.getElementById('profile-age').value,
+        conditions: getChipValues(),
+        medications: document.getElementById('profile-meds').value
+      };
+      localStorage.setItem('fern_profile', JSON.stringify(state.profile));
+      const btn = document.getElementById('save-btn');
+      btn.textContent = 'Saved \u2713';
+      setTimeout(() => { btn.textContent = 'Save Profile'; }, 2000);
+    }
+
+    function toggleProfile() {
+      const body = document.getElementById('profile-body');
+      const chevron = document.getElementById('profile-chevron');
+      body.classList.toggle('collapsed');
+      chevron.classList.toggle('open');
+    }
+
+    // ─────────────────────────────────────────────────────────
+    // CHIP INPUT
+    // ─────────────────────────────────────────────────────────
+    function setupChipInput() {
+      const input = document.getElementById('chip-input');
+      input.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          const val = input.value.trim();
+          if (val) { addChip(val); input.value = ''; }
+        } else if (e.key === 'Backspace' && input.value === '') {
+          const chips = document.getElementById('chip-container').querySelectorAll('.chip');
+          if (chips.length) chips[chips.length - 1].remove();
+        }
+      });
+      document.getElementById('chip-container').addEventListener('click', function(e) {
+        if (e.target === this || e.target.classList.contains('chip-container')) {
+          input.focus();
+        }
+      });
+    }
+
+    function addChip(text) {
+      const container = document.getElementById('chip-container');
+      const input = document.getElementById('chip-input');
+      const chip = document.createElement('span');
+      chip.className = 'chip';
+      const label = document.createTextNode(text);
+      chip.appendChild(label);
+      const btn = document.createElement('button');
+      btn.className = 'chip-remove';
+      btn.type = 'button';
+      btn.innerHTML = '&times;';
+      btn.addEventListener('click', function() { chip.remove(); });
+      chip.appendChild(btn);
+      container.insertBefore(chip, input);
+    }
+
+    function getChipValues() {
+      return Array.from(
+        document.getElementById('chip-container').querySelectorAll('.chip')
+      ).map(c => c.childNodes[0].textContent.trim());
+    }
+
+    // ─────────────────────────────────────────────────────────
+    // PROGRESS BAR
+    // ─────────────────────────────────────────────────────────
+    const STEP_LABELS = ['Diagnosis', 'History', 'Current', 'Goals', 'Research'];
+
+    function renderProgress() {
+      const container = document.getElementById('progress-steps');
+      let html = '';
+      STEP_LABELS.forEach(function(label, i) {
+        const n = i + 1;
+        let circleClass = '', labelClass = '', content = n;
+        if (n < state.step) {
+          circleClass = 'completed'; labelClass = 'completed'; content = '\u2713';
+        } else if (n === state.step) {
+          circleClass = 'active'; labelClass = 'active';
+        }
+        html += '<div class="progress-step">'
+              + '<div class="step-circle ' + circleClass + '">' + content + '</div>'
+              + '<span class="step-label ' + labelClass + '">' + label + '</span>'
+              + '</div>';
+        if (i < STEP_LABELS.length - 1) {
+          const lineClass = n < state.step ? 'completed' : '';
+          html += '<div class="progress-line ' + lineClass + '"></div>';
+        }
+      });
+      container.innerHTML = html;
+    }
+
+    // ─────────────────────────────────────────────────────────
+    // CHAT INPUT SETUP
+    // ─────────────────────────────────────────────────────────
+    function setupChatInput() {
+      const textarea = document.getElementById('chat-input');
+      textarea.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' && !e.shiftKey) {
+          e.preventDefault();
+          sendMessage();
+        }
+      });
+      textarea.addEventListener('input', function() {
+        this.style.height = 'auto';
+        this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+      });
+    }
+
+    // ─────────────────────────────────────────────────────────
+    // SEND MESSAGE — POST /api/agent3/chat (SSE stream)
+    // ─────────────────────────────────────────────────────────
+    async function sendMessage() {
+      const textarea = document.getElementById('chat-input');
+      const text = textarea.value.trim();
+      if (!text || state.generating) return;
+
+      state.messages.push({ role: 'user', content: text });
+      addBubble('user', text);
+      textarea.value = '';
+      textarea.style.height = 'auto';
+
+      setInputDisabled(true);
+      const typingId = showTyping();
+
+      let agentText = '';
+      let bubbleId = null;
+
+      try {
+        const res = await fetch('/api/agent3/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: state.messages, user_profile: state.profile })
+        });
+
+        if (!res.ok) {
+          const msg = await res.text().catch(() => '');
+          throw new Error(msg || 'HTTP ' + res.status);
+        }
+
+        const reader = res.body.getReader();
+        const dec = new TextDecoder();
+        let buf = '';
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          buf += dec.decode(value, { stream: true });
+
+          const lines = buf.split('\n');
+          buf = lines.pop(); // keep partial last line
+
+          for (const line of lines) {
+            if (!line.startsWith('data:')) continue;
+            const raw = line.slice(5).trim();
+            if (raw === '[DONE]' || raw === '') continue;
+
+            let chunk = raw;
+            try {
+              const parsed = JSON.parse(raw);
+              chunk = parsed.content ?? parsed.text ?? parsed.delta ?? raw;
+            } catch (_) { /* plain text chunk */ }
+
+            // Parse step markers
+            const stepMatches = chunk.match(/\[STEP:(\d+)\]/g);
+            if (stepMatches) {
+              stepMatches.forEach(function(m) {
+                const n = parseInt(m.match(/\d+/)[0], 10);
+                if (n > state.step) { state.step = n; renderProgress(); }
+              });
+            }
+            if (chunk.includes('[STEP:COMPLETE]')) {
+              state.interviewComplete = true;
+              enableGenerateButton();
+            }
+
+            // Strip markers from display
+            const display = chunk
+              .replace(/\[STEP:\d+\]/g, '')
+              .replace(/\[STEP:COMPLETE\]/g, '');
+
+            agentText += display;
+            removeTyping(typingId);
+
+            if (!bubbleId) {
+              bubbleId = addBubble('agent', agentText, true);
+            } else {
+              updateBubble(bubbleId, agentText);
+            }
+          }
+        }
+
+        // flush any remaining buffer
+        if (buf.startsWith('data:')) {
+          const raw = buf.slice(5).trim();
+          if (raw && raw !== '[DONE]') {
+            let chunk = raw;
+            try { const p = JSON.parse(raw); chunk = p.content ?? p.text ?? p.delta ?? raw; }
+            catch (_) {}
+            const display = chunk.replace(/\[STEP:\d+\]/g, '').replace(/\[STEP:COMPLETE\]/g, '');
+            agentText += display;
+            if (!bubbleId) addBubble('agent', agentText, true);
+            else updateBubble(bubbleId, agentText);
+          }
+        }
+
+        if (agentText) state.messages.push({ role: 'assistant', content: agentText });
+
+      } catch (err) {
+        removeTyping(typingId);
+        showToast(err.message || 'Failed to get a response.');
+      } finally {
+        removeTyping(typingId);
+        setInputDisabled(false);
+        scrollChat();
+      }
+    }
+
+    function setInputDisabled(on) {
+      document.getElementById('chat-input').disabled = on;
+      document.getElementById('send-btn').disabled = on;
+    }
+
+    function enableGenerateButton() {
+      const btn = document.getElementById('generate-btn');
+      btn.disabled = false;
+      btn.className = 'generate-btn enabled';
+      btn.textContent = 'Generate Treatment Roadmap \u2192';
+    }
+
+    // ─────────────────────────────────────────────────────────
+    // BUBBLE RENDERING
+    // ─────────────────────────────────────────────────────────
+    let _bubbleId = 0;
+
+    function addBubble(role, text) {
+      const id = 'bubble-' + (++_bubbleId);
+      const wrap = document.createElement('div');
+      wrap.className = 'message-wrapper ' + role;
+      wrap.id = id;
+
+      if (role === 'agent') {
+        const sender = document.createElement('span');
+        sender.className = 'message-sender';
+        sender.textContent = 'Fern';
+        wrap.appendChild(sender);
+      }
+
+      const bub = document.createElement('div');
+      bub.className = 'message-bubble ' + role;
+      bub.textContent = text;
+      wrap.appendChild(bub);
+
+      document.getElementById('chat-area').appendChild(wrap);
+      scrollChat();
+      return id;
+    }
+
+    function updateBubble(id, text) {
+      const wrap = document.getElementById(id);
+      if (!wrap) return;
+      const bub = wrap.querySelector('.message-bubble');
+      if (bub) bub.textContent = text;
+      scrollChat();
+    }
+
+    function scrollChat() {
+      const ca = document.getElementById('chat-area');
+      ca.scrollTop = ca.scrollHeight;
+    }
+
+    // ─────────────────────────────────────────────────────────
+    // TYPING INDICATOR
+    // ─────────────────────────────────────────────────────────
+    let _typingId = 0;
+
+    function showTyping() {
+      const id = 'typing-' + (++_typingId);
+      const wrap = document.createElement('div');
+      wrap.className = 'message-wrapper agent';
+      wrap.id = id;
+
+      const sender = document.createElement('span');
+      sender.className = 'message-sender';
+      sender.textContent = 'Fern';
+      wrap.appendChild(sender);
+
+      const dots = document.createElement('div');
+      dots.className = 'typing-dots';
+      dots.innerHTML = '<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';
+      wrap.appendChild(dots);
+
+      document.getElementById('chat-area').appendChild(wrap);
+      scrollChat();
+      return id;
+    }
+
+    function removeTyping(id) {
+      const el = document.getElementById(id);
+      if (el) el.remove();
+    }
+
+    // ─────────────────────────────────────────────────────────
+    // GENERATE ROADMAP — POST /api/agent3/generate
+    // ─────────────────────────────────────────────────────────
+    async function generateRoadmap() {
+      if (state.generating) return;
+      state.generating = true;
+
+      const btn = document.getElementById('generate-btn');
+      btn.className = 'generate-btn loading';
+      btn.innerHTML = '<div class="spinner"></div> Generating your roadmap...';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch('/api/agent3/generate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: state.messages, user_profile: state.profile })
+        });
+
+        if (!res.ok) {
+          const msg = await res.text().catch(() => '');
+          throw new Error(msg || 'HTTP ' + res.status);
+        }
+
+        const data = await res.json();
+        state.roadmap = data.roadmap || '';
+
+        renderRoadmap();
+
+        document.getElementById('action-bar').classList.add('visible');
+
+        if (data.retrieval_meta) {
+          const m = data.retrieval_meta;
+          document.getElementById('retrieval-meta').textContent =
+            'Based on ' + (m.used ?? '?') + ' of ' + (m.total ?? '?') +
+            ' treatments\u2002|\u2002' + (m.method || 'Keyword search');
+        }
+
+      } catch (err) {
+        showToast(err.message || 'Failed to generate roadmap.');
+      } finally {
+        state.generating = false;
+        btn.className = 'generate-btn enabled';
+        btn.textContent = 'Generate Treatment Roadmap \u2192';
+        btn.disabled = false;
+      }
+    }
+
+    function renderRoadmap() {
+      document.getElementById('empty-state').style.display = 'none';
+
+      const el = document.getElementById('roadmap-content');
+      el.classList.remove('visible');
+      void el.offsetWidth; // reflow to restart animation
+
+      if (typeof marked !== 'undefined') {
+        el.innerHTML = marked.parse(state.roadmap);
+      } else {
+        el.textContent = state.roadmap;
+      }
+      el.classList.add('visible');
+    }
+
+    // ─────────────────────────────────────────────────────────
+    // COPY ROADMAP
+    // ─────────────────────────────────────────────────────────
+    async function copyRoadmap() {
+      try {
+        await navigator.clipboard.writeText(state.roadmap);
+        const btn = document.getElementById('copy-btn');
+        btn.textContent = 'Copied \u2713';
+        setTimeout(() => { btn.textContent = 'Copy Roadmap'; }, 2000);
+      } catch (_) {
+        showToast('Failed to copy to clipboard.');
+      }
+    }
+
+    // ─────────────────────────────────────────────────────────
+    // REVIEWER — POST /api/agent3/review
+    // ─────────────────────────────────────────────────────────
+    async function openReviewer() {
+      if (state.reviewing) return;
+      state.reviewing = true;
+
+      document.getElementById('reviewer-overlay').classList.add('visible');
+      document.getElementById('reviewer-panel').classList.add('visible');
+      document.getElementById('reviewer-body').innerHTML =
+        '<div class="reviewer-loading">'
+        + '<div class="spinner-large"></div>'
+        + '<span class="reviewer-loading-text">Analyzing your roadmap\u2026</span>'
+        + '</div>';
+
+      try {
+        const res = await fetch('/api/agent3/review', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ roadmap: state.roadmap, user_profile: state.profile })
+        });
+
+        if (!res.ok) {
+          const msg = await res.text().catch(() => '');
+          throw new Error(msg || 'HTTP ' + res.status);
+        }
+
+        const data = await res.json();
+        renderReviewer(data);
+
+      } catch (err) {
+        document.getElementById('reviewer-body').innerHTML =
+          '<div style="padding:24px;font-family:\'Source Serif 4\',serif;color:var(--accent);">'
+          + 'Review failed: ' + escHtml(err.message) + '</div>';
+      } finally {
+        state.reviewing = false;
+      }
+    }
+
+    function renderReviewer(data) {
+      state.currentReviewData = data;
+      state.appliedFixes = new Set();
+
+      const score = data.score || 0;
+      const dims  = data.dimensions || [];
+      const gaps  = data.gaps || [];
+
+      let html = '<div class="reviewer-score-display">'
+               + '<div class="reviewer-score-number">' + score + '/20</div>'
+               + '<div class="reviewer-score-label">Overall Score</div>'
+               + '</div>';
+
+      dims.forEach(function(d) {
+        const s = d.score || 0;
+        const pct = (s / 5) * 100;
+        const color = s <= 2 ? 'var(--accent)' : s === 3 ? '#D97706' : 'var(--sage)';
+        html += '<div class="dimension-item">'
+              + '<div class="dimension-header">'
+              + '<span class="dimension-name">' + escHtml(d.name || '') + '</span>'
+              + '<span class="dimension-score-txt">' + s + '/5</span>'
+              + '</div>'
+              + '<div class="dimension-bar-track">'
+              + '<div class="dimension-bar-fill" style="width:' + pct + '%;background:' + color + ';"></div>'
+              + '</div>'
+              + '<div class="dimension-assessment">' + escHtml(d.assessment || '') + '</div>'
+              + '</div>';
+      });
+
+      if (gaps.length) {
+        html += '<div class="gaps-section"><div class="gaps-title">Identified Gaps</div>';
+        gaps.forEach(function(gap, i) {
+          html += '<div class="gap-card" id="gap-card-' + i + '">'
+                + '<div class="gap-card-title">' + escHtml(gap.title || '') + '</div>'
+                + '<div class="gap-problem">' + escHtml(gap.problem || '') + '</div>'
+                + '<div class="gap-fix-box">'
+                + '<div class="gap-fix-label">Suggested Fix</div>'
+                + '<div class="gap-fix-text">' + escHtml(gap.fix || '') + '</div>'
+                + '</div>'
+                + '<button class="apply-fix-btn" id="fix-btn-' + i + '" data-idx="' + i + '">Apply Fix</button>'
+                + '</div>';
+        });
+        html += '</div>';
+      }
+
+      html += '<button class="re-review-btn" id="re-review-btn">Re-Review</button>';
+
+      const body = document.getElementById('reviewer-body');
+      body.innerHTML = html;
+
+      // Bind apply-fix buttons
+      body.querySelectorAll('.apply-fix-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          applyFix(parseInt(this.dataset.idx, 10));
+        });
+      });
+
+      document.getElementById('re-review-btn').addEventListener('click', reReview);
+    }
+
+    function applyFix(idx) {
+      const data = state.currentReviewData;
+      if (!data || !data.gaps || !data.gaps[idx]) return;
+
+      const gap = data.gaps[idx];
+      const fixText = (gap.fix || '').trim();
+      if (!fixText) return;
+
+      // Try to find gap title as a heading in the markdown
+      const lines = state.roadmap.split('\n');
+      const titleLower = (gap.title || '').toLowerCase();
+      let sectionStart = -1;
+
+      for (let i = 0; i < lines.length; i++) {
+        if (lines[i].startsWith('#') && lines[i].toLowerCase().includes(titleLower)) {
+          sectionStart = i; break;
+        }
+      }
+
+      if (sectionStart >= 0) {
+        // Find end of section
+        const lvl = (lines[sectionStart].match(/^(#+)/) || ['',''])[1].length;
+        let sectionEnd = lines.length;
+        for (let i = sectionStart + 1; i < lines.length; i++) {
+          const m = lines[i].match(/^(#+)/);
+          if (m && m[1].length <= lvl) { sectionEnd = i; break; }
+        }
+        // Inject fix before section end
+        lines.splice(sectionEnd, 0, '', '> **Suggested Fix:** ' + fixText, '');
+        state.roadmap = lines.join('\n');
+      } else {
+        // Append at end
+        state.roadmap += '\n\n---\n\n**Fix \u2014 ' + (gap.title || 'Gap') + ':** ' + fixText + '\n';
+      }
+
+      renderRoadmap();
+
+      state.appliedFixes.add(idx);
+      const card = document.getElementById('gap-card-' + idx);
+      const btn  = document.getElementById('fix-btn-' + idx);
+      if (card) card.classList.add('applied');
+      if (btn)  { btn.textContent = 'Applied \u2713'; btn.disabled = true; }
+    }
+
+    async function reReview() {
+      const btn = document.getElementById('re-review-btn');
+      if (btn) { btn.disabled = true; btn.textContent = 'Re-reviewing\u2026'; }
+      state.reviewing = true;
+
+      try {
+        const res = await fetch('/api/agent3/review', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ roadmap: state.roadmap, user_profile: state.profile })
+        });
+
+        if (!res.ok) {
+          const msg = await res.text().catch(() => '');
+          throw new Error(msg || 'HTTP ' + res.status);
+        }
+
+        const data = await res.json();
+        renderReviewer(data);
+
+      } catch (err) {
+        showToast(err.message || 'Re-review failed.');
+        if (btn) { btn.disabled = false; btn.textContent = 'Re-Review'; }
+      } finally {
+        state.reviewing = false;
+      }
+    }
+
+    function closeReviewer() {
+      document.getElementById('reviewer-overlay').classList.remove('visible');
+      document.getElementById('reviewer-panel').classList.remove('visible');
+    }
+
+    // ─────────────────────────────────────────────────────────
+    // TOAST
+    // ─────────────────────────────────────────────────────────
+    function showToast(msg) {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      toast.textContent = msg;
+      container.appendChild(toast);
+      setTimeout(function() { toast.remove(); }, 4000);
+    }
+
+    // ─────────────────────────────────────────────────────────
+    // UTILS
+    // ─────────────────────────────────────────────────────────
+    function escHtml(str) {
+      const d = document.createElement('div');
+      d.appendChild(document.createTextNode(String(str)));
+      return d.innerHTML;
+    }
+  </script>
+</body>
+</html>

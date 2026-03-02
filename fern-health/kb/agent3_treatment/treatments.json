@@ -1,0 +1,482 @@
+[
+  {
+    "name": "Combined Oral Contraceptive Pills (OCPs)",
+    "conditions": ["endometriosis", "pcos"],
+    "evidence_tier": "well_evidenced",
+    "description": "Synthetic estrogen and progestin combination pills that suppress the menstrual cycle and reduce endometriosis lesion activity. Also used in PCOS to regulate cycles and reduce androgen-related symptoms.",
+    "mechanism": "Suppresses ovulation by preventing LH surge; reduces endometrial tissue proliferation; lowers androgen levels in PCOS.",
+    "tags": ["hormonal", "pain", "cycle-regulation", "androgen", "pharmaceutical"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": true,
+      "notes": "Withdrawal bleeds on OCPs are not true menstrual periods — they are hormone-withdrawal bleeds. Underlying hormonal decline (e.g., diminished ovarian reserve in endometriosis) can go undetected while on the pill. Ovulation resumes after stopping for most women, though timing varies."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": ["B2 (riboflavin)", "B6 (pyridoxine)", "B12 (cobalamin)", "Folate", "Vitamin C", "Magnesium", "Zinc"],
+      "notes": "Long-term OCP use is associated with documented depletions of these nutrients. Consider supplementation or dietary attention if using long-term. This is information to discuss with your doctor, not a reason to avoid OCPs if they are the right fit."
+    },
+    "contraindications": ["history of blood clots (DVT/PE)", "migraine with aura", "uncontrolled hypertension", "active liver disease", "smoking over age 35", "hormone-sensitive cancers"],
+    "side_effects": "Nausea, breast tenderness, mood changes, decreased libido, breakthrough bleeding. Most side effects reduce after 2-3 months.",
+    "administration": "Daily pill; multiple formulations with varying estrogen/progestin types and doses. Work with your doctor to find the right formulation.",
+    "cost": "low-moderate"
+  },
+  {
+    "name": "Progestin-Only Therapy (Norethindrone Acetate)",
+    "conditions": ["endometriosis"],
+    "evidence_tier": "well_evidenced",
+    "description": "High-dose progestin that directly suppresses endometriosis lesion growth and significantly reduces pain. Often used when estrogen-containing contraceptives are contraindicated or not tolerated.",
+    "mechanism": "Creates a hypoestrogenic environment within the endometrium while maintaining systemic estrogen at lower levels than GnRH agonists. Directly inhibits endometrial cell proliferation.",
+    "tags": ["hormonal", "pain", "progestin", "pharmaceutical", "non-estrogen"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": true,
+      "notes": "Suppresses ovulation at therapeutic doses. Ovarian function typically resumes after discontinuation. Less impact on bone density than GnRH agonists."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Generally well-tolerated. Some women experience mood changes or irregular spotting, especially in the first few months."
+    },
+    "contraindications": ["undiagnosed vaginal bleeding", "active liver disease", "history of blood clots", "hormone-sensitive cancers"],
+    "side_effects": "Irregular bleeding (common in first 6 months), mood changes, acne, weight changes. Breakthrough bleeding often resolves with continued use.",
+    "administration": "Oral tablet, typically 5mg daily. Discuss dosing with your doctor.",
+    "cost": "low"
+  },
+  {
+    "name": "Levonorgestrel IUD (Mirena)",
+    "conditions": ["endometriosis"],
+    "evidence_tier": "well_evidenced",
+    "description": "Hormonal intrauterine device that releases levonorgestrel locally, reducing menstrual flow and endometriosis pain. Effective for 5-7 years.",
+    "mechanism": "Local progestin release thins endometrial lining and reduces menstrual flow by 90% or more. Reduces prostaglandin production and local inflammation.",
+    "tags": ["hormonal", "pain", "IUD", "long-acting", "pharmaceutical"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "Mirena acts primarily locally. Most women continue to ovulate. Natural hormonal cycling is largely preserved, though cycles may become irregular or absent."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Because ovulation is usually preserved, hormonal fluctuations continue — this can mean ongoing cycle-related symptoms in some women but preserved natural hormonal production."
+    },
+    "contraindications": ["active pelvic infection", "uterine anomalies that distort the cavity", "unexplained vaginal bleeding", "hormone-sensitive cancers"],
+    "side_effects": "Cramping and spotting after insertion (usually resolves in 3-6 months), possible ovarian cysts (usually resolve on their own).",
+    "administration": "Placed by a clinician; lasts 5-7 years. Can be removed if desired.",
+    "cost": "high upfront, low long-term"
+  },
+  {
+    "name": "GnRH Agonists (Lupron / Leuprolide)",
+    "conditions": ["endometriosis"],
+    "evidence_tier": "well_evidenced",
+    "description": "Medications that induce a temporary, reversible menopause-like state, dramatically reducing endometriosis activity and pain. Used short-term (3-6 months) due to side effect profile.",
+    "mechanism": "Downregulates GnRH receptors in the pituitary, halting estrogen production. Endometriosis lesions, which are estrogen-dependent, regress significantly.",
+    "tags": ["hormonal", "pain", "medical-menopause", "pharmaceutical", "short-term"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": true,
+      "notes": "Creates a medically-induced menopausal state. Ovarian function returns after stopping, but there is a documented risk of decreased ovarian reserve with prolonged use. Bone density loss is a significant concern — typically used with add-back hormonal therapy."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": ["Calcium", "Vitamin D"],
+      "notes": "Bone density loss begins within months. Calcium and Vitamin D supplementation is typically recommended during treatment. Add-back therapy (low-dose estrogen/progesterone) reduces side effects without eliminating effectiveness."
+    },
+    "contraindications": ["pregnancy", "osteoporosis", "use beyond 6 months without add-back therapy", "breastfeeding"],
+    "side_effects": "Hot flashes, vaginal dryness, mood changes, bone density loss, sleep disturbance. Significant side effect burden — this medication is powerful.",
+    "administration": "Monthly or 3-month injection, or nasal spray. Discuss duration carefully with your doctor — add-back therapy should be considered.",
+    "cost": "high"
+  },
+  {
+    "name": "Laparoscopic Excision Surgery",
+    "conditions": ["endometriosis"],
+    "evidence_tier": "well_evidenced",
+    "description": "Minimally invasive surgery to physically remove endometriosis lesions. Excision (cutting out) is superior to ablation (burning) for long-term pain relief and reducing recurrence.",
+    "mechanism": "Physical removal of endometriosis implants, adhesions, and nodules. Excision removes the full depth of the lesion, unlike ablation which only addresses the surface.",
+    "tags": ["surgery", "pain", "definitive", "non-hormonal", "excision"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "When performed by an experienced excision surgeon, surgery preserves ovarian tissue. Ovarian endometriomas (cysts) require careful technique to avoid damaging healthy ovarian tissue — this is an important discussion to have with your surgeon."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Post-surgical recovery benefits from adequate protein, Vitamin C, and zinc for wound healing. Some specialists recommend hormonal suppression post-surgery to prevent recurrence — discuss this trade-off with your surgeon."
+    },
+    "contraindications": ["inability to tolerate general anesthesia", "extensive bowel or ureter involvement may require specialized surgical team"],
+    "side_effects": "Surgical risks: infection, bleeding, injury to adjacent organs (rare with experienced surgeon), adhesion formation. Recurrence rates are lower with excision than ablation.",
+    "administration": "Outpatient or short-stay hospital procedure. Recovery typically 1-2 weeks. Seek a surgeon who specializes in excision.",
+    "cost": "high"
+  },
+  {
+    "name": "NSAIDs (Ibuprofen, Naproxen)",
+    "conditions": ["endometriosis"],
+    "evidence_tier": "well_evidenced",
+    "description": "Non-steroidal anti-inflammatory drugs that reduce prostaglandin production and provide meaningful pain relief for endometriosis-related cramping and inflammation.",
+    "mechanism": "COX enzyme inhibition reduces prostaglandin synthesis — prostaglandins are key drivers of endometriosis pain. Starting NSAIDs 1-2 days before period onset improves effectiveness.",
+    "tags": ["pain", "anti-inflammatory", "OTC", "non-hormonal", "accessible"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "Chronic high-dose NSAID use may theoretically affect ovulation (luteinized unruptured follicle syndrome) — a concern primarily for women actively trying to conceive. For pain management only, this risk is generally not clinically significant."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Long-term daily NSAID use can cause GI irritation. Take with food. If using regularly, discuss stomach protection with your doctor. Not suitable as a sole long-term strategy."
+    },
+    "contraindications": ["kidney disease", "active GI ulcers", "blood clotting disorders", "certain heart conditions"],
+    "side_effects": "GI upset, stomach lining irritation with long-term use, kidney stress with overuse.",
+    "administration": "Over the counter. Follow package directions. Pre-emptive dosing (starting before pain peaks) is more effective than reactive dosing.",
+    "cost": "very low"
+  },
+  {
+    "name": "Dienogest",
+    "conditions": ["endometriosis"],
+    "evidence_tier": "well_evidenced",
+    "description": "A progestin specifically developed and approved for endometriosis treatment. Strong evidence for pain reduction and lesion regression. Not available in all countries.",
+    "mechanism": "Selective progestin receptor agonist that suppresses estrogen locally within endometriosis lesions, induces lesion regression, and is anti-inflammatory.",
+    "tags": ["hormonal", "pain", "progestin", "pharmaceutical", "targeted"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": true,
+      "notes": "Suppresses ovulation. Ovarian function returns after stopping. Less impact on bone density than GnRH agonists."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "May cause irregular bleeding, particularly in the first months. Some women experience mood changes."
+    },
+    "contraindications": ["history of blood clots", "active liver disease", "undiagnosed vaginal bleeding", "pregnancy"],
+    "side_effects": "Irregular bleeding (very common, often resolves), headache, depressed mood, weight change.",
+    "administration": "Daily oral tablet. Discuss dosing with your doctor.",
+    "cost": "moderate"
+  },
+  {
+    "name": "Metformin",
+    "conditions": ["pcos"],
+    "evidence_tier": "well_evidenced",
+    "description": "An insulin-sensitizing medication originally developed for type 2 diabetes, now extensively used in PCOS to address insulin resistance, regulate cycles, and improve metabolic markers.",
+    "mechanism": "Reduces hepatic glucose production and improves peripheral insulin sensitivity. In PCOS, lowering insulin levels reduces the signal that drives ovarian androgen overproduction.",
+    "tags": ["insulin", "metabolic", "cycle-regulation", "pharmaceutical", "fertility"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "Metformin does not suppress ovulation — it can actually help restore ovulation in women with anovulatory PCOS. It supports natural cycle restoration."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": ["B12 (cobalamin)", "Folate"],
+      "notes": "Long-term metformin use is associated with B12 depletion. Annual B12 testing and supplementation is often recommended. Folate status should also be monitored."
+    },
+    "contraindications": ["kidney disease (eGFR threshold applies)", "liver disease", "history of lactic acidosis", "IV contrast dye procedures (temporary hold)"],
+    "side_effects": "GI side effects (nausea, diarrhea) are common, especially at start. Taking with food and starting at low dose reduces this significantly. Extended-release formulation often better tolerated.",
+    "administration": "Oral tablet, typically starting at low dose and titrating. Extended-release often preferred. Discuss dosing with your doctor.",
+    "cost": "very low"
+  },
+  {
+    "name": "Spironolactone",
+    "conditions": ["pcos"],
+    "evidence_tier": "well_evidenced",
+    "description": "An androgen-blocking medication that effectively reduces hirsutism (excess hair), acne, and scalp hair loss associated with elevated androgens in PCOS.",
+    "mechanism": "Androgen receptor blocker that prevents testosterone and DHT from binding to receptors in hair follicles and skin.",
+    "tags": ["androgen", "hair", "acne", "pharmaceutical", "anti-androgen"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "Spironolactone does not suppress ovulation. However, it is teratogenic and requires reliable contraception — an important consideration for sexually active women."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Can cause elevated potassium — avoid high-potassium supplements and have potassium monitored. Can cause increased urination and occasional dizziness."
+    },
+    "contraindications": ["pregnancy or unprotected sex (teratogenic)", "kidney disease", "hyperkalemia", "taking potassium-sparing diuretics"],
+    "side_effects": "Frequent urination, dizziness, breast tenderness, menstrual irregularity, elevated potassium.",
+    "administration": "Oral tablet. Discuss dosing with your doctor. Typically used with contraception.",
+    "cost": "low"
+  },
+  {
+    "name": "Inositol (Myo-Inositol + D-Chiro-Inositol)",
+    "conditions": ["pcos"],
+    "evidence_tier": "well_evidenced",
+    "description": "A naturally occurring compound with strong evidence for improving insulin sensitivity, restoring menstrual regularity, reducing androgens, and improving egg quality in PCOS. The 40:1 ratio of myo-inositol to D-chiro-inositol is best supported.",
+    "mechanism": "Acts as a second messenger in insulin signaling pathways. Improves cellular response to insulin, reducing compensatory hyperinsulinemia that drives androgen overproduction in PCOS.",
+    "tags": ["natural", "insulin", "cycle-regulation", "fertility", "androgen", "supplement"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "Inositol supports ovulation restoration rather than suppressing it. Multiple studies show improved ovulation rates and egg quality, making it particularly relevant for women with PCOS who want to conceive or preserve natural cycles."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Generally very well tolerated. May cause mild GI upset at high doses. Look for the 40:1 myo-inositol to D-chiro-inositol ratio in formulations."
+    },
+    "contraindications": ["generally very safe; no significant contraindications identified in literature"],
+    "side_effects": "Mild GI discomfort at high doses. Generally very well tolerated.",
+    "administration": "Powder or capsule supplement. Common dose is 2g myo-inositol + 50mg D-chiro-inositol twice daily, but discuss with your doctor.",
+    "cost": "moderate"
+  },
+  {
+    "name": "Low-Glycemic / Anti-Inflammatory Diet",
+    "conditions": ["endometriosis", "pcos"],
+    "evidence_tier": "well_evidenced",
+    "description": "Dietary approach focusing on reducing blood sugar spikes and systemic inflammation. Strong evidence in PCOS for improving insulin sensitivity. Emerging but promising evidence in endometriosis for reducing inflammatory disease activity.",
+    "mechanism": "Reduces insulin spikes that drive androgen production in PCOS. Anti-inflammatory foods (omega-3 rich fish, vegetables, berries, olive oil) reduce prostaglandin and cytokine levels that contribute to endometriosis pain and progression.",
+    "tags": ["natural", "diet", "lifestyle", "insulin", "inflammation", "accessible", "pain"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "Diet interventions support natural hormonal balance rather than suppressing it. Reducing insulin resistance in PCOS can restore ovulation naturally."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "An anti-inflammatory diet emphasizes: fatty fish (salmon, sardines), colorful vegetables, berries, olive oil, nuts and seeds, legumes. Reduces: refined carbohydrates, sugar, processed foods, trans fats. Gluten and dairy elimination has patient-reported benefit in endometriosis — evidence is limited but risk of a trial elimination is low."
+    },
+    "contraindications": ["eating disorder history — approach dietary changes carefully with professional support"],
+    "side_effects": "No significant risks. Transition period may cause energy changes.",
+    "administration": "Lifestyle change. Consider working with a dietitian familiar with endometriosis or PCOS.",
+    "cost": "low-moderate"
+  },
+  {
+    "name": "Pelvic Floor Physical Therapy",
+    "conditions": ["endometriosis"],
+    "evidence_tier": "promising",
+    "description": "Specialized physical therapy targeting pelvic floor muscle dysfunction that commonly co-occurs with endometriosis. Addresses pain during sex, urinary symptoms, bowel symptoms, and central sensitization to pain.",
+    "mechanism": "Releases hypertonic (overly tight) pelvic floor muscles, addresses trigger points, and works with the nervous system to reduce pain sensitization. Endometriosis often causes adaptive muscle guarding that persists even without active lesions.",
+    "tags": ["natural", "pain", "physical-therapy", "non-hormonal", "sex-pain", "accessible"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "No impact on ovarian function. Purely mechanical/neurological intervention."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Particularly helpful if you experience pain during sex (dyspareunia), bowel or bladder symptoms, or pelvic tightness. Find a PT who specializes in pelvic floor dysfunction and ideally has experience with endometriosis."
+    },
+    "contraindications": ["active pelvic infection"],
+    "side_effects": "Temporary soreness after sessions. No significant risks.",
+    "administration": "Weekly sessions initially. Many techniques can be practiced at home.",
+    "cost": "moderate (may be covered by insurance)"
+  },
+  {
+    "name": "N-Acetylcysteine (NAC)",
+    "conditions": ["endometriosis", "pcos"],
+    "evidence_tier": "promising",
+    "description": "A potent antioxidant supplement with promising data for reducing endometriosis cyst size (endometriomas) and improving insulin sensitivity and egg quality in PCOS.",
+    "mechanism": "Precursor to glutathione (the body's master antioxidant). Reduces oxidative stress in the pelvic environment, which is elevated in endometriosis. In PCOS, reduces inflammation and improves insulin signaling.",
+    "tags": ["natural", "antioxidant", "supplement", "endometrioma", "insulin", "fertility"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "Does not suppress ovulation. A small Italian RCT showed NAC reduced endometrioma size and supported ovulation. May support ovarian health through antioxidant mechanisms."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Generally very well tolerated. Take on empty stomach for best absorption. Has a sulfur smell that some find unpleasant."
+    },
+    "contraindications": ["nitroglycerin or similar medications (can enhance effects)", "active asthma (use caution)"],
+    "side_effects": "Mild GI upset, sulfur-containing burps. Generally well tolerated.",
+    "administration": "Supplement, common doses range widely. Discuss dosing with your doctor. Typically taken 3 days on, 3 days off in some endometriosis protocols.",
+    "cost": "low"
+  },
+  {
+    "name": "Omega-3 Fatty Acids (Fish Oil)",
+    "conditions": ["endometriosis", "pcos"],
+    "evidence_tier": "promising",
+    "description": "Anti-inflammatory fatty acids with consistent evidence for reducing menstrual pain and inflammation in endometriosis, and improving cardiovascular risk markers and androgen levels in PCOS.",
+    "mechanism": "Converts to anti-inflammatory prostaglandins (PGE3 series) that compete with pro-inflammatory prostaglandins that drive endometriosis pain. In PCOS, reduces triglycerides and may modestly reduce testosterone.",
+    "tags": ["natural", "anti-inflammatory", "pain", "supplement", "accessible"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "No suppression of ovulation. Some evidence suggests improved egg quality with adequate omega-3 status."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Look for high EPA content (at least 500-1000mg EPA per serving). Fish oil from reputable brands tested for heavy metals. Algae-based omega-3 is a vegan alternative."
+    },
+    "contraindications": ["blood thinners — high-dose fish oil has mild antiplatelet effects; discuss with your doctor if on anticoagulants"],
+    "side_effects": "Fishy burps (take with food, refrigerate, or use enteric coated). Minor GI upset.",
+    "administration": "Supplement. Discuss dose with your doctor.",
+    "cost": "low-moderate"
+  },
+  {
+    "name": "Melatonin",
+    "conditions": ["endometriosis"],
+    "evidence_tier": "promising",
+    "description": "A hormone with significant antioxidant properties that shows promising results for reducing endometriosis pain in clinical trials, beyond its sleep effects.",
+    "mechanism": "Potent antioxidant and anti-inflammatory. Reduces oxidative stress in peritoneal fluid where endometriosis thrives. Small RCTs show significant reductions in pain and NSAID use.",
+    "tags": ["natural", "pain", "antioxidant", "supplement", "sleep"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "Does not suppress ovulation at supplemental doses. May support egg quality — some fertility research suggests it improves oocyte quality by reducing oxidative damage."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Take 1-2 hours before sleep. May improve sleep quality which itself benefits pain management. Start low and increase gradually."
+    },
+    "contraindications": ["autoimmune conditions (theoretical concern — discuss with doctor)", "certain antidepressants and blood thinners — discuss interactions"],
+    "side_effects": "Morning grogginess (reduce dose if this occurs), vivid dreams.",
+    "administration": "Supplement, taken at night. Discuss dosing with your doctor.",
+    "cost": "very low"
+  },
+  {
+    "name": "Zinc",
+    "conditions": ["endometriosis", "pcos"],
+    "evidence_tier": "promising",
+    "description": "An essential mineral with anti-inflammatory and antioxidant properties. Low zinc levels are documented in both endometriosis and PCOS. Supplementation shows promise for pain reduction and androgen modulation.",
+    "mechanism": "Inhibits 5-alpha-reductase (the enzyme that converts testosterone to DHT, the more potent androgen). Anti-inflammatory via NF-kB pathway inhibition. Antioxidant cofactor.",
+    "tags": ["natural", "supplement", "anti-inflammatory", "androgen", "pain"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "Zinc is essential for normal ovarian function and egg maturation. Correcting deficiency may support rather than suppress ovarian health."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": ["Copper (with high-dose zinc supplementation)"],
+      "notes": "OCP use is associated with zinc depletion. Do not mega-dose — excess zinc can deplete copper. Take with food to reduce nausea. Zinc picolinate or glycinate are better absorbed forms."
+    },
+    "contraindications": ["avoid very high doses (>40mg/day long term) without medical supervision"],
+    "side_effects": "Nausea if taken on empty stomach. Copper depletion with high doses.",
+    "administration": "Supplement. Discuss dosing with your doctor.",
+    "cost": "very low"
+  },
+  {
+    "name": "Spearmint Tea",
+    "conditions": ["pcos"],
+    "evidence_tier": "promising",
+    "description": "Spearmint has documented anti-androgenic properties. Two small clinical trials show meaningful reductions in free testosterone with twice-daily spearmint tea consumption.",
+    "mechanism": "Spearmint inhibits 5-alpha-reductase activity and shows anti-androgen effects in animal and human studies. Reduces free testosterone levels.",
+    "tags": ["natural", "tea", "androgen", "hair", "acne", "accessible"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "No evidence of ovulation suppression. As a mild anti-androgen, it supports rather than disrupts hormonal balance."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Two cups per day is the studied protocol. Results in studies were seen over 30 days. Minimal risk — it is simply tea."
+    },
+    "contraindications": ["generally considered very safe; no significant contraindications identified"],
+    "side_effects": "Essentially none at normal consumption levels.",
+    "administration": "2 cups of spearmint herbal tea per day. Use spearmint-specific tea, not general mint.",
+    "cost": "very low"
+  },
+  {
+    "name": "Vitamin D",
+    "conditions": ["endometriosis", "pcos"],
+    "evidence_tier": "promising",
+    "description": "Vitamin D deficiency is common in both endometriosis and PCOS and is associated with greater disease severity. Supplementation may reduce pain in endometriosis and improve insulin sensitivity and androgen levels in PCOS.",
+    "mechanism": "Vitamin D receptors are expressed in endometrial tissue. Acts as an immune modulator and has anti-inflammatory properties. In PCOS, improves insulin signaling and may modulate androgen production.",
+    "tags": ["natural", "supplement", "immune", "pain", "insulin", "accessible"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "Does not suppress ovulation. Adequate Vitamin D may support ovarian function — low D is associated with poorer IVF outcomes."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Test your level before supplementing — many women with endometriosis are deficient. Vitamin D is fat-soluble; take with a meal containing fat. K2 is often taken alongside D3 for cardiovascular health."
+    },
+    "contraindications": ["hypercalcemia", "kidney stones — discuss with doctor before high-dose supplementation"],
+    "side_effects": "Toxicity is possible with very high doses. Test and target levels with your doctor's guidance.",
+    "administration": "Supplement; dosing should be guided by your blood level (25-OH Vitamin D test).",
+    "cost": "very low"
+  },
+  {
+    "name": "Berberine",
+    "conditions": ["pcos"],
+    "evidence_tier": "promising",
+    "description": "A plant-derived compound with significant insulin-sensitizing effects comparable to metformin in some studies. Also shows anti-androgen properties and improvements in metabolic markers in PCOS.",
+    "mechanism": "Activates AMPK (the same pathway metformin activates), improving glucose uptake and reducing insulin resistance. May also directly reduce androgen synthesis in the ovaries.",
+    "tags": ["natural", "supplement", "insulin", "androgen", "metabolic", "cycle-regulation"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "Like metformin, berberine may help restore ovulation by reducing insulin-driven androgen excess. Does not suppress ovulation."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Berberine has significant drug interactions — particularly with blood thinners, some antibiotics, and medications metabolized by CYP3A4. Do not take with metformin without medical supervision."
+    },
+    "contraindications": ["pregnancy and breastfeeding", "medications metabolized by CYP3A4", "blood thinners", "should not be combined with metformin without medical supervision"],
+    "side_effects": "GI side effects (nausea, diarrhea, constipation) — take with meals. May cause low blood sugar if combined with other diabetes medications.",
+    "administration": "Supplement. Discuss dosing with your doctor. Due to interaction potential, medical supervision is important.",
+    "cost": "moderate"
+  },
+  {
+    "name": "Magnesium",
+    "conditions": ["endometriosis", "pcos"],
+    "evidence_tier": "promising",
+    "description": "Magnesium deficiency is common in women with endometriosis and PCOS and is associated with increased pain sensitivity and insulin resistance. Supplementation may reduce menstrual pain and muscle tension.",
+    "mechanism": "Involved in over 300 enzymatic reactions. Relaxes smooth muscle (reducing cramping), modulates calcium channels involved in pain signaling, and improves insulin sensitivity. OCP use is a documented cause of magnesium depletion.",
+    "tags": ["natural", "supplement", "pain", "insulin", "accessible", "sleep"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "Magnesium supports natural hormonal pathways. Correcting deficiency may support rather than suppress ovarian function."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Multiple forms available: glycinate is best for sleep and least likely to cause GI effects; citrate has a mild laxative effect; oxide is poorly absorbed. OCP use depletes magnesium — supplementation is especially worth considering if you are on OCPs."
+    },
+    "contraindications": ["kidney disease (kidneys excrete magnesium; impaired kidneys can lead to excess accumulation)"],
+    "side_effects": "Loose stools at high doses (use glycinate form to minimize this).",
+    "administration": "Supplement, often taken at night. Discuss dosing with your doctor.",
+    "cost": "very low"
+  },
+  {
+    "name": "Resveratrol",
+    "conditions": ["endometriosis", "pcos"],
+    "evidence_tier": "emerging",
+    "description": "A polyphenol found in red grapes and berries with anti-inflammatory and anti-estrogenic properties that have shown some activity against endometriosis in small studies. Limited formal research, but patient-reported interest is high.",
+    "mechanism": "Acts as a selective estrogen receptor modulator (SERM) with anti-inflammatory properties. In small studies, reduced endometriosis lesion size and pain scores. In PCOS, may improve testosterone and insulin markers.",
+    "tags": ["natural", "antioxidant", "supplement", "emerging", "anti-inflammatory"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "No evidence of ovulation suppression. Preliminary data suggests possible benefit for egg quality."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Bioavailability from food sources is low — supplemental forms have better absorption. Research is promising but still in early stages."
+    },
+    "contraindications": ["blood thinners (mild antiplatelet effect)", "hormone-sensitive conditions — theoretical caution given SERM activity"],
+    "side_effects": "Generally well tolerated at supplemental doses. Limited long-term safety data.",
+    "administration": "Supplement. Discuss dosing with your doctor. Evidence is preliminary — approach as a complement to, not replacement for, evidenced treatments.",
+    "cost": "moderate"
+  },
+  {
+    "name": "Curcumin (Turmeric Extract)",
+    "conditions": ["endometriosis", "pcos"],
+    "evidence_tier": "emerging",
+    "description": "The active compound in turmeric with powerful anti-inflammatory and antioxidant properties. Preclinical and small clinical studies show it may inhibit endometriosis lesion growth. Limited formal research in humans.",
+    "mechanism": "Inhibits NF-kB and COX-2 pathways, reducing inflammatory cytokines implicated in endometriosis progression. Anti-angiogenic effects may reduce blood supply to lesions.",
+    "tags": ["natural", "anti-inflammatory", "antioxidant", "supplement", "emerging"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "No evidence of ovulation suppression. Very limited human data specifically on ovarian function."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Standard curcumin has very poor bioavailability. Look for formulations with piperine (black pepper extract) or phospholipid complex (like Meriva) that significantly improve absorption. High doses of turmeric in food are generally safe and worth including in diet regardless."
+    },
+    "contraindications": ["gallbladder disease or bile duct obstruction", "blood thinners at high doses", "pregnancy at medicinal doses"],
+    "side_effects": "GI upset at high doses. Staining of clothing/surfaces.",
+    "administration": "Supplement with bioavailability enhancer, or liberal culinary use. Evidence is preliminary. Discuss dosing with your doctor.",
+    "cost": "low"
+  },
+  {
+    "name": "Acupuncture",
+    "conditions": ["endometriosis"],
+    "evidence_tier": "emerging",
+    "description": "Some women report meaningful pain reduction with acupuncture for endometriosis. A Cochrane review found insufficient high-quality evidence to draw firm conclusions, but several smaller studies show benefit for pain and quality of life.",
+    "mechanism": "Proposed mechanisms include modulation of pain signaling, reduction of inflammatory cytokines, and influence on the autonomic nervous system. Evidence is limited and mechanistic understanding is incomplete.",
+    "tags": ["natural", "pain", "emerging", "complementary", "non-hormonal"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "No impact on ovarian function. Some fertility research shows possible benefit for ovarian response — evidence is preliminary."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Risk is very low when performed by a licensed practitioner. Often works best as a complement to other treatments. Some women find it helpful for stress and sleep alongside pain."
+    },
+    "contraindications": ["blood thinners (bruising risk)", "pacemakers (if electrical stimulation used)", "active infection at needle sites"],
+    "side_effects": "Bruising, soreness at needle sites. Rare adverse events with licensed practitioners.",
+    "administration": "Licensed acupuncturist, ideally with experience in women's health or pain conditions.",
+    "cost": "moderate (rarely covered by insurance)"
+  },
+  {
+    "name": "Probiotics (Gut Microbiome Support)",
+    "conditions": ["endometriosis", "pcos"],
+    "evidence_tier": "emerging",
+    "description": "Emerging research links gut microbiome dysbiosis to both endometriosis and PCOS, through estrogen metabolism and inflammatory pathways. Probiotic supplementation and dietary fiber are being investigated as adjunct approaches.",
+    "mechanism": "The estrobolome (gut bacteria that metabolize estrogen) influences circulating estrogen levels. Dysbiosis may increase recirculation of estrogen metabolites, potentially worsening estrogen-dependent conditions. Gut inflammation may also affect systemic inflammation.",
+    "tags": ["natural", "supplement", "gut-health", "emerging", "microbiome"],
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "notes": "No evidence of ovulation suppression. A healthy gut microbiome may support hormonal balance, though research is very preliminary."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "notes": "Focus on fiber-rich foods (prebiotics) alongside probiotics. High-fiber diet supports estrogen metabolism through the gut. Fermented foods (yogurt, kefir, sauerkraut, kimchi) are natural probiotic sources."
+    },
+    "contraindications": ["immunocompromised state — consult doctor before probiotic supplementation"],
+    "side_effects": "Initial GI adjustment (bloating, gas) — usually resolves within 1-2 weeks.",
+    "administration": "Probiotic supplement and/or fermented foods. Research on optimal strains and doses is still developing.",
+    "cost": "low-moderate"
+  }
+]

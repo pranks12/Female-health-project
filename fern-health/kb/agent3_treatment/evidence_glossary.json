@@ -1,0 +1,17 @@
+{
+  "well_evidenced": {
+    "label": "Well-Evidenced",
+    "definition": "Supported by randomized controlled trials (RCTs) or systematic reviews",
+    "patient_language": "Strong research supports this option"
+  },
+  "promising": {
+    "label": "Promising",
+    "definition": "Supported by observational studies, case series, or expert consensus without RCT confirmation",
+    "patient_language": "Early research looks encouraging, but more studies are needed"
+  },
+  "emerging": {
+    "label": "Emerging / Complementary",
+    "definition": "Limited formal research; primarily patient-reported or traditional medicine",
+    "patient_language": "Limited research so far, but some women report benefit"
+  }
+}
