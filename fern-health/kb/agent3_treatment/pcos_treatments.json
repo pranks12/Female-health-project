@@ -1,0 +1,918 @@
+[
+  {
+    "id": "metformin_pcos",
+    "name": "Metformin for PCOS",
+    "also_known_as": ["Glucophage", "insulin-sensitizing therapy"],
+    "condition": ["pcos"],
+    "category": "pharmaceutical",
+    "requires_prescription": true,
+    "requires_specialist": false,
+    "specialist_type": "primary care physician, endocrinologist, or gynecologist",
+    "evidence_tier": "well_evidenced",
+    "evidence_summary": "Multiple randomized controlled trials and meta-analyses show that metformin improves insulin sensitivity, can help restore ovulation, and modestly supports weight and androgen reduction in PCOS, especially in insulin-resistant patients.",
+    "evidence_sources": [
+      "Endocrine Society PCOS Clinical Practice Guideline",
+      "Systematic reviews of metformin in PCOS",
+      "Natural Fertility Info – PCOS diet and metformin discussion"
+    ],
+    "what_it_does": "Improves insulin sensitivity and reduces hepatic glucose output, which can lower insulin and androgen levels, support more regular ovulation, and improve metabolic risk markers.",
+    "typical_timeline": "GI side effects are often felt in the first 1–2 weeks; improvements in cycles, ovulation, and metabolic markers typically appear over 3–6 months of consistent use.",
+    "best_for": [
+      "PCOS with insulin resistance or prediabetes",
+      "Women with irregular or absent ovulation related to high insulin",
+      "Patients preparing for fertility treatment who need metabolic optimization"
+    ],
+    "not_recommended_for": [
+      "Individuals with significant kidney or liver disease",
+      "Patients with a history of lactic acidosis or metformin intolerance",
+      "Those with predominantly lean PCOS without insulin issues, unless clearly indicated"
+    ],
+    "side_effects": [
+      "Nausea, diarrhea, abdominal discomfort (especially at initiation or with dose increases)",
+      "Rare risk of lactic acidosis in susceptible individuals",
+      "Possible vitamin B12 lowering over long-term use"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "pcos_low_gi_diet",
+      "pcos_inositol_40_1",
+      "pcos_berberine",
+      "pcos_exercise_lifestyle"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "not_applicable",
+      "fertility_preservation": "high",
+      "avoid_surgery": "high",
+      "natural_options_only": "low",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "Metformin does not suppress ovulation; it can help restore more regular ovulatory cycles in insulin-resistant PCOS, supporting both fertility and long-term ovarian health signalling."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": ["vitamin B12 (possible with long-term use)"],
+      "masking_risks": "Improved cycle regularity reflects metabolic improvement rather than masking; however, cycles may appear more regular even if underlying lifestyle drivers are not fully addressed.",
+      "natural_cycle_alternatives": [
+        "pcos_inositol_40_1",
+        "pcos_low_gi_diet",
+        "pcos_exercise_lifestyle"
+      ]
+    },
+    "cost_accessibility": "Generic metformin is widely available at low cost and often covered by insurance; extended-release forms may be slightly more expensive but can improve tolerability.",
+    "self_directed": false,
+    "patient_note": "Ask your clinician about starting with a low dose and titrating up slowly, monitoring B12 over time, and combining metformin with diet and movement changes for best results."
+  },
+  {
+    "id": "pcos_inositol_40_1",
+    "name": "Myo-Inositol and D-Chiro-Inositol (40:1 Ratio)",
+    "also_known_as": ["MI/DCI 40:1", "inositol for PCOS"],
+    "condition": ["pcos"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "well_evidenced",
+    "evidence_summary": "Randomized controlled trials show that myo-inositol, alone or in a 40:1 myo- to D-chiro-inositol combination, improves ovulation, insulin sensitivity, and androgen levels in many women with PCOS.",
+    "evidence_sources": [
+      "Natural Fertility Info – Studies Show Benefits of Myo-Inositol & D-Chiro-Inositol for Women with PCOS",
+      "Peer-reviewed RCTs on inositol in PCOS"
+    ],
+    "what_it_does": "Acts as an insulin-sensitizing agent and intracellular signaling molecule, helping normalize insulin and androgen levels and support more regular ovulation and improved egg quality.",
+    "typical_timeline": "Cycle changes and improved ovulation may appear after 3–6 months of daily use; some women notice changes in PMS, cravings, or blood sugar sooner.",
+    "best_for": [
+      "PCOS with irregular or absent ovulation",
+      "Women with insulin resistance who prefer a non-pharmaceutical option or want to augment metformin",
+      "Those preparing for conception and seeking to support egg quality"
+    ],
+    "not_recommended_for": [
+      "Individuals with significant hypoglycemia risk without monitoring",
+      "Patients already on multiple insulin-sensitizing drugs without clinician oversight"
+    ],
+    "side_effects": [
+      "Generally well tolerated; mild GI upset or dizziness in some users"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "metformin_pcos",
+      "pcos_low_gi_diet",
+      "pcos_exercise_lifestyle",
+      "pcos_berberine"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "not_applicable",
+      "fertility_preservation": "high",
+      "avoid_surgery": "high",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "Inositol supports more regular ovulatory cycles rather than suppressing them, and may improve oocyte quality in insulin-resistant PCOS without masking ovarian decline."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Improved cycle patterns reflect underlying metabolic support; they do not artificially regularize cycles in the way hormonal contraceptives do.",
+      "natural_cycle_alternatives": []
+    },
+    "cost_accessibility": "Available as an over-the-counter supplement; cost varies by brand and dose but is typically moderate.",
+    "self_directed": true,
+    "patient_note": "Look for products that clearly state a 40:1 myo- to D-chiro-inositol ratio and be consistent for several months before judging its effect on cycles and symptoms."
+  },
+  {
+    "id": "pcos_berberine",
+    "name": "Berberine for PCOS",
+    "also_known_as": ["berberine supplement"],
+    "condition": ["pcos"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "promising",
+    "evidence_summary": "Randomized trials in women with PCOS and metabolic syndrome show that berberine improves insulin sensitivity, glucose and lipid profiles, and may reduce androgens; in some studies it performs similarly or better than metformin on metabolic endpoints.",
+    "evidence_sources": [
+      "Natural Fertility Info – Research Shows Berberine Benefits PCOS",
+      "RCTs comparing berberine and metformin in PCOS"
+    ],
+    "what_it_does": "Activates AMPK and other pathways to improve insulin sensitivity and lipid metabolism, potentially lowering insulin and androgen levels and supporting weight and metabolic health in PCOS.",
+    "typical_timeline": "Metabolic changes can appear over 2–3 months; effects on weight, cycle regularity, and androgens are often evaluated over 3–6 months.",
+    "best_for": [
+      "PCOS with clear insulin resistance or metabolic syndrome",
+      "Women who cannot tolerate metformin or want a botanical insulin-sensitizer",
+      "Patients focusing on cholesterol, triglycerides, and blood sugar"
+    ],
+    "not_recommended_for": [
+      "Pregnancy or breastfeeding without specialist guidance",
+      "Patients on multiple hypoglycemic drugs without close monitoring",
+      "Those with chronic liver disease without clinician oversight"
+    ],
+    "side_effects": [
+      "GI upset, constipation or diarrhea",
+      "Potential interactions with medications metabolized by CYP enzymes or affecting blood sugar"
+    ],
+    "conflicts_with": [
+      "metformin_pcos"
+    ],
+    "works_well_with": [
+      "pcos_low_gi_diet",
+      "pcos_exercise_lifestyle",
+      "pcos_inositol_40_1"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "not_applicable",
+      "fertility_preservation": "moderate",
+      "avoid_surgery": "high",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "Berberine supports metabolic pathways without artificially suppressing ovulation, so ovulatory patterns remain visible for tracking ovarian health."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Improved metabolic markers and cycles reflect underlying physiology; blood sugar should be monitored when used with other insulin-lowering treatments.",
+      "natural_cycle_alternatives": [
+        "pcos_inositol_40_1",
+        "pcos_low_gi_diet"
+      ]
+    },
+    "cost_accessibility": "Moderately priced supplement; quality and potency vary by brand.",
+    "self_directed": true,
+    "patient_note": "If you are already on metformin or other blood sugar medications, discuss berberine with your clinician to avoid overly low glucose and to coordinate monitoring."
+  },
+  {
+    "id": "pcos_low_gi_diet",
+    "name": "Low-Glycemic Index Diet for PCOS",
+    "also_known_as": [
+      "low-GI diet",
+      "PCOS fertility diet",
+      "insulin-aware eating for PCOS"
+    ],
+    "condition": ["pcos"],
+    "category": "dietary",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "well_evidenced",
+    "evidence_summary": "Clinical studies and lifestyle trials show that low-glycemic, whole-food diets improve insulin sensitivity, support weight management, and improve menstrual regularity and ovulation in many women with PCOS.",
+    "evidence_sources": [
+      "Natural Fertility Info – PCOS Fertility Diet",
+      "Polycystic Ovary Syndrome: Study Shows Power of Diet, Lifestyle & Herbs"
+    ],
+    "what_it_does": "Reduces rapid blood sugar spikes by emphasizing whole, fiber-rich carbohydrates, adequate protein, and healthy fats, which lowers insulin demand and downstream androgen production.",
+    "typical_timeline": "Energy, cravings, and blood sugar swings may improve within weeks; changes in weight, cycles, and ovulation typically appear over 3–6 months of consistent dietary changes.",
+    "best_for": [
+      "PCOS with insulin resistance or weight gain",
+      "Women wanting to improve cycles and fertility through lifestyle first",
+      "Those combining diet with supplements or medications like metformin or inositol"
+    ],
+    "not_recommended_for": [
+      "Individuals with a history of restrictive eating disorders without professional support",
+      "Patients requiring specialized medical diets that conflict with low-GI patterns"
+    ],
+    "side_effects": [
+      "Transient fatigue or cravings while adjusting from high-sugar eating patterns",
+      "Potential under-fueling if calorie intake is unintentionally too low"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "metformin_pcos",
+      "pcos_inositol_40_1",
+      "pcos_berberine",
+      "pcos_exercise_lifestyle",
+      "pcos_time_restricted_eating"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "not_applicable",
+      "fertility_preservation": "high",
+      "avoid_surgery": "high",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "By lowering insulin and supporting metabolic health, a low-glycemic diet can help restore more regular ovulatory cycles without suppressing natural ovarian signaling."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Diet supports underlying physiology; it does not artificially normalize cycle length in the way contraceptives do.",
+      "natural_cycle_alternatives": []
+    },
+    "cost_accessibility": "Implemented through food choices rather than medications; cost depends on food availability but can often be achieved by substituting processed foods with whole staples.",
+    "self_directed": true,
+    "patient_note": "Focus on adding fiber-rich carbs, protein, and healthy fats to each meal rather than just removing foods, and track cycles, energy, and cravings over several months."
+  },
+  {
+    "id": "pcos_time_restricted_eating",
+    "name": "Time-Restricted Eating for PCOS",
+    "also_known_as": ["TRE", "intermittent fasting (time-restricted)"],
+    "condition": ["pcos"],
+    "category": "dietary",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "emerging",
+    "evidence_summary": "Emerging research in metabolic syndrome and small PCOS-focused studies suggest that early time-restricted eating (e.g., 10–12 hour daytime eating window) may improve insulin sensitivity and weight regulation, but robust PCOS-specific RCTs are limited.",
+    "evidence_sources": [
+      "Lifestyle and diet studies referenced in Natural Fertility Info PCOS content",
+      "Metabolic syndrome time-restricted eating trials"
+    ],
+    "what_it_does": "Concentrates food intake within a defined daily window, allowing a longer fasting period that can improve insulin dynamics, circadian hormone rhythms, and appetite regulation.",
+    "typical_timeline": "Blood sugar and appetite changes may occur within weeks; weight, cycle, and energy shifts are usually assessed over 2–3 months.",
+    "best_for": [
+      "PCOS with insulin resistance and weight management challenges",
+      "Women with irregular snacking patterns or late-night eating",
+      "Those already following a whole-food, low-GI pattern seeking further metabolic benefit"
+    ],
+    "not_recommended_for": [
+      "Women who are underweight or have a history of disordered eating",
+      "Pregnant or breastfeeding women without specialist guidance",
+      "Individuals on insulin or sulfonylureas without medical oversight due to hypoglycemia risk"
+    ],
+    "side_effects": [
+      "Hunger, irritability, or low energy during adaptation",
+      "Overeating during the eating window if not balanced"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "pcos_low_gi_diet",
+      "metformin_pcos",
+      "pcos_exercise_lifestyle"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "not_applicable",
+      "fertility_preservation": "moderate",
+      "avoid_surgery": "high",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "When appropriately implemented, time-restricted eating can improve insulin and weight without suppressing ovulation, but overly aggressive fasting can stress the HPA axis and potentially disrupt cycles."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Cycle changes reflect real metabolic shifts; however, if eating windows become too short or intake too low, cycles may lengthen or stop due to under-fueling rather than PCOS improvement.",
+      "natural_cycle_alternatives": []
+    },
+    "cost_accessibility": "No direct cost; requires behavioral changes and planning rather than purchases.",
+    "self_directed": true,
+    "patient_note": "Favor an early, reasonable eating window (e.g., 10–12 hours) over extreme fasting, and stop or adjust if cycles lengthen, you feel unwell, or disordered thoughts around food increase."
+  },
+  {
+    "id": "pcos_exercise_lifestyle",
+    "name": "Exercise and Lifestyle Program for PCOS",
+    "also_known_as": ["PCOS lifestyle program", "structured exercise for PCOS"],
+    "condition": ["pcos"],
+    "category": "complementary",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": "optional: exercise physiologist or health coach",
+    "evidence_tier": "well_evidenced",
+    "evidence_summary": "Lifestyle trials in PCOS show that regular moderate-intensity exercise and weight management improve insulin sensitivity, menstrual frequency, ovulation, and cardiometabolic risk, independent of medications.",
+    "evidence_sources": [
+      "Polycystic Ovary Syndrome: Study Shows Power of Diet, Lifestyle & Herbs",
+      "PCOS lifestyle RCTs and meta-analyses"
+    ],
+    "what_it_does": "Combines cardiovascular, resistance, and movement practices to improve insulin sensitivity, body composition, and stress regulation, thereby reducing PCOS metabolic and reproductive symptoms.",
+    "typical_timeline": "Benefits on energy and mood can appear within weeks; changes in weight, insulin markers, and cycles are typically evaluated over 3–6 months.",
+    "best_for": [
+      "All phenotypes of PCOS, especially with insulin resistance or weight gain",
+      "Women seeking to improve long-term health and fertility concurrently",
+      "Those combining lifestyle with diet, supplements, or medications"
+    ],
+    "not_recommended_for": [
+      "Individuals with significant cardiac or orthopedic limitations without medical clearance",
+      "Those prone to over-exercising or extreme regimens that can disrupt cycles"
+    ],
+    "side_effects": [
+      "Muscle soreness or fatigue during adaptation",
+      "Risk of injury if intensity is increased too quickly"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "pcos_low_gi_diet",
+      "metformin_pcos",
+      "pcos_inositol_40_1",
+      "pcos_berberine",
+      "pcos_time_restricted_eating"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "low",
+      "fertility_preservation": "high",
+      "avoid_surgery": "high",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "preserves",
+      "cycle_signal_preserved": true,
+      "note": "Appropriate exercise supports metabolic and hormonal balance and is protective for long-term ovarian and cardiovascular health; extreme exercise or under-fueling can disrupt cycles, so balance is key."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Cycle improvements reflect better metabolic and stress regulation; they are not masking underlying decline but helping prevent it.",
+      "natural_cycle_alternatives": []
+    },
+    "cost_accessibility": "Can be low-cost using walking and home exercise; structured programs, gyms, or coaching add cost but may also increase adherence.",
+    "self_directed": true,
+    "patient_note": "Aim for a sustainable routine (e.g., 150+ minutes/week of moderate movement plus 2–3 strength sessions) rather than short, intense bursts, and notice how your cycles and mood respond."
+  },
+  {
+    "id": "pcos_cocs_cycle_regulation",
+    "name": "Combined Oral Contraceptives for PCOS",
+    "also_known_as": [
+      "birth control pills",
+      "COCs",
+      "combined pill for PCOS"
+    ],
+    "condition": ["pcos"],
+    "category": "hormonal",
+    "requires_prescription": true,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "well_evidenced",
+    "evidence_summary": "Guidelines and randomized trials show that combined oral contraceptives reduce androgen-related symptoms, provide predictable withdrawal bleeding, and protect the endometrium in women with chronic anovulation due to PCOS.",
+    "evidence_sources": [
+      "Endocrine Society PCOS Guideline",
+      "ACOG guidance on PCOS and hormonal contraception",
+      "Natural Fertility Info – PCOS education on pill use"
+    ],
+    "what_it_does": "Provides synthetic estrogen and progestin to suppress ovulation, lower LH and ovarian androgen production, increase SHBG, and create regular withdrawal bleeds, improving acne, hirsutism, and cycle predictability.",
+    "typical_timeline": "Acne and cycle regularity often improve within 2–3 months; hirsutism improvements typically require 6–12 months.",
+    "best_for": [
+      "PCOS patients not trying to conceive who want reliable contraception",
+      "Women with bothersome acne, hirsutism, or very irregular bleeding",
+      "Those needing endometrial protection when lifestyle changes are still in progress"
+    ],
+    "not_recommended_for": [
+      "Women actively trying to conceive or planning pregnancy soon",
+      "Patients with contraindications to estrogen (e.g., high thrombotic risk, migraine with aura, certain cardiovascular conditions)",
+      "Those who strongly prefer to track natural cycles or avoid synthetic hormones"
+    ],
+    "side_effects": [
+      "Nausea, breast tenderness, spotting, or mood changes",
+      "Increased blood clot risk in susceptible individuals",
+      "Possible changes in libido or headaches"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "pcos_low_gi_diet",
+      "pcos_exercise_lifestyle",
+      "pcos_inositol_40_1 (for metabolic support)",
+      "pcos_mental_health_support"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "low",
+      "fertility_preservation": "low",
+      "avoid_surgery": "high",
+      "natural_options_only": "low",
+      "hormonal_treatment": "high",
+      "ovarian_health_preservation": "low"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": true,
+      "ovarian_reserve_effect": "may_mask",
+      "cycle_signal_preserved": false,
+      "note": "Combined pills suppress ovulation and flatten hormone fluctuations, which can mask early ovarian insufficiency because AMH, antral follicle count, and ovarian volume are lower during use and cycles appear regular; these markers usually normalize after stopping, but underlying decline can go undetected while on the pill."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [
+        "vitamin B2",
+        "vitamin B6",
+        "vitamin B12",
+        "folate",
+        "vitamin C",
+        "magnesium",
+        "zinc",
+        "selenium"
+      ],
+      "masking_risks": "Creates predictable withdrawal bleeds that can hide persistent anovulation and early ovarian aging; regular check-ins and off-pill assessments are important if long-term fertility is a priority.",
+      "natural_cycle_alternatives": [
+        "pcos_inositol_40_1",
+        "pcos_low_gi_diet",
+        "pcos_exercise_lifestyle"
+      ]
+    },
+    "cost_accessibility": "Generally low cost and widely covered; generics are inexpensive, but access varies by region.",
+    "self_directed": false,
+    "patient_note": "Ask how long your clinician recommends staying on the pill, what nutrient support you may need, and how you'll periodically assess natural cycles and ovarian health if you plan to conceive later."
+  },
+  {
+    "id": "pcos_progestin_only_options",
+    "name": "Progestin-Only Options for PCOS",
+    "also_known_as": [
+      "progestin-only pill",
+      "DMPA shot",
+      "levonorgestrel IUD"
+    ],
+    "condition": ["pcos"],
+    "category": "hormonal",
+    "requires_prescription": true,
+    "requires_specialist": false,
+    "specialist_type": "gynecologist or primary care physician",
+    "evidence_tier": "promising",
+    "evidence_summary": "Progestin-only methods provide endometrial protection and can reduce bleeding in anovulatory PCOS; evidence for androgen reduction is less robust than for combined pills, and ovulation suppression varies by method.",
+    "evidence_sources": [
+      "PCOS hormonal contraception literature",
+      "Endometrial protection recommendations in chronic anovulation"
+    ],
+    "what_it_does": "Delivers synthetic progestin to thin the endometrium, reduce bleeding, and, depending on the method, partially or fully suppress ovulation, providing contraception and endometrial protection.",
+    "typical_timeline": "Bleeding patterns can become lighter or more irregular over 3–6 months; full effects on bleeding and cramps are usually evaluated after several cycles.",
+    "best_for": [
+      "PCOS patients needing endometrial protection who cannot take estrogen",
+      "Women wanting long-acting reversible contraception (e.g., levonorgestrel IUD)",
+      "Those with heavy or prolonged bleeding from chronic anovulation"
+    ],
+    "not_recommended_for": [
+      "Women actively trying to conceive",
+      "Patients intolerant to progestin-related mood or bleeding changes",
+      "Those with specific contraindications to IUD placement or depot injections"
+    ],
+    "side_effects": [
+      "Irregular bleeding or spotting",
+      "Mood changes, bloating, or breast tenderness",
+      "Possible bone density concerns with long-term injectable progestins"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "pcos_low_gi_diet",
+      "pcos_exercise_lifestyle",
+      "metformin_pcos",
+      "pcos_inositol_40_1"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "low",
+      "fertility_preservation": "low",
+      "avoid_surgery": "high",
+      "natural_options_only": "low",
+      "hormonal_treatment": "high",
+      "ovarian_health_preservation": "low"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": true,
+      "ovarian_reserve_effect": "may_mask",
+      "cycle_signal_preserved": false,
+      "note": "Many progestin-only methods, especially injections and some IUDs, significantly alter or suppress ovulation and bleeding, which can mask underlying cycle patterns and early ovarian decline; these effects are generally reversible after discontinuation."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Amenorrhea or irregular bleeding can obscure whether ovulation is occurring; off-hormone assessments are needed before fertility planning.",
+      "natural_cycle_alternatives": [
+        "pcos_inositol_40_1",
+        "pcos_low_gi_diet",
+        "pcos_exercise_lifestyle"
+      ]
+    },
+    "cost_accessibility": "Upfront costs for IUDs or injections can be higher but may be covered and cost-effective over time; pills are generally inexpensive.",
+    "self_directed": false,
+    "patient_note": "Clarify whether your chosen progestin method is expected to stop ovulation or mainly thin the uterine lining, and how that fits with your future fertility plans."
+  },
+  {
+    "id": "pcos_spironolactone",
+    "name": "Spironolactone for Androgen Symptoms",
+    "also_known_as": [
+      "spironolactone",
+      "aldactone"
+    ],
+    "condition": ["pcos"],
+    "category": "pharmaceutical",
+    "requires_prescription": true,
+    "requires_specialist": false,
+    "specialist_type": "dermatologist, endocrinologist, or gynecologist",
+    "evidence_tier": "well_evidenced",
+    "evidence_summary": "Randomized and observational studies show that spironolactone reduces hirsutism and acne in women with hyperandrogenic PCOS, especially when combined with oral contraceptives.",
+    "evidence_sources": [
+      "PCOS hyperandrogenism treatment literature",
+      "Dermatology guidelines on hormonal acne"
+    ],
+    "what_it_does": "Acts as an androgen receptor blocker and mild diuretic, reducing the effects of excess androgens on hair follicles and sebaceous glands, thereby decreasing hirsutism and acne.",
+    "typical_timeline": "Improvements in acne and hair growth typically appear after 3–6 months and continue over 6–12 months.",
+    "best_for": [
+      "PCOS with bothersome acne and/or hirsutism",
+      "Patients already on reliable contraception who still have androgen symptoms",
+      "Women who cannot tolerate or do not fully respond to combined OCPs alone"
+    ],
+    "not_recommended_for": [
+      "Pregnancy or women not using effective contraception (due to teratogenic risk for male fetuses)",
+      "Patients with kidney disease or high baseline potassium",
+      "Those on ACE inhibitors or potassium supplements without careful monitoring"
+    ],
+    "side_effects": [
+      "Increased urination, dizziness, or fatigue",
+      "Breast tenderness, irregular spotting",
+      "Increased potassium levels (hyperkalemia) in susceptible individuals"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "pcos_cocs_cycle_regulation",
+      "pcos_low_gi_diet",
+      "pcos_inositol_40_1",
+      "pcos_topical_acne_treatments"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "not_applicable",
+      "fertility_preservation": "moderate",
+      "avoid_surgery": "high",
+      "natural_options_only": "low",
+      "hormonal_treatment": "moderate",
+      "ovarian_health_preservation": "moderate"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "Spironolactone does not reliably suppress ovulation on its own but is always used with contraception because of fetal risks; cycles remain visible if not combined with other suppressive hormones."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Improves outward androgen symptoms without changing underlying PCOS drivers; metabolic and reproductive risks still need separate management.",
+      "natural_cycle_alternatives": [
+        "pcos_low_gi_diet",
+        "pcos_inositol_40_1",
+        "pcos_spearmint_tea"
+      ]
+    },
+    "cost_accessibility": "Generic spironolactone is inexpensive and widely available.",
+    "self_directed": false,
+    "patient_note": "Confirm you are using reliable contraception, have your potassium and kidney function monitored, and set realistic expectations—hair changes are slow and may take many months."
+  },
+  {
+    "id": "pcos_letrozole_ovulation_induction",
+    "name": "Letrozole for Ovulation Induction",
+    "also_known_as": ["Femara", "aromatase inhibitor for ovulation"],
+    "condition": ["pcos"],
+    "category": "pharmaceutical",
+    "requires_prescription": true,
+    "requires_specialist": true,
+    "specialist_type": "reproductive endocrinologist or fertility-focused gynecologist",
+    "evidence_tier": "well_evidenced",
+    "evidence_summary": "Multiple randomized controlled trials show that letrozole is superior to clomiphene for live birth and ovulation rates in women with PCOS-related anovulatory infertility.",
+    "evidence_sources": [
+      "NEJM trial comparing letrozole vs clomiphene in PCOS",
+      "Fertility society guidelines recommending letrozole as first-line for PCOS ovulation induction"
+    ],
+    "what_it_does": "Temporarily blocks estrogen production via aromatase inhibition, leading to increased FSH release from the pituitary and stimulation of follicular development and ovulation.",
+    "typical_timeline": "Used in short cycles (usually days 3–7 or 5–9); ovulation is expected later in the same cycle, and success is typically assessed over 3–6 treatment cycles.",
+    "best_for": [
+      "PCOS patients with anovulatory infertility actively trying to conceive",
+      "Women who did not ovulate or conceive with lifestyle measures alone",
+      "Those who can access cycle monitoring and ultrasound when needed"
+    ],
+    "not_recommended_for": [
+      "Women not currently trying to conceive",
+      "Patients with unexplained infertility or other major fertility factors without full workup",
+      "Those without access to pregnancy testing or monitoring to avoid inadvertent early pregnancy exposure"
+    ],
+    "side_effects": [
+      "Hot flashes, headaches, or fatigue during treatment days",
+      "Occasional mood changes or joint discomfort",
+      "Multiple pregnancy risk (though lower than with gonadotropins)"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "pcos_low_gi_diet",
+      "metformin_pcos",
+      "pcos_inositol_40_1",
+      "pcos_exercise_lifestyle"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "not_applicable",
+      "fertility_preservation": "high",
+      "avoid_surgery": "high",
+      "natural_options_only": "low",
+      "hormonal_treatment": "moderate",
+      "ovarian_health_preservation": "moderate"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "Letrozole stimulates rather than suppresses ovulation; it is used in short bursts each cycle and does not chronically mask ovarian reserve, though repeated stimulation should still be coordinated with a fertility specialist."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Ovulation induction cycles are timed and monitored; they do not create artificially regular cycles outside treatment and thus do not mask long-term decline.",
+      "natural_cycle_alternatives": [
+        "pcos_inositol_40_1",
+        "pcos_low_gi_diet",
+        "pcos_exercise_lifestyle"
+      ]
+    },
+    "cost_accessibility": "Generic letrozole is relatively affordable, but monitoring and fertility visits add cost; coverage varies.",
+    "self_directed": false,
+    "patient_note": "Confirm dosage and timing, ask how ovulation will be monitored, and clarify how many cycles your clinician recommends before re-evaluating your fertility plan."
+  },
+  {
+    "id": "pcos_clomiphene_ovulation_induction",
+    "name": "Clomiphene Citrate for Ovulation Induction",
+    "also_known_as": ["Clomid", "clomiphene"],
+    "condition": ["pcos"],
+    "category": "pharmaceutical",
+    "requires_prescription": true,
+    "requires_specialist": true,
+    "specialist_type": "reproductive endocrinologist or fertility-focused gynecologist",
+    "evidence_tier": "well_evidenced",
+    "evidence_summary": "Older randomized trials established clomiphene as effective for inducing ovulation in anovulatory PCOS, but newer data show letrozole yields higher live birth rates; clomiphene remains an alternative where letrozole is unavailable.",
+    "evidence_sources": [
+      "Classic clomiphene trials in PCOS",
+      "Fertility guidelines noting letrozole superiority but clomiphene effectiveness"
+    ],
+    "what_it_does": "Blocks estrogen receptors at the hypothalamus and pituitary, leading to increased FSH and LH release and stimulation of ovarian follicle development and ovulation.",
+    "typical_timeline": "Taken for 5 days early in the cycle; ovulation is expected later that cycle, and treatment is usually limited to 3–6 cycles.",
+    "best_for": [
+      "PCOS-related anovulatory infertility when letrozole is not available or contraindicated",
+      "Patients able to undergo monitoring for ovulation and endometrial response"
+    ],
+    "not_recommended_for": [
+      "Women with thin endometrial lining on clomiphene",
+      "Those at high risk of multiple pregnancy who cannot be closely monitored",
+      "Women not actively trying to conceive"
+    ],
+    "side_effects": [
+      "Hot flashes, mood changes, visual disturbances (rare)",
+      "Thinning of the endometrial lining in some women",
+      "Multiple pregnancy risk"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "pcos_low_gi_diet",
+      "metformin_pcos",
+      "pcos_exercise_lifestyle"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "not_applicable",
+      "fertility_preservation": "high",
+      "avoid_surgery": "high",
+      "natural_options_only": "low",
+      "hormonal_treatment": "moderate",
+      "ovarian_health_preservation": "moderate"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "Clomiphene stimulates ovulation and is used in short course cycles; it does not chronically mask ovarian reserve, but repeated cycles require monitoring for endometrial and ovarian response."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Treatment cycles are clearly demarcated and monitored; they do not create the illusion of regular natural cycles between treatments.",
+      "natural_cycle_alternatives": [
+        "pcos_inositol_40_1",
+        "pcos_low_gi_diet",
+        "pcos_exercise_lifestyle"
+      ]
+    },
+    "cost_accessibility": "Generic clomiphene is inexpensive; cost lies mainly in fertility monitoring and clinic visits.",
+    "self_directed": false,
+    "patient_note": "Ask about success rates compared with letrozole for your situation, how your endometrial lining and ovulation will be tracked, and how many cycles they recommend."
+  },
+  {
+    "id": "pcos_glp1_agonists",
+    "name": "GLP-1 Agonists for Weight and Metabolic Management",
+    "also_known_as": [
+      "semaglutide",
+      "Ozempic",
+      "Wegovy",
+      "GLP-1 receptor agonists"
+    ],
+    "condition": ["pcos"],
+    "category": "pharmaceutical",
+    "requires_prescription": true,
+    "requires_specialist": true,
+    "specialist_type": "endocrinologist, obesity medicine specialist, or experienced primary care physician",
+    "evidence_tier": "emerging",
+    "evidence_summary": "Robust RCT data show GLP-1 agonists produce significant weight loss and metabolic improvements in obesity and type 2 diabetes; emerging PCOS-specific data suggest similar benefits but long-term reproductive outcomes in PCOS are still being studied.",
+    "evidence_sources": [
+      "Obesity and diabetes RCTs on GLP-1 agonists",
+      "Early studies and reviews on GLP-1 use in PCOS"
+    ],
+    "what_it_does": "Mimics GLP-1 to slow gastric emptying, increase satiety, and enhance glucose-dependent insulin secretion, leading to significant weight loss and improved insulin sensitivity.",
+    "typical_timeline": "Weight loss and blood sugar improvements are typically seen over 3–6 months and may continue over 12+ months; dose is titrated gradually to minimize side effects.",
+    "best_for": [
+      "PCOS with obesity and significant insulin resistance or prediabetes/diabetes",
+      "Women who have not achieved weight or metabolic goals with lifestyle and other medications",
+      "Patients who understand the need for concurrent lifestyle changes"
+    ],
+    "not_recommended_for": [
+      "Women actively trying to conceive (safety in early pregnancy is not established; discontinuation before conception is recommended)",
+      "Patients with a personal or family history of medullary thyroid carcinoma or MEN2 (for certain agents)",
+      "Individuals with severe GI disease or pancreatitis history without specialist input"
+    ],
+    "side_effects": [
+      "Nausea, vomiting, diarrhea or constipation",
+      "Potential gallbladder issues, rare pancreatitis",
+      "Injection site reactions"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "pcos_low_gi_diet",
+      "pcos_exercise_lifestyle",
+      "metformin_pcos"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "not_applicable",
+      "fertility_preservation": "moderate",
+      "avoid_surgery": "high",
+      "natural_options_only": "low",
+      "hormonal_treatment": "moderate",
+      "ovarian_health_preservation": "moderate"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "GLP-1 agonists do not directly suppress ovulation; by improving weight and insulin profiles they may indirectly support restoration of ovulatory cycles, but they are typically stopped before pregnancy attempts."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Rapid weight loss can temporarily alter cycles; careful planning is needed around when to transition off medication before TTC.",
+      "natural_cycle_alternatives": [
+        "pcos_low_gi_diet",
+        "pcos_exercise_lifestyle",
+        "pcos_inositol_40_1"
+      ]
+    },
+    "cost_accessibility": "High-cost medications with variable insurance coverage; access can be limited by formularies, prior authorization, and supply issues.",
+    "self_directed": false,
+    "patient_note": "Clarify the goals, expected duration, and plan for stopping the medication before pregnancy, and ensure you have support for sustainable lifestyle changes alongside the injection."
+  },
+  {
+    "id": "pcos_spearmint_tea",
+    "name": "Spearmint Tea for Androgen Symptoms",
+    "also_known_as": ["spearmint infusion"],
+    "condition": ["pcos"],
+    "category": "supplement",
+    "requires_prescription": false,
+    "requires_specialist": false,
+    "specialist_type": null,
+    "evidence_tier": "emerging",
+    "evidence_summary": "Small randomized and pilot studies suggest that spearmint tea may modestly reduce free testosterone and improve mild hirsutism in women with androgen excess, but evidence is limited and short-term.",
+    "evidence_sources": [
+      "Small RCTs on spearmint tea and hirsutism",
+      "Natural PCOS resources referencing spearmint tea"
+    ],
+    "what_it_does": "May exert mild anti-androgen and antioxidant effects that slightly lower free testosterone or its activity, leading to small improvements in unwanted hair growth or acne.",
+    "typical_timeline": "Studies used twice-daily tea for several weeks; any changes in hair or acne are gradual and subtle, often requiring months.",
+    "best_for": [
+      "Mild androgen symptoms in PCOS where medications are not desired",
+      "Adjunct to other androgen-lowering strategies like diet or medications",
+      "Patients wanting a gentle, low-risk option to try"
+    ],
+    "not_recommended_for": [
+      "Severe hirsutism needing more potent therapy",
+      "Individuals with mint allergies"
+    ],
+    "side_effects": [
+      "Generally well tolerated; mild GI upset in some people"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "pcos_low_gi_diet",
+      "pcos_inositol_40_1",
+      "pcos_spironolactone"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "not_applicable",
+      "fertility_preservation": "high",
+      "avoid_surgery": "high",
+      "natural_options_only": "high",
+      "hormonal_treatment": "low",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "Spearmint tea does not meaningfully affect ovulation or ovarian reserve; its impact is primarily on mild androgen symptoms."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Cosmetic improvements do not change underlying metabolic or reproductive risks; those still need dedicated management.",
+      "natural_cycle_alternatives": []
+    },
+    "cost_accessibility": "Low-cost herbal tea available in most grocery stores or online.",
+    "self_directed": true,
+    "patient_note": "Use spearmint tea as a supportive measure rather than a primary treatment, and combine it with broader PCOS management for best results."
+  },
+  {
+    "id": "pcos_mental_health_support",
+    "name": "Mental Health Support for PCOS",
+    "also_known_as": [
+      "therapy for PCOS-related anxiety and depression",
+      "psychological support"
+    ],
+    "condition": ["pcos"],
+    "category": "complementary",
+    "requires_prescription": false,
+    "requires_specialist": true,
+    "specialist_type": "therapist, psychologist, or psychiatrist",
+    "evidence_tier": "promising",
+    "evidence_summary": "Studies show higher rates of anxiety and depression in women with PCOS; psychological and psychiatric support improves quality of life and may support better adherence to lifestyle and medical treatments.",
+    "evidence_sources": [
+      "PCOS quality-of-life and mental health research",
+      "Natural Fertility Info – PCOS emotional impact discussions"
+    ],
+    "what_it_does": "Provides tools to manage stress, body image concerns, mood symptoms, and the emotional burden of PCOS, which can indirectly improve self-care and treatment outcomes.",
+    "typical_timeline": "Benefits can appear within weeks of regular therapy; deeper changes in coping and mood may take several months.",
+    "best_for": [
+      "PCOS patients experiencing anxiety, depression, or disordered eating",
+      "Women feeling overwhelmed by long diagnostic journeys and treatment decisions",
+      "Those struggling with adherence to lifestyle or medical plans"
+    ],
+    "not_recommended_for": [
+      "No absolute contraindications; modality should be tailored to the individual and serious conditions require specialist care"
+    ],
+    "side_effects": [
+      "Emotional discomfort when processing difficult experiences",
+      "Time and financial commitment"
+    ],
+    "conflicts_with": [],
+    "works_well_with": [
+      "pcos_exercise_lifestyle",
+      "pcos_low_gi_diet",
+      "metformin_pcos",
+      "pcos_cocs_cycle_regulation"
+    ],
+    "goal_alignment": {
+      "pain_reduction": "low",
+      "fertility_preservation": "high",
+      "avoid_surgery": "high",
+      "natural_options_only": "high",
+      "hormonal_treatment": "not_applicable",
+      "ovarian_health_preservation": "high"
+    },
+    "ovarian_health_impact": {
+      "suppresses_ovulation": false,
+      "ovarian_reserve_effect": "neutral",
+      "cycle_signal_preserved": true,
+      "note": "Mental health care supports overall well-being and self-care capacity without altering ovarian physiology."
+    },
+    "holistic_considerations": {
+      "nutrient_depletions": [],
+      "masking_risks": "Improved mood can make symptoms feel more manageable but does not remove the need to address metabolic and hormonal drivers.",
+      "natural_cycle_alternatives": []
+    },
+    "cost_accessibility": "Access and cost vary widely; some therapy is covered by insurance or offered through community clinics, while private care can be expensive.",
+    "self_directed": false,
+    "patient_note": "If PCOS is affecting your mood, relationships, or eating patterns, bringing a mental health professional onto your care team is an important part of comprehensive treatment, not an optional extra."
+  }
+]
