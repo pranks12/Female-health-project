@@ -1272,6 +1272,11 @@
           document.getElementById('profile-meds').value = state.profile.medications;
         if (Array.isArray(state.profile.conditions))
           state.profile.conditions.forEach(addChip);
+        // Collapse the profile panel for returning users — chat is already visible
+        const body = document.getElementById('profile-body');
+        const chevron = document.getElementById('profile-chevron');
+        body.classList.add('collapsed');
+        chevron.classList.remove('open');
       } catch (_) { /* ignore */ }
     }
 
@@ -1285,6 +1290,17 @@
       const btn = document.getElementById('save-btn');
       btn.textContent = 'Saved \u2713';
       setTimeout(() => { btn.textContent = 'Save Profile'; }, 2000);
+
+      // Collapse profile panel after saving
+      const body = document.getElementById('profile-body');
+      const chevron = document.getElementById('profile-chevron');
+      body.classList.add('collapsed');
+      chevron.classList.remove('open');
+
+      // Auto-start interview if not already underway
+      if (state.messages.length === 0) {
+        startInterview();
+      }
     }
 
     function toggleProfile() {
@@ -1292,6 +1308,90 @@
       const chevron = document.getElementById('profile-chevron');
       body.classList.toggle('collapsed');
       chevron.classList.toggle('open');
+    }
+
+    // ─────────────────────────────────────────────────────────
+    // START INTERVIEW — silent kickoff so Fern asks the first question
+    // ─────────────────────────────────────────────────────────
+    async function startInterview() {
+      setInputDisabled(true);
+      const typingId = showTyping();
+      let agentText = '';
+      let bubbleId = null;
+
+      // Hidden kickoff — kept in state.messages for API history but not shown as a user bubble
+      const kickoff = { role: 'user', content: 'Hi, I\'d like help understanding my treatment options.' };
+      state.messages.push(kickoff);
+
+      try {
+        const res = await fetch('/api/agent3/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: state.messages, user_profile: state.profile })
+        });
+
+        if (!res.ok) {
+          state.messages.pop(); // Remove kickoff on failure
+          const msg = await res.text().catch(() => '');
+          throw new Error(msg || 'HTTP ' + res.status);
+        }
+
+        const reader = res.body.getReader();
+        const dec = new TextDecoder();
+        let buf = '';
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          buf += dec.decode(value, { stream: true });
+          const lines = buf.split('\n');
+          buf = lines.pop();
+
+          for (const line of lines) {
+            if (!line.startsWith('data:')) continue;
+            const raw = line.slice(5).trim();
+            if (raw === '[DONE]' || raw === '') continue;
+
+            let chunk = raw;
+            try {
+              const parsed = JSON.parse(raw);
+              chunk = parsed.content ?? parsed.text ?? parsed.delta ?? raw;
+            } catch (_) {}
+
+            const stepMatches = chunk.match(/\[STEP:(\d+)\]/g);
+            if (stepMatches) {
+              stepMatches.forEach(function(m) {
+                const n = parseInt(m.match(/\d+/)[0], 10);
+                if (n > state.step) { state.step = n; renderProgress(); }
+              });
+            }
+
+            const display = chunk
+              .replace(/\[STEP:\d+\]/g, '')
+              .replace(/\[STEP:COMPLETE\]/g, '');
+
+            agentText += display;
+            removeTyping(typingId);
+
+            if (!bubbleId) {
+              bubbleId = addBubble('agent', agentText);
+            } else {
+              updateBubble(bubbleId, agentText);
+            }
+          }
+        }
+
+        if (agentText) state.messages.push({ role: 'assistant', content: agentText });
+
+      } catch (err) {
+        removeTyping(typingId);
+        state.messages = []; // Reset so user can retry via Save Profile
+        showToast(err.message || 'Failed to start interview.');
+      } finally {
+        removeTyping(typingId);
+        setInputDisabled(false);
+        scrollChat();
+      }
     }
 
     // ─────────────────────────────────────────────────────────
@@ -1608,8 +1708,8 @@
         if (data.retrieval_meta) {
           const m = data.retrieval_meta;
           document.getElementById('retrieval-meta').textContent =
-            'Based on ' + (m.used ?? '?') + ' of ' + (m.total ?? '?') +
-            ' treatments\u2002|\u2002' + (m.method || 'Keyword search');
+            'Based on ' + (m.retrieved ?? m.used ?? '?') + ' of ' + (m.total ?? '?') +
+            ' treatments\u2002|\u2002' + (m.mode || m.method || 'Keyword search');
         }
 
       } catch (err) {
