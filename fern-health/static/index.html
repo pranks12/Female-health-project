@@ -1353,10 +1353,19 @@
             if (raw === '[DONE]' || raw === '') continue;
 
             let chunk = raw;
+            let streamError = null;
             try {
               const parsed = JSON.parse(raw);
-              chunk = parsed.content ?? parsed.text ?? parsed.delta ?? raw;
+              if (parsed.error) { streamError = parsed.error; }
+              else { chunk = parsed.content ?? parsed.text ?? parsed.delta ?? raw; }
             } catch (_) {}
+
+            if (streamError) {
+              removeTyping(typingId);
+              state.messages = [];
+              showToast('API error: ' + streamError);
+              return;
+            }
 
             const stepMatches = chunk.match(/\[STEP:(\d+)\]/g);
             if (stepMatches) {
@@ -1530,10 +1539,18 @@
             if (raw === '[DONE]' || raw === '') continue;
 
             let chunk = raw;
+            let streamError = null;
             try {
               const parsed = JSON.parse(raw);
-              chunk = parsed.content ?? parsed.text ?? parsed.delta ?? raw;
+              if (parsed.error) { streamError = parsed.error; }
+              else { chunk = parsed.content ?? parsed.text ?? parsed.delta ?? raw; }
             } catch (_) { /* plain text chunk */ }
+
+            if (streamError) {
+              removeTyping(typingId);
+              showToast('API error: ' + streamError);
+              return;
+            }
 
             // Parse step markers
             const stepMatches = chunk.match(/\[STEP:(\d+)\]/g);

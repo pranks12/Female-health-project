@@ -328,15 +328,19 @@ async def chat(request: ChatRequest):
                 for m in request.messages]
 
     async def generate():
-        with client.messages.stream(
-            model=MODEL,
-            max_tokens=1024,
-            system=INTERVIEWER_SYSTEM,
-            messages=messages
-        ) as stream:
-            for text in stream.text_stream:
-                yield f"data: {json.dumps({'content': text})}\n\n"
-        yield "data: [DONE]\n\n"
+        try:
+            with client.messages.stream(
+                model=MODEL,
+                max_tokens=1024,
+                system=INTERVIEWER_SYSTEM,
+                messages=messages
+            ) as stream:
+                for text in stream.text_stream:
+                    yield f"data: {json.dumps({'content': text})}\n\n"
+            yield "data: [DONE]\n\n"
+        except Exception as e:
+            yield f"data: {json.dumps({'error': str(e)})}\n\n"
+            yield "data: [DONE]\n\n"
 
     return StreamingResponse(
         generate(),
